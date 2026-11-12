@@ -34,13 +34,13 @@ Expect: `Done. All 6 rules pass.` and a `Progress:` line.
 
 ## If you get stuck
 
-| What you see | Fix |
-|---|---|
-| `FAIL notes.csv is in this folder` | Your download went to your Downloads folder. Move it here. |
-| `FAIL it has the 30 drafts from your sample` | Do not add or remove rows. Start from the starter `notes.csv` if you need to. |
-| `FAIL every note is filled in` | Find the empty or short notes. Write what you saw, or `ok`. |
-| `FAIL you spotted most of the drafts with a real problem` | Open the drafts you marked `ok` and check each fact against the request. |
-| `FAIL you did not flag every draft` | A note is for something a designer would fix. If a draft is fine, write `ok`. |
+| What you see                                              | Fix                                                                           |
+| --------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `FAIL notes.csv is in this folder`                        | Your download went to your Downloads folder. Move it here.                    |
+| `FAIL it has the 30 drafts from your sample`              | Do not add or remove rows. Start from the starter `notes.csv` if you need to. |
+| `FAIL every note is filled in`                            | Find the empty or short notes. Write what you saw, or `ok`.                   |
+| `FAIL you spotted most of the drafts with a real problem` | Open the drafts you marked `ok` and check each fact against the request.      |
+| `FAIL you did not flag every draft`                       | A note is for something a designer would fix. If a draft is fine, write `ok`. |
 
 You can also fill in `notes.csv` in a spreadsheet. Save it as CSV, not as a spreadsheet file.
 

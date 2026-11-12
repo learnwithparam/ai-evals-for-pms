@@ -37,12 +37,12 @@ Expect: `Done. All 7 rules pass.` and a `Progress:` line.
 
 ## If you get stuck
 
-| What you see | Fix |
-|---|---|
-| `FAIL every mode you used is a heading` | A spelling change makes a new mode. Copy the names from `failure-modes.md`. |
-| `FAIL each count matches` | Build the pivot table again from `notes.csv`, not by hand. |
-| `FAIL counts.csv runs from the biggest count` | Sort by `count`, largest first. |
-| `FAIL top-mode.md names the mode at the top` | Use the first row of `counts.csv`, and write its number. |
+| What you see                                  | Fix                                                                         |
+| --------------------------------------------- | --------------------------------------------------------------------------- |
+| `FAIL every mode you used is a heading`       | A spelling change makes a new mode. Copy the names from `failure-modes.md`. |
+| `FAIL each count matches`                     | Build the pivot table again from `notes.csv`, not by hand.                  |
+| `FAIL counts.csv runs from the biggest count` | Sort by `count`, largest first.                                             |
+| `FAIL top-mode.md names the mode at the top`  | Use the first row of `counts.csv`, and write its number.                    |
 
 ## Words you will use
 

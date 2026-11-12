@@ -31,10 +31,10 @@ Expect: `Done. All 5 rules pass.` and a `Progress:` line.
 
 ## If you get stuck
 
-| What you see | Fix |
-|---|---|
-| `FAIL the world is in place` | Run `bun run world reset`. |
-| `FAIL the Question: line asks how often` | Start the line with `Question: How often` and write at least 6 words. |
+| What you see                                         | Fix                                                                                      |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `FAIL the world is in place`                         | Run `bun run world reset`.                                                               |
+| `FAIL the Question: line asks how often`             | Start the line with `Question: How often` and write at least 6 words.                    |
 | `FAIL the Who decides: line names the head designer` | The boss signs budgets, not trips. Read the tab again and find who signs off every trip. |
 
 ## Words you will use

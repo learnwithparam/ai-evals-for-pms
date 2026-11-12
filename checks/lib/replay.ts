@@ -17,9 +17,13 @@ export async function draftPlannerRunsInReplay(requestId = "R001", runs = 3): Pr
     }
     const log = join(LOGS, "runs.jsonl");
     if (!existsSync(log)) return false;
-    const logged = readFileSync(log, "utf8").trim().split("\n").map((l) => JSON.parse(l));
+    const logged = readFileSync(log, "utf8")
+      .trim()
+      .split("\n")
+      .map((l) => JSON.parse(l));
     return ids.every((id) => logged.some((l) => l.run_id === id && l.provider === "replay"));
   } finally {
-    if (before === undefined) delete process.env.LLM_PROVIDER; else process.env.LLM_PROVIDER = before;
+    if (before === undefined) delete process.env.LLM_PROVIDER;
+    else process.env.LLM_PROVIDER = before;
   }
 }

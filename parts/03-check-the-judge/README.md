@@ -22,12 +22,12 @@ flowchart LR
 
 ## Steps
 
-| Step | Minutes | You make | The check reads |
-|---|---|---|---|
-| test-the-judge | 25 | `judge-check.md` | TPR and TNR for the two pass or fail judges, each within 0.01 of the values from `world/data/judges/` against `world/data/expert-labels.csv`. The pick is the judge whose lower value is at least 0.80 (only the mobility judge). One line on why a 1 to 5 score cannot be checked without a pass line |
-| choose-the-judge-prompt | 20 | `judge-prompt.md` | The Pass and Fail text from the rubric. 2 to 4 examples, all from `world/data/splits/train.csv` (an id from dev or test is leakage and fails). Asks for a reason before the verdict. Covers one failure mode only |
-| correct-the-pass-rate (extension) | 15 | `corrected.md` | The corrected pass rate with the Rogan-Gladen formula, within 0.01. One line on why the raw rate is wrong |
-| write-your-own-judge (extension) | 20 | `my-judge-verdicts.csv` | Columns trace_id, critique, verdict. 40 rows from `world/data/splits/dev.csv`. TPR and TNR against Ines both at least 0.80. Any tool may make it; the file is the contract |
+| Step                              | Minutes | You make                | The check reads                                                                                                                                                                                                                                                                                        |
+| --------------------------------- | ------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| test-the-judge                    | 25      | `judge-check.md`        | TPR and TNR for the two pass or fail judges, each within 0.01 of the values from `world/data/judges/` against `world/data/expert-labels.csv`. The pick is the judge whose lower value is at least 0.80 (only the mobility judge). One line on why a 1 to 5 score cannot be checked without a pass line |
+| choose-the-judge-prompt           | 20      | `judge-prompt.md`       | The Pass and Fail text from the rubric. 2 to 4 examples, all from `world/data/splits/train.csv` (an id from dev or test is leakage and fails). Asks for a reason before the verdict. Covers one failure mode only                                                                                      |
+| correct-the-pass-rate (extension) | 15      | `corrected.md`          | The corrected pass rate with the Rogan-Gladen formula, within 0.01. One line on why the raw rate is wrong                                                                                                                                                                                              |
+| write-your-own-judge (extension)  | 20      | `my-judge-verdicts.csv` | Columns trace_id, critique, verdict. 40 rows from `world/data/splits/dev.csv`. TPR and TNR against Ines both at least 0.80. Any tool may make it; the file is the contract                                                                                                                             |
 
 Planted numbers, already in the world: mobility judge TPR 84 of 90 and TNR 26 of 30; generic judge TPR 87 of 90 and TNR 11 of 30. `tests/world.test.ts` guards them.
 

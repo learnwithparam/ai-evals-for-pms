@@ -11,7 +11,9 @@ export function requestText(t: Trace): string {
   ].join("\n");
 }
 export function draftText(t: Trace): string {
-  const lines = [`Hotel: ${t.draft.hotel.name} (${t.draft.hotel.price_eur} euros a person a night)`];
+  const lines = [
+    `Hotel: ${t.draft.hotel.name} (${t.draft.hotel.price_eur} euros a person a night)`,
+  ];
   for (const d of t.draft.days) {
     lines.push(`${d.weekday} ${d.date}`);
     for (const i of d.items) lines.push(`  ${i.time}  ${i.name}  ${i.price_eur} euros`);

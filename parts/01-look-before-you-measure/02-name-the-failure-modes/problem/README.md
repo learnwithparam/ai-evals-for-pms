@@ -44,12 +44,12 @@ Expect: `Done. All 8 rules pass.` and a `Progress:` line.
 
 ## If you get stuck
 
-| What you see | Fix |
-|---|---|
-| `FAIL it names 4 to 8 failure modes` | Two big groups hide the detail. Split a group if it mixes two problems. |
-| `FAIL every mode lists at least 2 drafts` | Merge a group of one into the group it is most like. |
-| `FAIL no mode is named with only a vague word` | Rename it after what happened, like `Over budget`. |
-| `FAIL together the modes cover at least 8 in 10` | Some notes are in no group. Add each to the group it fits. |
+| What you see                                     | Fix                                                                     |
+| ------------------------------------------------ | ----------------------------------------------------------------------- |
+| `FAIL it names 4 to 8 failure modes`             | Two big groups hide the detail. Split a group if it mixes two problems. |
+| `FAIL every mode lists at least 2 drafts`        | Merge a group of one into the group it is most like.                    |
+| `FAIL no mode is named with only a vague word`   | Rename it after what happened, like `Over budget`.                      |
+| `FAIL together the modes cover at least 8 in 10` | Some notes are in no group. Add each to the group it fits.              |
 
 A note that is not a real problem, like "a bit slow", can stay out of every group.
 

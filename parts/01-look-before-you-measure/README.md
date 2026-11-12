@@ -21,11 +21,11 @@ flowchart LR
 
 ## Steps
 
-| Step | Minutes | You make | The check reads |
-|---|---|---|---|
-| [read-the-traces](01-read-the-traces/problem/README.md) | 25 | `notes.csv`: a note on each of 30 drafts | Your 30 ids, the length of each note, and whether you caught the drafts with real problems |
-| [name-the-failure-modes](02-name-the-failure-modes/problem/README.md) | 20 | `failure-modes.md`: 4 to 8 named groups | Names, definitions, the drafts in each group, and how many of your notes they cover |
-| [count-the-failures](03-count-the-failures/problem/README.md) | 10 | `counts.csv`, `top-mode.md` and a chart | The mode column in `notes.csv`, each count, the sort order and your top mode |
+| Step                                                                  | Minutes | You make                                 | The check reads                                                                            |
+| --------------------------------------------------------------------- | ------- | ---------------------------------------- | ------------------------------------------------------------------------------------------ |
+| [read-the-traces](01-read-the-traces/problem/README.md)               | 25      | `notes.csv`: a note on each of 30 drafts | Your 30 ids, the length of each note, and whether you caught the drafts with real problems |
+| [name-the-failure-modes](02-name-the-failure-modes/problem/README.md) | 20      | `failure-modes.md`: 4 to 8 named groups  | Names, definitions, the drafts in each group, and how many of your notes they cover        |
+| [count-the-failures](03-count-the-failures/problem/README.md)         | 10      | `counts.csv`, `top-mode.md` and a chart  | The mode column in `notes.csv`, each count, the sort order and your top mode               |
 
 ## Walkthrough
 

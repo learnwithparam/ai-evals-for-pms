@@ -58,19 +58,19 @@
 </main>
 <script src="data/viewer-data.js"></script>
 <script>
-(function () {
+(() => {
   var D = window.LANTERN;
-  var $ = function (id) { return document.getElementById(id); };
-  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  var $ = (id) => document.getElementById(id);
+  var esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   var store = {
-    get: function (k) { try { return window.localStorage.getItem(k) || ""; } catch (e) { return ""; } },
-    set: function (k, v) { try { window.localStorage.setItem(k, v); } catch (e) {} }
+    get: (k) => { try { return window.localStorage.getItem(k) || ""; } catch (e) { return ""; } },
+    set: (k, v) => { try { window.localStorage.setItem(k, v); } catch (e) {} }
   };
   if (!D) {
     document.querySelector("main").innerHTML = '<div class="card"><p class="warn">The world data did not load.</p><p>Keep viewer.html inside the world folder, next to the data folder. If the data folder is missing, ask your facilitator to run: bun run world reset</p></div>';
     return;
   }
-  var byId = {}; D.traces.forEach(function (t) { byId[t.trace_id] = t; });
+  var byId = {}; D.traces.forEach((t) => { byId[t.trace_id] = t; });
 
   // ---------- Meet ----------
   $("meet").innerHTML =
@@ -80,14 +80,14 @@
     '<p><b>Ines Duarte</b> is the head designer. She signs off every trip. When she says a draft is good, it is good. Her word is the rule.</p>' +
     '<p><b>You</b> are the product manager who owns Draft Planner.</p></div>' +
     '<div class="card"><h2>A note from the boss</h2>' +
-    '<p>"Designers rewrote or edited ' + D.traces.filter(function (t) { return t.outcome !== "sent unchanged"; }).length + ' of our last ' + D.traces.length + ' drafts. Engineering wants a cheaper model. Sales wants to send city break drafts with no designer. Before I say yes to anything: how often does Draft Planner get a trip wrong, and in what way? Bring me numbers."</p></div>' +
+    '<p>"Designers rewrote or edited ' + D.traces.filter((t) => t.outcome !== "sent unchanged").length + ' of our last ' + D.traces.length + ' drafts. Engineering wants a cheaper model. Sales wants to send city break drafts with no designer. Before I say yes to anything: how often does Draft Planner get a trip wrong, and in what way? Bring me numbers."</p></div>' +
     '<div class="card"><h2>Two calls on your desk</h2><ol><li><b>A cheaper model.</b> It costs about a third as much. Engineering says the drafts read just as well.</li><li><b>Instant drafts.</b> Sales wants short city breaks sent straight to the customer, with no designer.</li></ol>' +
     '<p class="muted">You will answer both with numbers. First you need to know what goes wrong. Open <b>Read the drafts</b>.</p></div>';
 
   // ---------- Read ----------
   var mode = "sample", current = D.sample[0];
   function noteKey(id) { return "lantern-note-" + id; }
-  function list() { return mode === "sample" ? D.sample : D.traces.map(function (t) { return t.trace_id; }); }
+  function list() { return mode === "sample" ? D.sample : D.traces.map((t) => t.trace_id); }
   function factsFor(i) {
     if (!i.catalogue_id) return '<span class="warn">Not found in the catalogue</span>';
     var f = [];
@@ -110,9 +110,9 @@
       '<div><b>Likes</b>' + esc(r.interests) + '</div>' +
       '<div><b>Budget a person</b>' + r.budget_eur_per_person + ' euros</div></div>' +
       '<h3>The draft</h3><p>Hotel: ' + esc(t.draft.hotel.name) + ', ' + t.draft.hotel.price_eur + ' euros a person a night</p>';
-    t.draft.days.forEach(function (d) {
+    t.draft.days.forEach((d) => {
       h += '<div class="day">' + esc(d.weekday) + ' ' + esc(d.date) + '</div><table><tr><th>Time</th><th>Place</th><th>Euros</th><th>What the catalogue says</th><th>Travel from last stop</th></tr>';
-      d.items.forEach(function (i) {
+      d.items.forEach((i) => {
         h += '<tr><td>' + esc(i.time) + '</td><td>' + esc(i.name) + '</td><td>' + i.price_eur + '</td><td>' + factsFor(i) + '</td><td>' + (i.travel_min_from_last === "" ? "" : i.travel_min_from_last + " min by car") + '</td></tr>';
       });
       h += '</table>';
@@ -125,11 +125,11 @@
   }
   function renderRead() {
     var ids = list();
-    var done = D.sample.filter(function (id) { return store.get(noteKey(id)).trim(); }).length;
+    var done = D.sample.filter((id) => store.get(noteKey(id)).trim()).length;
     var h = '<div class="card row" style="justify-content:space-between"><div><b>Your sample: ' + done + ' of ' + D.sample.length + ' notes written.</b> <span class="muted">Notes save in this browser as you type.</span></div>' +
       '<div class="row"><label><input type="checkbox" id="all"' + (mode === "all" ? " checked" : "") + '> Show all ' + D.traces.length + ' drafts</label><button class="btn" id="dl">Download notes.csv</button></div></div>' +
       '<div class="grid"><div class="card list" style="padding:0">';
-    ids.forEach(function (id) {
+    ids.forEach((id) => {
       var has = store.get(noteKey(id)).trim();
       h += '<button data-id="' + id + '" class="' + (id === current ? "on" : "") + '"><span>' + id + '</span><span class="dot' + (has ? " done" : "") + '"></span></button>';
     });
@@ -137,15 +137,15 @@
     $("read").innerHTML = h;
     $("all").onchange = function () { mode = this.checked ? "all" : "sample"; if (list().indexOf(current) < 0) current = list()[0]; renderRead(); };
     $("dl").onclick = download;
-    Array.prototype.forEach.call(document.querySelectorAll(".list button"), function (b) { b.onclick = function () { current = b.getAttribute("data-id"); renderRead(); location.hash = "read/" + current; }; });
+    Array.prototype.forEach.call(document.querySelectorAll(".list button"), (b) => { b.onclick = () => { current = b.getAttribute("data-id"); renderRead(); location.hash = "read/" + current; }; });
     $("note").oninput = function () { store.set(noteKey(current), this.value); $("saved").textContent = "Saved."; };
-    var move = function (k) { var i = ids.indexOf(current) + k; if (i >= 0 && i < ids.length) { current = ids[i]; renderRead(); location.hash = "read/" + current; } };
-    $("prev").onclick = function () { move(-1); };
-    $("next").onclick = function () { move(1); };
+    var move = (k) => { var i = ids.indexOf(current) + k; if (i >= 0 && i < ids.length) { current = ids[i]; renderRead(); location.hash = "read/" + current; } };
+    $("prev").onclick = () => { move(-1); };
+    $("next").onclick = () => { move(1); };
   }
   function csvCell(s) { s = String(s).replace(/\r?\n/g, " "); return /[",]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; }
   function download() {
-    var rows = ["trace_id,note"].concat(D.sample.map(function (id) { return id + "," + csvCell(store.get(noteKey(id)).trim()); }));
+    var rows = ["trace_id,note"].concat(D.sample.map((id) => id + "," + csvCell(store.get(noteKey(id)).trim())));
     var a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([rows.join("\n") + "\n"], { type: "text/csv" }));
     a.download = "notes.csv"; a.click();
@@ -153,22 +153,22 @@
 
   // ---------- Chart ----------
   function parseCsv(text) {
-    var lines = text.replace(/^﻿/, "").split(/\r?\n/).filter(function (l) { return l.trim(); });
-    var head = lines.shift().split(",").map(function (h) { return h.trim().toLowerCase(); });
-    return lines.map(function (l) {
+    var lines = text.replace(/^﻿/, "").split(/\r?\n/).filter((l) => l.trim());
+    var head = lines.shift().split(",").map((h) => h.trim().toLowerCase());
+    return lines.map((l) => {
       var cells = [], cur = "", q = false;
       for (var i = 0; i < l.length; i++) { var c = l[i]; if (c === '"') { if (q && l[i + 1] === '"') { cur += '"'; i++; } else q = !q; } else if (c === "," && !q) { cells.push(cur); cur = ""; } else cur += c; }
       cells.push(cur);
-      var o = {}; head.forEach(function (h, k) { o[h] = (cells[k] || "").trim(); }); return o;
+      var o = {}; head.forEach((h, k) => { o[h] = (cells[k] || "").trim(); }); return o;
     });
   }
   function drawChart(rows) {
-    rows = rows.filter(function (r) { return r.mode && !isNaN(Number(r.count)); });
+    rows = rows.filter((r) => r.mode && !isNaN(Number(r.count)));
     if (!rows.length) { $("chartOut").innerHTML = '<p class="warn">That file has no mode and count columns. Check the first row says: mode,count</p>'; return; }
-    var max = Math.max.apply(null, rows.map(function (r) { return Number(r.count); }));
+    var max = Math.max.apply(null, rows.map((r) => Number(r.count)));
     var W = 760, L = 260, H = rows.length * 40 + 30;
     var s = '<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" role="img" aria-label="Failure modes by count">';
-    rows.forEach(function (r, i) {
+    rows.forEach((r, i) => {
       var w = (W - L - 60) * Number(r.count) / max, y = i * 40 + 10;
       s += '<text x="' + (L - 10) + '" y="' + (y + 20) + '" text-anchor="end">' + esc(r.mode) + '</text>';
       s += '<rect x="' + L + '" y="' + (y + 4) + '" width="' + w + '" height="24" rx="3" fill="var(--bar)"></rect>';
@@ -178,8 +178,8 @@
   }
   $("chart").innerHTML = '<div class="card"><h2>Chart your counts</h2><p>Choose your <code>counts.csv</code>. The viewer draws one bar for each failure mode, in the order of your file.</p>' +
     '<input type="file" id="countsFile" accept=".csv,text/csv"></div><div class="card" id="chartOut"><p class="muted">No file chosen yet.</p></div>';
-  $("countsFile").onchange = function () { var f = this.files[0]; if (!f) return; var rd = new FileReader(); rd.onload = function () { drawChart(parseCsv(rd.result)); }; rd.readAsText(f); };
-  window.drawCounts = function (text) { drawChart(parseCsv(text)); };
+  $("countsFile").onchange = function () { var f = this.files[0]; if (!f) return; var rd = new FileReader(); rd.onload = () => { drawChart(parseCsv(rd.result)); }; rd.readAsText(f); };
+  window.drawCounts = (text) => { drawChart(parseCsv(text)); };
 
   // ---------- Goal ----------
   $("goal").innerHTML = '<div class="card"><h2>Your goal: the Draft Planner launch pack</h2><p>By the end you hand the boss one pack of files. Each one is checked.</p><ol class="goal">' +
@@ -191,11 +191,11 @@
 
   // ---------- Tabs ----------
   function show(tab) {
-    ["meet", "read", "chart", "goal"].forEach(function (t) { $(t).style.display = t === tab ? "" : "none"; });
-    Array.prototype.forEach.call(document.querySelectorAll("nav button"), function (b) { b.className = b.getAttribute("data-tab") === tab ? "on" : ""; });
+    ["meet", "read", "chart", "goal"].forEach((t) => { $(t).style.display = t === tab ? "" : "none"; });
+    Array.prototype.forEach.call(document.querySelectorAll("nav button"), (b) => { b.className = b.getAttribute("data-tab") === tab ? "on" : ""; });
     if (tab === "read") renderRead();
   }
-  Array.prototype.forEach.call(document.querySelectorAll("nav button"), function (b) { b.onclick = function () { location.hash = b.getAttribute("data-tab"); }; });
+  Array.prototype.forEach.call(document.querySelectorAll("nav button"), (b) => { b.onclick = () => { location.hash = b.getAttribute("data-tab"); }; });
   function route() {
     var h = location.hash.replace("#", "").split("/");
     if (h[0] === "read" && h[1] && byId[h[1]]) { current = h[1]; if (D.sample.indexOf(current) < 0) mode = "all"; }
