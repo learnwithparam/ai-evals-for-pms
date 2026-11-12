@@ -56,12 +56,12 @@ Expect: `Done. All 7 rules pass.` and a `Progress:` line.
 
 Find the `FAIL` line you see in the left column. Then do the fix on the right.
 
-| What you see                                  | Fix                                                                              |
-| --------------------------------------------- | -------------------------------------------------------------------------------- |
+| What you see                                  | Fix                                                                               |
+| --------------------------------------------- | --------------------------------------------------------------------------------- |
 | `FAIL every mode you used is a heading`       | A small spelling change makes a new mode. Copy the names from `failure-modes.md`. |
-| `FAIL each count matches`                     | Make the pivot table again from `notes.csv`. Do not count by hand.               |
-| `FAIL counts.csv runs from the biggest count` | Sort by `count`, with the biggest first.                                         |
-| `FAIL top-mode.md names the mode at the top`  | Use the first row of `counts.csv`, and write its number.                         |
+| `FAIL each count matches`                     | Make the pivot table again from `notes.csv`. Do not count by hand.                |
+| `FAIL counts.csv runs from the biggest count` | Sort by `count`, with the biggest first.                                          |
+| `FAIL top-mode.md names the mode at the top`  | Use the first row of `counts.csv`, and write its number.                          |
 
 ## Words you will use
 
