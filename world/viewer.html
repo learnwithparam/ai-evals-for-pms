@@ -5,34 +5,74 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lantern Trails Viewer</title>
 <style>
-  :root { --bg:#f7f5f0; --card:#ffffff; --ink:#1f2328; --muted:#5b6470; --line:#ddd8cc; --accent:#b4531f; --accent-soft:#f6e3d7; --ok:#2f7d4a; --bar:#b4531f; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#16181c; --card:#1f2228; --ink:#e8e6e1; --muted:#a3a9b2; --line:#343842; --accent:#f08a4b; --accent-soft:#3a2a20; --ok:#6cc48a; --bar:#f08a4b; } }
+  :root {
+    --bg:#f7f5f0; --card:#ffffff; --ink:#1f2328; --muted:#5b6470; --line:#ddd8cc;
+    --accent:#b4531f; --accent-soft:#f6e3d7; --ok:#2f7d4a; --bar:#b4531f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#16181c; --card:#1f2228; --ink:#e8e6e1; --muted:#a3a9b2; --line:#343842;
+      --accent:#f08a4b; --accent-soft:#3a2a20; --ok:#6cc48a; --bar:#f08a4b;
+    }
+  }
   * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
-  header { padding:14px 20px; border-bottom:1px solid var(--line); display:flex; gap:16px; align-items:center; flex-wrap:wrap; background:var(--card); }
+  body {
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  header {
+    padding:14px 20px; border-bottom:1px solid var(--line); display:flex; gap:16px;
+    align-items:center; flex-wrap:wrap; background:var(--card);
+  }
   header h1 { font-size:18px; margin:0; }
   nav { display:flex; gap:6px; flex-wrap:wrap; }
-  nav button { border:1px solid var(--line); background:transparent; color:var(--ink); padding:6px 12px; border-radius:6px; cursor:pointer; font:inherit; font-size:14px; }
+  nav button {
+    border:1px solid var(--line); background:transparent; color:var(--ink); padding:6px 12px;
+    border-radius:6px; cursor:pointer; font:inherit; font-size:14px;
+  }
   nav button.on { background:var(--accent); color:#fff; border-color:var(--accent); }
   main { padding:20px; max-width:1200px; margin:0 auto; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 18px; margin-bottom:16px; }
+  .card {
+    background:var(--card); border:1px solid var(--line); border-radius:8px;
+    padding:16px 18px; margin-bottom:16px;
+  }
   .muted { color:var(--muted); }
   .grid { display:grid; grid-template-columns: 220px 1fr; gap:16px; }
   @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
   .list { max-height: 78vh; overflow:auto; }
-  .list button { display:flex; justify-content:space-between; width:100%; text-align:left; border:0; border-bottom:1px solid var(--line); background:transparent; color:var(--ink); padding:8px 10px; cursor:pointer; font:inherit; font-size:14px; }
+  .list button {
+    display:flex; justify-content:space-between; width:100%; text-align:left; border:0;
+    border-bottom:1px solid var(--line); background:transparent; color:var(--ink);
+    padding:8px 10px; cursor:pointer; font:inherit; font-size:14px;
+  }
   .list button.on { background:var(--accent-soft); }
-  .dot { width:10px; height:10px; border-radius:50%; background:var(--line); display:inline-block; margin-top:6px; }
+  .dot {
+    width:10px; height:10px; border-radius:50%; background:var(--line);
+    display:inline-block; margin-top:6px;
+  }
   .dot.done { background:var(--ok); }
   table { border-collapse:collapse; width:100%; font-size:14px; }
-  th, td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th, td {
+    text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top;
+  }
   th { color:var(--muted); font-weight:600; }
   .day { margin-top:14px; font-weight:600; }
-  .facts { display:grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap:6px 16px; }
-  .facts b { display:block; font-size:12px; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.04em; }
-  textarea { width:100%; min-height:70px; font:inherit; padding:8px; border:1px solid var(--line); border-radius:6px; background:var(--bg); color:var(--ink); }
+  .facts {
+    display:grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap:6px 16px;
+  }
+  .facts b {
+    display:block; font-size:12px; color:var(--muted); font-weight:600;
+    text-transform:uppercase; letter-spacing:.04em;
+  }
+  textarea {
+    width:100%; min-height:70px; font:inherit; padding:8px; border:1px solid var(--line);
+    border-radius:6px; background:var(--bg); color:var(--ink);
+  }
   .row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
-  .btn { background:var(--accent); color:#fff; border:0; padding:8px 14px; border-radius:6px; cursor:pointer; font:inherit; }
+  .btn {
+    background:var(--accent); color:#fff; border:0; padding:8px 14px; border-radius:6px;
+    cursor:pointer; font:inherit;
+  }
   .btn.ghost { background:transparent; color:var(--accent); border:1px solid var(--accent); }
   .warn { color:var(--accent); font-weight:600; }
   .goal li { margin:6px 0; }
@@ -44,10 +84,10 @@
 <header>
   <h1>Lantern Trails</h1>
   <nav>
-    <button data-tab="meet">Meet Lantern Trails</button>
-    <button data-tab="read">Read the drafts</button>
-    <button data-tab="chart">Chart your counts</button>
-    <button data-tab="goal">Your goal</button>
+    <button type="button" data-tab="meet">Meet Lantern Trails</button>
+    <button type="button" data-tab="read">Read the drafts</button>
+    <button type="button" data-tab="chart">Chart your counts</button>
+    <button type="button" data-tab="goal">Your goal</button>
   </nav>
 </header>
 <main>
@@ -58,152 +98,523 @@
 </main>
 <script src="data/viewer-data.js"></script>
 <script>
-(function () {
-  var D = window.LANTERN;
-  var $ = function (id) { return document.getElementById(id); };
-  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
-  var store = {
-    get: function (k) { try { return window.localStorage.getItem(k) || ""; } catch (e) { return ""; } },
-    set: function (k, v) { try { window.localStorage.setItem(k, v); } catch (e) {} }
+// The data script above sets window.LANTERN. It is a plain script, not a fetch,
+// so the viewer still works when a learner opens this file with a double-click.
+const world = window.LANTERN;
+const TABS = ["meet", "read", "chart", "goal"];
+const HTML_ESCAPES = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" };
+
+const traceById = {};
+let listMode = "sample";
+let currentTraceId = "";
+
+// ---------- Small helpers ----------
+
+function findElement(id) {
+  return document.getElementById(id);
+}
+
+// Trace text goes into innerHTML, so characters that mean something in HTML are escaped first.
+function escapeHtml(value) {
+  let text = "";
+  if (value !== null && value !== undefined) {
+    text = String(value);
+  }
+  return text.replace(/[&<>"]/g, (character) => HTML_ESCAPES[character]);
+}
+
+// Some browsers block localStorage for files opened from disk. The viewer still works then;
+// notes are just not kept.
+function readSaved(key) {
+  try {
+    return window.localStorage.getItem(key) || "";
+  } catch {
+    return "";
+  }
+}
+
+function save(key, value) {
+  try {
+    window.localStorage.setItem(key, value);
+  } catch {
+    // Saving is a convenience. Without storage the note stays on screen until the page changes.
+  }
+}
+
+function noteKey(traceId) {
+  return `lantern-note-${traceId}`;
+}
+
+function savedNote(traceId) {
+  return readSaved(noteKey(traceId)).trim();
+}
+
+// ---------- Meet ----------
+
+function renderMeet() {
+  const changedCount = world.traces.filter((trace) => trace.outcome !== "sent unchanged").length;
+  findElement("meet").innerHTML = [
+    '<div class="card"><h2>Meet Lantern Trails</h2>',
+    "<p>Lantern Trails plans custom trips in Portugal: Lisbon, Sintra, Porto, ",
+    "the Douro valley and the Algarve. A customer fills in a form. ",
+    "A trip designer turns it into a plan.</p>",
+    "<p><b>Draft Planner</b> is the AI tool that writes the first draft. ",
+    "It reads the form and picks places from the supplier catalogue. ",
+    "A designer checks the draft, fixes it, and sends it.</p>",
+    "<p><b>Ines Duarte</b> is the head designer. She signs off every trip. ",
+    "When she says a draft is good, it is good. Her word is the rule.</p>",
+    "<p><b>You</b> are the product manager who owns Draft Planner.</p></div>",
+    '<div class="card"><h2>A note from the boss</h2>',
+    `<p>"Designers rewrote or edited ${changedCount} of our last ${world.traces.length} drafts. `,
+    "Engineering wants a cheaper model. ",
+    "Sales wants to send city break drafts with no designer. ",
+    "Before I say yes to anything: how often does Draft Planner get a trip wrong, ",
+    'and in what way? Bring me numbers."</p></div>',
+    '<div class="card"><h2>Two calls on your desk</h2><ol>',
+    "<li><b>A cheaper model.</b> It costs about a third as much. ",
+    "Engineering says the drafts read just as well.</li>",
+    "<li><b>Instant drafts.</b> Sales wants short city breaks sent straight to the customer, ",
+    "with no designer.</li></ol>",
+    '<p class="muted">You will answer both with numbers. First you need to know what goes wrong. ',
+    "Open <b>Read the drafts</b>.</p></div>",
+  ].join("");
+}
+
+// ---------- Read: one trace ----------
+
+function catalogueFacts(item) {
+  const facts = [];
+  if (item.closed_day) {
+    facts.push(`Closed ${item.closed_day}s`);
+  } else {
+    facts.push("Open every day");
+  }
+  if (item.season && item.season !== "all year") {
+    facts.push(`Runs ${item.season}`);
+  }
+  if (item.access) {
+    facts.push(`Access: ${item.access}`);
+  }
+  if (item.food) {
+    facts.push(`Food: ${item.food}`);
+  }
+  return facts;
+}
+
+function describeCatalogueEntry(item) {
+  if (!item.catalogue_id) {
+    return '<span class="warn">Not found in the catalogue</span>';
+  }
+  return escapeHtml(catalogueFacts(item).join(" · "));
+}
+
+function travelText(item) {
+  if (item.travel_min_from_last === "") {
+    return "";
+  }
+  return `${item.travel_min_from_last} min by car`;
+}
+
+function itemRow(item) {
+  const cells = [
+    escapeHtml(item.time),
+    escapeHtml(item.name),
+    item.price_eur,
+    describeCatalogueEntry(item),
+    travelText(item),
+  ];
+  const cellsHtml = cells.map((cell) => `<td>${cell}</td>`).join("");
+  return `<tr>${cellsHtml}</tr>`;
+}
+
+const DAY_TABLE_HEADINGS =
+  "<table><tr><th>Time</th><th>Place</th><th>Euros</th>" +
+  "<th>What the catalogue says</th><th>Travel from last stop</th></tr>";
+
+function dayTable(day) {
+  const heading = `<div class="day">${escapeHtml(day.weekday)} ${escapeHtml(day.date)}</div>`;
+  const rows = day.items.map(itemRow).join("");
+  return `${heading}${DAY_TABLE_HEADINGS}${rows}</table>`;
+}
+
+function fact(label, valueHtml) {
+  return `<div><b>${label}</b>${valueHtml}</div>`;
+}
+
+function partyText(request) {
+  let party = `${request.adults} adult`;
+  if (request.adults > 1) {
+    party += "s";
+  }
+  if (request.children_ages) {
+    party += `, children aged ${escapeHtml(request.children_ages)}`;
+  }
+  return party;
+}
+
+function requestFacts(request) {
+  const tripType = escapeHtml(request.trip_type);
+  const region = escapeHtml(request.region);
+  return [
+    '<h3>The request</h3><div class="facts">',
+    fact("Trip", `${tripType}, ${request.nights} nights, ${region}`),
+    fact("Party", partyText(request)),
+    fact("Mobility", escapeHtml(request.mobility)),
+    fact("Diet", escapeHtml(request.diet)),
+    fact("Pace", escapeHtml(request.pace)),
+    fact("Likes", escapeHtml(request.interests)),
+    fact("Budget a person", `${request.budget_eur_per_person} euros`),
+    "</div>",
+  ].join("");
+}
+
+function traceHeading(trace) {
+  const requestLabel = `request ${trace.request.request_id}`;
+  return [
+    '<div class="row" style="justify-content:space-between">',
+    `<h2 style="margin:0">${trace.trace_id} `,
+    `<span class="muted" style="font-size:15px">${requestLabel}</span></h2>`,
+    `<span class="muted">What the designer did: <b>${escapeHtml(trace.outcome)}</b></span>`,
+    "</div>",
+  ].join("");
+}
+
+function draftSection(trace) {
+  const draft = trace.draft;
+  const hotel = draft.hotel;
+  const budget = trace.request.budget_eur_per_person;
+  return [
+    "<h3>The draft</h3>",
+    `<p>Hotel: ${escapeHtml(hotel.name)}, ${hotel.price_eur} euros a person a night</p>`,
+    draft.days.map(dayTable).join(""),
+    `<p><b>Total: ${draft.total_eur_per_person} euros a person.</b> `,
+    `Budget: ${budget} euros.</p>`,
+  ].join("");
+}
+
+function noteCard(traceId) {
+  return [
+    '<div class="card"><h3 style="margin-top:0">Your note</h3>',
+    '<p class="muted">Write what you see, not why it happened. ',
+    "If the draft is fine, write <code>ok</code>.</p>",
+    '<textarea id="note" placeholder="Example: the museum is booked on the day it is closed">',
+    escapeHtml(readSaved(noteKey(traceId))),
+    "</textarea>",
+    '<div class="row" style="margin-top:8px">',
+    '<button class="btn ghost" id="prev">Previous</button>',
+    '<button class="btn ghost" id="next">Next</button>',
+    '<span class="muted" id="saved"></span></div></div>',
+  ].join("");
+}
+
+function renderTrace(traceId) {
+  const trace = traceById[traceId];
+  const traceCard = `<div class="card">${traceHeading(trace)}${requestFacts(trace.request)}`;
+  return `${traceCard}${draftSection(trace)}</div>${noteCard(traceId)}`;
+}
+
+// ---------- Read: the list and its controls ----------
+
+function visibleTraceIds() {
+  if (listMode === "sample") {
+    return world.sample;
+  }
+  return world.traces.map((trace) => trace.trace_id);
+}
+
+function progressBar() {
+  const writtenCount = world.sample.filter((traceId) => savedNote(traceId)).length;
+  let checked = "";
+  if (listMode === "all") {
+    checked = " checked";
+  }
+  return [
+    '<div class="card row" style="justify-content:space-between"><div>',
+    `<b>Your sample: ${writtenCount} of ${world.sample.length} notes written.</b> `,
+    '<span class="muted">Notes save in this browser as you type.</span></div>',
+    `<div class="row"><label><input type="checkbox" id="all"${checked}> `,
+    `Show all ${world.traces.length} drafts</label>`,
+    '<button class="btn" id="dl">Download notes.csv</button></div></div>',
+  ].join("");
+}
+
+function traceButton(traceId) {
+  let buttonClass = "";
+  if (traceId === currentTraceId) {
+    buttonClass = "on";
+  }
+  let dotClass = "dot";
+  if (savedNote(traceId)) {
+    dotClass = "dot done";
+  }
+  const label = `<span>${traceId}</span><span class="${dotClass}"></span>`;
+  return `<button data-id="${traceId}" class="${buttonClass}">${label}</button>`;
+}
+
+function renderRead() {
+  const traceIds = visibleTraceIds();
+  findElement("read").innerHTML = [
+    progressBar(),
+    '<div class="grid"><div class="card list" style="padding:0">',
+    traceIds.map(traceButton).join(""),
+    "</div><div>",
+    renderTrace(currentTraceId),
+    "</div></div>",
+  ].join("");
+  bindReadControls(traceIds);
+}
+
+function bindReadControls(traceIds) {
+  findElement("all").onchange = (event) => switchListMode(event.target.checked);
+  findElement("dl").onclick = downloadNotes;
+  for (const button of document.querySelectorAll(".list button")) {
+    button.onclick = () => openTrace(button.getAttribute("data-id"));
+  }
+  findElement("note").oninput = (event) => {
+    save(noteKey(currentTraceId), event.target.value);
+    findElement("saved").textContent = "Saved.";
   };
-  if (!D) {
-    document.querySelector("main").innerHTML = '<div class="card"><p class="warn">The world data did not load.</p><p>Keep viewer.html inside the world folder, next to the data folder. If the data folder is missing, ask your facilitator to run: bun run world reset</p></div>';
+  findElement("prev").onclick = () => stepThroughTraces(traceIds, -1);
+  findElement("next").onclick = () => stepThroughTraces(traceIds, 1);
+}
+
+function openTrace(traceId) {
+  currentTraceId = traceId;
+  renderRead();
+  location.hash = `read/${traceId}`;
+}
+
+// Previous and Next walk the list as it was drawn, and stop at either end.
+function stepThroughTraces(traceIds, step) {
+  const position = traceIds.indexOf(currentTraceId) + step;
+  if (position >= 0 && position < traceIds.length) {
+    openTrace(traceIds[position]);
+  }
+}
+
+function switchListMode(showAll) {
+  if (showAll) {
+    listMode = "all";
+  } else {
+    listMode = "sample";
+  }
+  // Leaving "all" can hide the open trace, so jump to the first one still in the list.
+  if (!visibleTraceIds().includes(currentTraceId)) {
+    currentTraceId = visibleTraceIds()[0];
+  }
+  renderRead();
+}
+
+// ---------- Read: notes.csv ----------
+
+// A note may hold commas, quotes or line breaks. Quote it the way a spreadsheet expects.
+function csvCell(text) {
+  const oneLine = String(text).replace(/\r?\n/g, " ");
+  if (!/[",]/.test(oneLine)) {
+    return oneLine;
+  }
+  return `"${oneLine.replace(/"/g, '""')}"`;
+}
+
+function downloadNotes() {
+  const noteRows = world.sample.map((traceId) => `${traceId},${csvCell(savedNote(traceId))}`);
+  const csvText = `${["trace_id,note", ...noteRows].join("\n")}\n`;
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(new Blob([csvText], { type: "text/csv" }));
+  link.download = "notes.csv";
+  link.click();
+}
+
+// ---------- Chart ----------
+
+// Splits one CSV line into cells. A comma inside "double quotes" is part of the cell,
+// and two double quotes in a row stand for one.
+function splitCsvLine(line) {
+  const cells = [];
+  let cell = "";
+  let insideQuotes = false;
+  for (let i = 0; i < line.length; i++) {
+    const character = line[i];
+    const isQuote = character === '"';
+    if (isQuote && insideQuotes && line[i + 1] === '"') {
+      cell += '"';
+      i++;
+    } else if (isQuote) {
+      insideQuotes = !insideQuotes;
+    } else if (character === "," && !insideQuotes) {
+      cells.push(cell);
+      cell = "";
+    } else {
+      cell += character;
+    }
+  }
+  cells.push(cell);
+  return cells;
+}
+
+function rowFromCells(headings, cells) {
+  const row = {};
+  headings.forEach((heading, column) => {
+    row[heading] = (cells[column] || "").trim();
+  });
+  return row;
+}
+
+function parseCsv(text) {
+  // Spreadsheet apps often start a saved CSV with an invisible byte-order mark.
+  const withoutMark = text.replace(/^\uFEFF/, "");
+  const lines = withoutMark.split(/\r?\n/).filter((line) => line.trim());
+  const headings = lines.shift().split(",");
+  const cleanHeadings = headings.map((heading) => heading.trim().toLowerCase());
+  return lines.map((line) => rowFromCells(cleanHeadings, splitCsvLine(line)));
+}
+
+const CHART_WIDTH = 760;
+const LABEL_WIDTH = 260;
+const ROW_HEIGHT = 40;
+
+function chartBar(row, i, largestCount) {
+  const count = Number(row.count);
+  const barWidth = ((CHART_WIDTH - LABEL_WIDTH - 60) * count) / largestCount;
+  const rowTop = i * ROW_HEIGHT + 10;
+  const label = escapeHtml(row.mode);
+  return [
+    `<text x="${LABEL_WIDTH - 10}" y="${rowTop + 20}" text-anchor="end">${label}</text>`,
+    `<rect x="${LABEL_WIDTH}" y="${rowTop + 4}" width="${barWidth}" height="24" rx="3"`,
+    ' fill="var(--bar)"></rect>',
+    `<text x="${LABEL_WIDTH + barWidth + 8}" y="${rowTop + 21}">${count}</text>`,
+  ].join("");
+}
+
+function drawChart(rows) {
+  const countedRows = rows.filter((row) => row.mode && !Number.isNaN(Number(row.count)));
+  const chartOut = findElement("chartOut");
+  if (!countedRows.length) {
+    chartOut.innerHTML =
+      '<p class="warn">That file has no mode and count columns. ' +
+      "Check the first row says: mode,count</p>";
     return;
   }
-  var byId = {}; D.traces.forEach(function (t) { byId[t.trace_id] = t; });
+  const largestCount = Math.max(...countedRows.map((row) => Number(row.count)));
+  const height = countedRows.length * ROW_HEIGHT + 30;
+  const bars = countedRows.map((row, i) => chartBar(row, i, largestCount)).join("");
+  chartOut.innerHTML = [
+    `<svg viewBox="0 0 ${CHART_WIDTH} ${height}" width="100%" role="img"`,
+    ' aria-label="Failure modes by count">',
+    bars,
+    "</svg>",
+  ].join("");
+}
 
-  // ---------- Meet ----------
-  $("meet").innerHTML =
-    '<div class="card"><h2>Meet Lantern Trails</h2>' +
-    '<p>Lantern Trails plans custom trips in Portugal: Lisbon, Sintra, Porto, the Douro valley and the Algarve. A customer fills in a form. A trip designer turns it into a plan.</p>' +
-    '<p><b>Draft Planner</b> is the AI tool that writes the first draft. It reads the form and picks places from the supplier catalogue. A designer checks the draft, fixes it, and sends it.</p>' +
-    '<p><b>Ines Duarte</b> is the head designer. She signs off every trip. When she says a draft is good, it is good. Her word is the rule.</p>' +
-    '<p><b>You</b> are the product manager who owns Draft Planner.</p></div>' +
-    '<div class="card"><h2>A note from the boss</h2>' +
-    '<p>"Designers rewrote or edited ' + D.traces.filter(function (t) { return t.outcome !== "sent unchanged"; }).length + ' of our last ' + D.traces.length + ' drafts. Engineering wants a cheaper model. Sales wants to send city break drafts with no designer. Before I say yes to anything: how often does Draft Planner get a trip wrong, and in what way? Bring me numbers."</p></div>' +
-    '<div class="card"><h2>Two calls on your desk</h2><ol><li><b>A cheaper model.</b> It costs about a third as much. Engineering says the drafts read just as well.</li><li><b>Instant drafts.</b> Sales wants short city breaks sent straight to the customer, with no designer.</li></ol>' +
-    '<p class="muted">You will answer both with numbers. First you need to know what goes wrong. Open <b>Read the drafts</b>.</p></div>';
+function readCountsFile(file) {
+  if (!file) {
+    return;
+  }
+  const reader = new FileReader();
+  reader.onload = () => {
+    drawChart(parseCsv(reader.result));
+  };
+  reader.readAsText(file);
+}
 
-  // ---------- Read ----------
-  var mode = "sample", current = D.sample[0];
-  function noteKey(id) { return "lantern-note-" + id; }
-  function list() { return mode === "sample" ? D.sample : D.traces.map(function (t) { return t.trace_id; }); }
-  function factsFor(i) {
-    if (!i.catalogue_id) return '<span class="warn">Not found in the catalogue</span>';
-    var f = [];
-    f.push(i.closed_day ? "Closed " + i.closed_day + "s" : "Open every day");
-    if (i.season && i.season !== "all year") f.push("Runs " + i.season);
-    if (i.access) f.push("Access: " + i.access);
-    if (i.food) f.push("Food: " + i.food);
-    return esc(f.join(" · "));
-  }
-  function renderTrace(id) {
-    var t = byId[id], r = t.request;
-    var h = '<div class="card"><div class="row" style="justify-content:space-between"><h2 style="margin:0">' + t.trace_id + ' <span class="muted" style="font-size:15px">request ' + r.request_id + '</span></h2>' +
-      '<span class="muted">What the designer did: <b>' + esc(t.outcome) + '</b></span></div>' +
-      '<h3>The request</h3><div class="facts">' +
-      '<div><b>Trip</b>' + esc(r.trip_type) + ', ' + r.nights + ' nights, ' + esc(r.region) + '</div>' +
-      '<div><b>Party</b>' + r.adults + ' adult' + (r.adults > 1 ? "s" : "") + (r.children_ages ? ", children aged " + esc(r.children_ages) : "") + '</div>' +
-      '<div><b>Mobility</b>' + esc(r.mobility) + '</div>' +
-      '<div><b>Diet</b>' + esc(r.diet) + '</div>' +
-      '<div><b>Pace</b>' + esc(r.pace) + '</div>' +
-      '<div><b>Likes</b>' + esc(r.interests) + '</div>' +
-      '<div><b>Budget a person</b>' + r.budget_eur_per_person + ' euros</div></div>' +
-      '<h3>The draft</h3><p>Hotel: ' + esc(t.draft.hotel.name) + ', ' + t.draft.hotel.price_eur + ' euros a person a night</p>';
-    t.draft.days.forEach(function (d) {
-      h += '<div class="day">' + esc(d.weekday) + ' ' + esc(d.date) + '</div><table><tr><th>Time</th><th>Place</th><th>Euros</th><th>What the catalogue says</th><th>Travel from last stop</th></tr>';
-      d.items.forEach(function (i) {
-        h += '<tr><td>' + esc(i.time) + '</td><td>' + esc(i.name) + '</td><td>' + i.price_eur + '</td><td>' + factsFor(i) + '</td><td>' + (i.travel_min_from_last === "" ? "" : i.travel_min_from_last + " min by car") + '</td></tr>';
-      });
-      h += '</table>';
-    });
-    h += '<p><b>Total: ' + t.draft.total_eur_per_person + ' euros a person.</b> Budget: ' + r.budget_eur_per_person + ' euros.</p></div>';
-    h += '<div class="card"><h3 style="margin-top:0">Your note</h3><p class="muted">Write what you see, not why it happened. If the draft is fine, write <code>ok</code>.</p>' +
-      '<textarea id="note" placeholder="Example: the museum is booked on the day it is closed">' + esc(store.get(noteKey(id))) + '</textarea>' +
-      '<div class="row" style="margin-top:8px"><button class="btn ghost" id="prev">Previous</button><button class="btn ghost" id="next">Next</button><span class="muted" id="saved"></span></div></div>';
-    return h;
-  }
-  function renderRead() {
-    var ids = list();
-    var done = D.sample.filter(function (id) { return store.get(noteKey(id)).trim(); }).length;
-    var h = '<div class="card row" style="justify-content:space-between"><div><b>Your sample: ' + done + ' of ' + D.sample.length + ' notes written.</b> <span class="muted">Notes save in this browser as you type.</span></div>' +
-      '<div class="row"><label><input type="checkbox" id="all"' + (mode === "all" ? " checked" : "") + '> Show all ' + D.traces.length + ' drafts</label><button class="btn" id="dl">Download notes.csv</button></div></div>' +
-      '<div class="grid"><div class="card list" style="padding:0">';
-    ids.forEach(function (id) {
-      var has = store.get(noteKey(id)).trim();
-      h += '<button data-id="' + id + '" class="' + (id === current ? "on" : "") + '"><span>' + id + '</span><span class="dot' + (has ? " done" : "") + '"></span></button>';
-    });
-    h += '</div><div>' + renderTrace(current) + '</div></div>';
-    $("read").innerHTML = h;
-    $("all").onchange = function () { mode = this.checked ? "all" : "sample"; if (list().indexOf(current) < 0) current = list()[0]; renderRead(); };
-    $("dl").onclick = download;
-    Array.prototype.forEach.call(document.querySelectorAll(".list button"), function (b) { b.onclick = function () { current = b.getAttribute("data-id"); renderRead(); location.hash = "read/" + current; }; });
-    $("note").oninput = function () { store.set(noteKey(current), this.value); $("saved").textContent = "Saved."; };
-    var move = function (k) { var i = ids.indexOf(current) + k; if (i >= 0 && i < ids.length) { current = ids[i]; renderRead(); location.hash = "read/" + current; } };
-    $("prev").onclick = function () { move(-1); };
-    $("next").onclick = function () { move(1); };
-  }
-  function csvCell(s) { s = String(s).replace(/\r?\n/g, " "); return /[",]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; }
-  function download() {
-    var rows = ["trace_id,note"].concat(D.sample.map(function (id) { return id + "," + csvCell(store.get(noteKey(id)).trim()); }));
-    var a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob([rows.join("\n") + "\n"], { type: "text/csv" }));
-    a.download = "notes.csv"; a.click();
-  }
+function renderChartTab() {
+  findElement("chart").innerHTML = [
+    '<div class="card"><h2>Chart your counts</h2>',
+    "<p>Choose your <code>counts.csv</code>. The viewer draws one bar for each failure mode, ",
+    "in the order of your file.</p>",
+    '<input type="file" id="countsFile" accept=".csv,text/csv"></div>',
+    '<div class="card" id="chartOut"><p class="muted">No file chosen yet.</p></div>',
+  ].join("");
+  findElement("countsFile").onchange = (event) => readCountsFile(event.target.files[0]);
+  // images/shoot.ts calls this to draw the expected chart without a file picker.
+  window.drawCounts = (text) => {
+    drawChart(parseCsv(text));
+  };
+}
 
-  // ---------- Chart ----------
-  function parseCsv(text) {
-    var lines = text.replace(/^﻿/, "").split(/\r?\n/).filter(function (l) { return l.trim(); });
-    var head = lines.shift().split(",").map(function (h) { return h.trim().toLowerCase(); });
-    return lines.map(function (l) {
-      var cells = [], cur = "", q = false;
-      for (var i = 0; i < l.length; i++) { var c = l[i]; if (c === '"') { if (q && l[i + 1] === '"') { cur += '"'; i++; } else q = !q; } else if (c === "," && !q) { cells.push(cur); cur = ""; } else cur += c; }
-      cells.push(cur);
-      var o = {}; head.forEach(function (h, k) { o[h] = (cells[k] || "").trim(); }); return o;
-    });
-  }
-  function drawChart(rows) {
-    rows = rows.filter(function (r) { return r.mode && !isNaN(Number(r.count)); });
-    if (!rows.length) { $("chartOut").innerHTML = '<p class="warn">That file has no mode and count columns. Check the first row says: mode,count</p>'; return; }
-    var max = Math.max.apply(null, rows.map(function (r) { return Number(r.count); }));
-    var W = 760, L = 260, H = rows.length * 40 + 30;
-    var s = '<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" role="img" aria-label="Failure modes by count">';
-    rows.forEach(function (r, i) {
-      var w = (W - L - 60) * Number(r.count) / max, y = i * 40 + 10;
-      s += '<text x="' + (L - 10) + '" y="' + (y + 20) + '" text-anchor="end">' + esc(r.mode) + '</text>';
-      s += '<rect x="' + L + '" y="' + (y + 4) + '" width="' + w + '" height="24" rx="3" fill="var(--bar)"></rect>';
-      s += '<text x="' + (L + w + 8) + '" y="' + (y + 21) + '">' + Number(r.count) + '</text>';
-    });
-    $("chartOut").innerHTML = s + '</svg>';
-  }
-  $("chart").innerHTML = '<div class="card"><h2>Chart your counts</h2><p>Choose your <code>counts.csv</code>. The viewer draws one bar for each failure mode, in the order of your file.</p>' +
-    '<input type="file" id="countsFile" accept=".csv,text/csv"></div><div class="card" id="chartOut"><p class="muted">No file chosen yet.</p></div>';
-  $("countsFile").onchange = function () { var f = this.files[0]; if (!f) return; var rd = new FileReader(); rd.onload = function () { drawChart(parseCsv(rd.result)); }; rd.readAsText(f); };
-  window.drawCounts = function (text) { drawChart(parseCsv(text)); };
+// ---------- Goal ----------
 
-  // ---------- Goal ----------
-  $("goal").innerHTML = '<div class="card"><h2>Your goal: the Draft Planner launch pack</h2><p>By the end you hand the boss one pack of files. Each one is checked.</p><ol class="goal">' +
-    '<li><b>What goes wrong, counted.</b> A bar chart of failure modes. <span class="muted">Steps: read-the-traces, name-the-failure-modes, count-the-failures</span></li>' +
-    '<li><b>What good means.</b> A pass and fail rule for one failure mode, and your labels next to Ines. <span class="muted">Part: define-good</span></li>' +
-    '<li><b>A judge you can trust.</b> Which AI grader agrees with Ines, with numbers. <span class="muted">Part: check-the-judge</span></li>' +
-    '<li><b>Two decisions.</b> The cheaper model, and instant drafts, each with the numbers behind it. <span class="muted">Part: decide-and-write-it-down</span></li>' +
-    '<li><b>The eval section of your PRD.</b> What you measure, the bar to ship, and who checks it. <span class="muted">Part: decide-and-write-it-down</span></li></ol></div>';
+function renderGoal() {
+  findElement("goal").innerHTML = [
+    '<div class="card"><h2>Your goal: the Draft Planner launch pack</h2>',
+    "<p>By the end you hand the boss one pack of files. Each one is checked.</p>",
+    '<ol class="goal">',
+    "<li><b>What goes wrong, counted.</b> A bar chart of failure modes. ",
+    '<span class="muted">Steps: read-the-traces, name-the-failure-modes, count-the-failures',
+    "</span></li>",
+    "<li><b>What good means.</b> A pass and fail rule for one failure mode, ",
+    'and your labels next to Ines. <span class="muted">Part: define-good</span></li>',
+    "<li><b>A judge you can trust.</b> Which AI grader agrees with Ines, with numbers. ",
+    '<span class="muted">Part: check-the-judge</span></li>',
+    "<li><b>Two decisions.</b> The cheaper model, and instant drafts, ",
+    "each with the numbers behind it. ",
+    '<span class="muted">Part: decide-and-write-it-down</span></li>',
+    "<li><b>The eval section of your PRD.</b> What you measure, the bar to ship, ",
+    'and who checks it. <span class="muted">Part: decide-and-write-it-down</span></li></ol></div>',
+  ].join("");
+}
 
-  // ---------- Tabs ----------
-  function show(tab) {
-    ["meet", "read", "chart", "goal"].forEach(function (t) { $(t).style.display = t === tab ? "" : "none"; });
-    Array.prototype.forEach.call(document.querySelectorAll("nav button"), function (b) { b.className = b.getAttribute("data-tab") === tab ? "on" : ""; });
-    if (tab === "read") renderRead();
+// ---------- Tabs ----------
+
+function showTab(tab) {
+  for (const section of TABS) {
+    findElement(section).style.display = section === tab ? "" : "none";
   }
-  Array.prototype.forEach.call(document.querySelectorAll("nav button"), function (b) { b.onclick = function () { location.hash = b.getAttribute("data-tab"); }; });
-  function route() {
-    var h = location.hash.replace("#", "").split("/");
-    if (h[0] === "read" && h[1] && byId[h[1]]) { current = h[1]; if (D.sample.indexOf(current) < 0) mode = "all"; }
-    show(["meet", "read", "chart", "goal"].indexOf(h[0]) >= 0 ? h[0] : "meet");
+  for (const button of document.querySelectorAll("nav button")) {
+    button.className = button.getAttribute("data-tab") === tab ? "on" : "";
+  }
+  if (tab === "read") {
+    renderRead();
+  }
+}
+
+// The address bar remembers the tab and trace, for example #read/T020,
+// so a learner can bookmark a trace or share it.
+function route() {
+  const [tab, traceId] = location.hash.replace("#", "").split("/");
+  if (tab === "read" && traceId && traceById[traceId]) {
+    currentTraceId = traceId;
+    if (!world.sample.includes(traceId)) {
+      listMode = "all";
+    }
+  }
+  if (TABS.includes(tab)) {
+    showTab(tab);
+  } else {
+    showTab("meet");
+  }
+}
+
+function startViewer() {
+  for (const trace of world.traces) {
+    traceById[trace.trace_id] = trace;
+  }
+  currentTraceId = world.sample[0];
+  renderMeet();
+  renderChartTab();
+  renderGoal();
+  for (const button of document.querySelectorAll("nav button")) {
+    button.onclick = () => {
+      location.hash = button.getAttribute("data-tab");
+    };
   }
   window.onhashchange = route;
   route();
-})();
+}
+
+function showMissingData() {
+  document.querySelector("main").innerHTML = [
+    '<div class="card"><p class="warn">The world data did not load.</p>',
+    "<p>Keep viewer.html inside the world folder, next to the data folder. ",
+    "If the data folder is missing, ask your facilitator to run: bun run world reset</p></div>",
+  ].join("");
+}
+
+if (world) {
+  startViewer();
+} else {
+  showMissingData();
+}
 </script>
 </body>
 </html>

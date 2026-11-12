@@ -2,7 +2,11 @@
 
 ## The problem
 
-You have 30 notes. Many say the same thing in different words. A list of 30 notes is hard to act on. A short list of named problems is easy: an engineer can fix one, and you can count each one.
+You have 30 notes. Many of them say the same thing in different words. A list of 30 notes is hard to act on.
+
+A short list of named problems is easy to act on. An engineer can fix one at a time, and you can count each one. We call each named problem a **failure mode**.
+
+For example, these four notes become two failure modes:
 
 ```mermaid
 flowchart LR
@@ -14,16 +18,25 @@ flowchart LR
 
 ## Your challenge
 
-This folder has a `notes.csv` filled in for you, so you can start even if you skipped the last step. If you want to use your own notes, copy your `notes.csv` from `read-the-traces` over it.
+This folder has a filled-in `notes.csv`, so you can start now. To use your own notes, copy your `notes.csv` from `read-the-traces` over it.
 
 1. Read every note that is not `ok`.
 2. Put notes that describe the same problem into one group. Aim for 4 to 8 groups.
 3. Open `failure-modes.md`. For each group, write:
    - `## ` and a short name that says what happened, like `## Closed on the day`.
-   - `Definition:` one sentence a designer could use to spot it.
+   - `Definition:` one sentence that helps a designer spot the problem.
    - `Traces:` the ids of the drafts in this group, like `T020, T199`.
 
-Name what happened, not how it felt. "Quality" or "Accuracy" tells an engineer nothing.
+One finished group looks like this:
+
+```text
+## Ignores mobility needs
+
+Definition: The draft books a place with steps for a traveller who uses a wheelchair or cannot walk far.
+Traces: T020, T199, T207, T255
+```
+
+Name what happened, not how it felt. "Quality" or "Accuracy" tells an engineer nothing. "Closed on the day" tells them what to fix.
 
 ## Done when
 
@@ -44,12 +57,14 @@ Expect: `Done. All 8 rules pass.` and a `Progress:` line.
 
 ## If you get stuck
 
-| What you see | Fix |
-|---|---|
-| `FAIL it names 4 to 8 failure modes` | Two big groups hide the detail. Split a group if it mixes two problems. |
-| `FAIL every mode lists at least 2 drafts` | Merge a group of one into the group it is most like. |
-| `FAIL no mode is named with only a vague word` | Rename it after what happened, like `Over budget`. |
-| `FAIL together the modes cover at least 8 in 10` | Some notes are in no group. Add each to the group it fits. |
+Find your `FAIL` line on the left. Do the fix on the right.
+
+| What you see                                     | Fix                                                            |
+| ------------------------------------------------ | -------------------------------------------------------------- |
+| `FAIL it names 4 to 8 failure modes`             | Split a group if it mixes two problems.                        |
+| `FAIL every mode lists at least 2 drafts`        | Move a group of one into the group it is most like.            |
+| `FAIL no mode is named with only a vague word`   | Give it a name that says what happened, like `Over budget`.    |
+| `FAIL together the modes cover at least 8 in 10` | Some notes are in no group. Add each one to the group it fits. |
 
 A note that is not a real problem, like "a bit slow", can stay out of every group.
 
@@ -57,4 +72,5 @@ A note that is not a real problem, like "a bit slow", can stay out of every grou
 
 - **Failure mode**: one kind of thing that goes wrong, with a name and a definition.
 - **Definition**: one sentence that lets someone else decide if a draft has this problem.
-- **Coverage**: how many of your notes belong to some named mode.
+- **Vague**: not clear, like "quality".
+- **Coverage**: how many of your notes belong to a named mode.

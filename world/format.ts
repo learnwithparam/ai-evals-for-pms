@@ -1,21 +1,36 @@
-// Turns a trace into the plain text a designer would read. Used by the Draft Planner and the replay file.
+// Turns a trace into the plain text a designer would read. Used by the Draft Planner and the
+// replay file.
 import type { Trace } from "./generate";
 
-const KIDS = (a: string) => (a ? `, children aged ${a}` : "");
-export function requestText(t: Trace): string {
-  const r = t.request;
-  return [
-    `Request ${r.request_id}: ${r.trip_type}, ${r.nights} nights in the ${r.region} region from ${r.start_date}.`,
-    `Party: ${r.adults} adult${r.adults > 1 ? "s" : ""}${KIDS(r.children_ages)}. Mobility: ${r.mobility}. Diet: ${r.diet}.`,
-    `Pace: ${r.pace}. Likes: ${r.interests}. Budget: ${r.budget_eur_per_person} euros a person.`,
-  ].join("\n");
+function childrenText(childrenAges: string): string {
+  if (!childrenAges) return "";
+  return `, children aged ${childrenAges}`;
 }
-export function draftText(t: Trace): string {
-  const lines = [`Hotel: ${t.draft.hotel.name} (${t.draft.hotel.price_eur} euros a person a night)`];
-  for (const d of t.draft.days) {
-    lines.push(`${d.weekday} ${d.date}`);
-    for (const i of d.items) lines.push(`  ${i.time}  ${i.name}  ${i.price_eur} euros`);
+
+export function requestText(trace: Trace): string {
+  const request = trace.request;
+  const adults = request.adults > 1 ? "adults" : "adult";
+  const trip =
+    `Request ${request.request_id}: ${request.trip_type}, ${request.nights} nights ` +
+    `in the ${request.region} region from ${request.start_date}.`;
+  const party =
+    `Party: ${request.adults} ${adults}${childrenText(request.children_ages)}. ` +
+    `Mobility: ${request.mobility}. Diet: ${request.diet}.`;
+  const tastes =
+    `Pace: ${request.pace}. Likes: ${request.interests}. ` +
+    `Budget: ${request.budget_eur_per_person} euros a person.`;
+  return [trip, party, tastes].join("\n");
+}
+
+export function draftText(trace: Trace): string {
+  const draft = trace.draft;
+  const lines = [`Hotel: ${draft.hotel.name} (${draft.hotel.price_eur} euros a person a night)`];
+  for (const day of draft.days) {
+    lines.push(`${day.weekday} ${day.date}`);
+    for (const item of day.items) {
+      lines.push(`  ${item.time}  ${item.name}  ${item.price_eur} euros`);
+    }
   }
-  lines.push(`Total: ${t.draft.total_eur_per_person} euros a person`);
+  lines.push(`Total: ${draft.total_eur_per_person} euros a person`);
   return lines.join("\n");
 }
