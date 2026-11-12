@@ -12,13 +12,13 @@ T026,A stop on this trip is not step-free for this traveller.,fail
 T031,Every stop suits the traveller's mobility.,pass
 T042,Every stop suits the traveller's mobility.,pass
 T046,Every stop suits the traveller's mobility.,pass
-T049,A stop on this trip is not step-free for this traveller.,fail
+T049,Every stop suits the traveller's mobility.,pass
 T051,Every stop suits the traveller's mobility.,pass
-T053,A stop on this trip is not step-free for this traveller.,fail
+T053,Every stop suits the traveller's mobility.,pass
 T054,Every stop suits the traveller's mobility.,pass
 T055,Every stop suits the traveller's mobility.,pass
-T056,A stop on this trip is not step-free for this traveller.,fail
-T058,A stop on this trip is not step-free for this traveller.,fail
+T056,Every stop suits the traveller's mobility.,pass
+T058,Every stop suits the traveller's mobility.,pass
 T060,Every stop suits the traveller's mobility.,pass
 T063,Every stop suits the traveller's mobility.,pass
 T065,Every stop suits the traveller's mobility.,pass
@@ -33,14 +33,14 @@ T077,Every stop suits the traveller's mobility.,pass
 T079,Every stop suits the traveller's mobility.,pass
 T081,Every stop suits the traveller's mobility.,pass
 T082,Every stop suits the traveller's mobility.,pass
-T086,Every stop suits the traveller's mobility.,pass
+T086,A stop on this trip is not step-free for this traveller.,fail
 T088,Every stop suits the traveller's mobility.,pass
-T090,Every stop suits the traveller's mobility.,pass
+T090,A stop on this trip is not step-free for this traveller.,fail
 T091,Every stop suits the traveller's mobility.,pass
 T092,Every stop suits the traveller's mobility.,pass
-T093,A stop on this trip is not step-free for this traveller.,fail
+T093,Every stop suits the traveller's mobility.,pass
 T098,Every stop suits the traveller's mobility.,pass
-T099,A stop on this trip is not step-free for this traveller.,fail
+T099,Every stop suits the traveller's mobility.,pass
 T100,Every stop suits the traveller's mobility.,pass
 T101,Every stop suits the traveller's mobility.,pass
 T105,Every stop suits the traveller's mobility.,pass
@@ -48,7 +48,7 @@ T109,A stop on this trip is not step-free for this traveller.,fail
 T111,A stop on this trip is not step-free for this traveller.,fail
 T112,Every stop suits the traveller's mobility.,pass
 T114,Every stop suits the traveller's mobility.,pass
-T116,Every stop suits the traveller's mobility.,pass
+T116,A stop on this trip is not step-free for this traveller.,fail
 T120,A stop on this trip is not step-free for this traveller.,fail
 T125,Every stop suits the traveller's mobility.,pass
 T128,Every stop suits the traveller's mobility.,pass
@@ -57,19 +57,19 @@ T135,Every stop suits the traveller's mobility.,pass
 T137,Every stop suits the traveller's mobility.,pass
 T139,Every stop suits the traveller's mobility.,pass
 T143,Every stop suits the traveller's mobility.,pass
-T145,Every stop suits the traveller's mobility.,pass
+T145,A stop on this trip is not step-free for this traveller.,fail
 T146,Every stop suits the traveller's mobility.,pass
 T148,Every stop suits the traveller's mobility.,pass
 T149,A stop on this trip is not step-free for this traveller.,fail
 T150,Every stop suits the traveller's mobility.,pass
 T152,Every stop suits the traveller's mobility.,pass
-T154,Every stop suits the traveller's mobility.,pass
+T154,A stop on this trip is not step-free for this traveller.,fail
 T158,Every stop suits the traveller's mobility.,pass
 T169,Every stop suits the traveller's mobility.,pass
 T170,Every stop suits the traveller's mobility.,pass
 T174,Every stop suits the traveller's mobility.,pass
 T175,A stop on this trip is not step-free for this traveller.,fail
-T177,A stop on this trip is not step-free for this traveller.,fail
+T177,Every stop suits the traveller's mobility.,pass
 T178,Every stop suits the traveller's mobility.,pass
 T180,A stop on this trip is not step-free for this traveller.,fail
 T182,Every stop suits the traveller's mobility.,pass
@@ -77,13 +77,13 @@ T183,Every stop suits the traveller's mobility.,pass
 T184,Every stop suits the traveller's mobility.,pass
 T186,Every stop suits the traveller's mobility.,pass
 T188,Every stop suits the traveller's mobility.,pass
-T195,Every stop suits the traveller's mobility.,pass
+T195,A stop on this trip is not step-free for this traveller.,fail
 T198,Every stop suits the traveller's mobility.,pass
 T200,Every stop suits the traveller's mobility.,pass
 T205,Every stop suits the traveller's mobility.,pass
 T206,Every stop suits the traveller's mobility.,pass
 T209,A stop on this trip is not step-free for this traveller.,fail
-T215,A stop on this trip is not step-free for this traveller.,fail
+T215,Every stop suits the traveller's mobility.,pass
 T216,A stop on this trip is not step-free for this traveller.,fail
 T217,Every stop suits the traveller's mobility.,pass
 T223,Every stop suits the traveller's mobility.,pass
@@ -108,14 +108,14 @@ T253,A stop on this trip is not step-free for this traveller.,fail
 T256,Every stop suits the traveller's mobility.,pass
 T257,Every stop suits the traveller's mobility.,pass
 T259,Every stop suits the traveller's mobility.,pass
-T262,A stop on this trip is not step-free for this traveller.,fail
+T262,Every stop suits the traveller's mobility.,pass
 T263,Every stop suits the traveller's mobility.,pass
 T270,A stop on this trip is not step-free for this traveller.,fail
 T276,Every stop suits the traveller's mobility.,pass
 T278,A stop on this trip is not step-free for this traveller.,fail
 T289,A stop on this trip is not step-free for this traveller.,fail
 T290,Every stop suits the traveller's mobility.,pass
-T291,Every stop suits the traveller's mobility.,pass
-T293,Every stop suits the traveller's mobility.,pass
+T291,A stop on this trip is not step-free for this traveller.,fail
+T293,A stop on this trip is not step-free for this traveller.,fail
 T295,Every stop suits the traveller's mobility.,pass
-T298,Every stop suits the traveller's mobility.,pass
+T298,A stop on this trip is not step-free for this traveller.,fail

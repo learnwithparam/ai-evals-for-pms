@@ -8,7 +8,7 @@ T012,ignores-mobility,fail,"Fail. Regua Hilltop Lanes Walk has steep steps, and 
 T015,ignores-mobility,fail,"Fail. Regua Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 T018,ignores-mobility,fail,"Fail. Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T019,ignores-mobility,pass,Pass. No mobility need in the request.
-T026,ignores-mobility,fail,"Fail. Faro Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T026,ignores-mobility,fail,"Fail. Belem Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 T031,ignores-mobility,pass,Pass. No mobility need in the request.
 T042,ignores-mobility,pass,Pass. Every stop is step-free for a wheelchair user.
 T046,ignores-mobility,pass,Pass. No mobility need in the request.
@@ -17,18 +17,18 @@ T051,ignores-mobility,pass,Pass. No mobility need in the request.
 T053,ignores-mobility,pass,Pass. No mobility need in the request.
 T054,ignores-mobility,pass,Pass. No mobility need in the request.
 T055,ignores-mobility,pass,Pass. No mobility need in the request.
-T056,ignores-mobility,fail,"Fail. Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T056,ignores-mobility,fail,"Fail. Foz Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T058,ignores-mobility,pass,Pass. No mobility need in the request.
 T060,ignores-mobility,pass,Pass. No mobility need in the request.
 T063,ignores-mobility,pass,Pass. No mobility need in the request.
 T065,ignores-mobility,pass,Pass. No mobility need in the request.
-T067,ignores-mobility,fail,"Fail. Ribeira Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
-T068,ignores-mobility,pass,"Pass. Baixa Market Walk has a few steps, which is fine for limited walking."
-T069,ignores-mobility,fail,"Fail. Foz Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
-T071,ignores-mobility,fail,"Fail. Regua Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T067,ignores-mobility,fail,"Fail. Tavira Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T068,ignores-mobility,pass,"Pass. Ribeira Kitchen No. 2 has a few steps, which is fine for limited walking."
+T069,ignores-mobility,fail,"Fail. Pinhao Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T071,ignores-mobility,fail,"Fail. Faro Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T072,ignores-mobility,pass,Pass. No mobility need in the request.
 T073,ignores-mobility,pass,Pass. No mobility need in the request.
-T076,ignores-mobility,pass,"Pass. Tavira Dolphin Boat Trip has a few steps, which is fine for limited walking."
+T076,ignores-mobility,pass,"Pass. Alfama River Boat Trip has a few steps, which is fine for limited walking."
 T077,ignores-mobility,pass,Pass. No mobility need in the request.
 T079,ignores-mobility,pass,Pass. No mobility need in the request.
 T081,ignores-mobility,pass,Pass. No mobility need in the request.
@@ -43,17 +43,17 @@ T098,ignores-mobility,pass,Pass. No mobility need in the request.
 T099,ignores-mobility,pass,Pass. No mobility need in the request.
 T100,ignores-mobility,pass,Pass. No mobility need in the request.
 T101,ignores-mobility,pass,Pass. No mobility need in the request.
-T105,ignores-mobility,pass,"Pass. Baixa Market Walk has a few steps, which is fine for limited walking."
-T109,ignores-mobility,fail,"Fail. Alfama Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T105,ignores-mobility,pass,"Pass. Ribeira Tasca No. 3 has a few steps, which is fine for limited walking."
+T109,ignores-mobility,fail,"Fail. Belem Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T111,ignores-mobility,fail,"Fail. Tavira Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 T112,ignores-mobility,pass,Pass. No mobility need in the request.
 T114,ignores-mobility,pass,Pass. No mobility need in the request.
 T116,ignores-mobility,pass,Pass. Every stop is step-free for a wheelchair user.
-T120,ignores-mobility,fail,"Fail. Sintra Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T120,ignores-mobility,fail,"Fail. Alfama Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T125,ignores-mobility,pass,Pass. No mobility need in the request.
 T128,ignores-mobility,pass,Pass. Every stop is step-free for a wheelchair user.
 T132,ignores-mobility,pass,Pass. No mobility need in the request.
-T135,ignores-mobility,pass,"Pass. Alfama Kitchen No. 7 has a few steps, which is fine for limited walking."
+T135,ignores-mobility,pass,"Pass. Ribeira Kitchen No. 2 has a few steps, which is fine for limited walking."
 T137,ignores-mobility,pass,Pass. No mobility need in the request.
 T139,ignores-mobility,pass,Pass. No mobility need in the request.
 T143,ignores-mobility,pass,Pass. No mobility need in the request.
@@ -61,17 +61,17 @@ T145,ignores-mobility,pass,Pass. No mobility need in the request.
 T146,ignores-mobility,pass,Pass. No mobility need in the request.
 T148,ignores-mobility,pass,Pass. No mobility need in the request.
 T149,ignores-mobility,fail,"Fail. Ribeira Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
-T150,ignores-mobility,pass,"Pass. Lagos Garden Walk has a few steps, which is fine for limited walking."
+T150,ignores-mobility,pass,"Pass. Belem Viewpoints Walk has a few steps, which is fine for limited walking."
 T152,ignores-mobility,pass,Pass. No mobility need in the request.
 T154,ignores-mobility,pass,Pass. Every stop is step-free for a wheelchair user.
 T158,ignores-mobility,pass,Pass. No mobility need in the request.
 T169,ignores-mobility,pass,Pass. No mobility need in the request.
 T170,ignores-mobility,pass,Pass. No mobility need in the request.
 T174,ignores-mobility,pass,Pass. No mobility need in the request.
-T175,ignores-mobility,fail,"Fail. Faro Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
-T177,ignores-mobility,fail,"Fail. Faro Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T175,ignores-mobility,fail,"Fail. Lagos Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T177,ignores-mobility,fail,"Fail. Foz Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 T178,ignores-mobility,pass,Pass. No mobility need in the request.
-T180,ignores-mobility,fail,"Fail. Belem Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T180,ignores-mobility,fail,"Fail. Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T182,ignores-mobility,pass,Pass. No mobility need in the request.
 T183,ignores-mobility,pass,Pass. No mobility need in the request.
 T184,ignores-mobility,pass,Pass. Every stop is step-free for a wheelchair user.
@@ -82,40 +82,40 @@ T198,ignores-mobility,pass,Pass. No mobility need in the request.
 T200,ignores-mobility,pass,Pass. No mobility need in the request.
 T205,ignores-mobility,pass,Pass. No mobility need in the request.
 T206,ignores-mobility,pass,Pass. No mobility need in the request.
-T209,ignores-mobility,fail,"Fail. Lagos Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T209,ignores-mobility,fail,"Fail. Sintra Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T215,ignores-mobility,pass,Pass. No mobility need in the request.
-T216,ignores-mobility,fail,"Fail. Foz Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T216,ignores-mobility,fail,"Fail. Sintra Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T217,ignores-mobility,pass,Pass. No mobility need in the request.
 T223,ignores-mobility,pass,Pass. No mobility need in the request.
 T225,ignores-mobility,pass,Pass. No mobility need in the request.
 T226,ignores-mobility,pass,Pass. No mobility need in the request.
-T228,ignores-mobility,fail,"Fail. Sintra Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T228,ignores-mobility,fail,"Fail. Regua Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T229,ignores-mobility,pass,Pass. No mobility need in the request.
 T230,ignores-mobility,pass,Pass. No mobility need in the request.
 T232,ignores-mobility,pass,Pass. No mobility need in the request.
 T234,ignores-mobility,pass,Pass. No mobility need in the request.
-T236,ignores-mobility,fail,"Fail. Regua Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T236,ignores-mobility,fail,"Fail. Tavira Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T238,ignores-mobility,pass,Pass. Every stop is step-free for a wheelchair user.
 T239,ignores-mobility,pass,Pass. No mobility need in the request.
 T242,ignores-mobility,pass,Pass. No mobility need in the request.
-T243,ignores-mobility,fail,"Fail. Pinhao Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T243,ignores-mobility,fail,"Fail. Tavira Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T244,ignores-mobility,pass,Pass. No mobility need in the request.
 T247,ignores-mobility,pass,Pass. No mobility need in the request.
 T248,ignores-mobility,pass,Pass. No mobility need in the request.
 T249,ignores-mobility,pass,Pass. No mobility need in the request.
 T251,ignores-mobility,pass,Pass. No mobility need in the request.
-T253,ignores-mobility,fail,"Fail. Lagos Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
-T256,ignores-mobility,pass,"Pass. Ribeira Coast Kayak Trip has a few steps, which is fine for limited walking."
+T253,ignores-mobility,fail,"Fail. Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T256,ignores-mobility,pass,"Pass. Faro Coast Kayak Trip has a few steps, which is fine for limited walking."
 T257,ignores-mobility,pass,Pass. No mobility need in the request.
 T259,ignores-mobility,pass,Pass. Every stop is step-free for a wheelchair user.
-T262,ignores-mobility,fail,"Fail. Foz Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
-T263,ignores-mobility,fail,"Fail. Alfama Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T262,ignores-mobility,fail,"Fail. Faro Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T263,ignores-mobility,fail,"Fail. Belem Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 T270,ignores-mobility,fail,"Fail. Foz Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T276,ignores-mobility,pass,Pass. No mobility need in the request.
-T278,ignores-mobility,fail,"Fail. Foz Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
-T289,ignores-mobility,fail,"Fail. Pinhao Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T278,ignores-mobility,fail,"Fail. Regua Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T289,ignores-mobility,fail,"Fail. Baixa Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 T290,ignores-mobility,pass,Pass. No mobility need in the request.
 T291,ignores-mobility,pass,Pass. No mobility need in the request.
-T293,ignores-mobility,fail,"Fail. Sintra Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T293,ignores-mobility,fail,"Fail. Belem Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T295,ignores-mobility,pass,Pass. No mobility need in the request.
-T298,ignores-mobility,fail,"Fail. Alfama Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T298,ignores-mobility,fail,"Fail. Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."

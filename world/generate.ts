@@ -297,7 +297,7 @@ function okForBut(i: Item, r: Request, ignore: "closed" | "access" | "season", d
 // sample-30: what the learner reads first. judge-120: the set the three judges and Ines labelled.
 // rest-150: everything else. Counts are fixed so the course's numbers never drift.
 const PLAN = {
-  sample: { "closed-on-the-day": 3, "ignores-mobility": 3, "over-budget": 2, "impossible-transfer": 2, "diet-missed": 2, none: 18 },
+  sample: { "closed-on-the-day": 3, "ignores-mobility": 4, "over-budget": 2, "impossible-transfer": 2, "diet-missed": 2, none: 17 },
   judge: { "ignores-mobility": 30, "closed-on-the-day": 3, "over-budget": 2, "wrong-pace": 2, "not-in-catalogue": 1, "out-of-season": 1, "impossible-transfer": 1, none: 80 },
   rest: { "closed-on-the-day": 8, "impossible-transfer": 5, "over-budget": 6, "not-in-catalogue": 5, "wrong-pace": 5, "diet-missed": 4, "out-of-season": 4, "ignores-mobility": 3, none: 110 },
 } as const;

@@ -18,18 +18,18 @@ T016,rest,none,
 T017,rest,closed-on-the-day,"Belem Sea Stories Museum is booked on a Monday, but it is closed on Mondays."
 T018,judge,ignores-mobility,"Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T019,judge,none,
-T020,sample,over-budget,"The plan costs 541 euros a person, 18% over the 458 euro budget."
-T021,rest,over-budget,"The plan costs 854 euros a person, 18% over the 724 euro budget."
+T020,sample,ignores-mobility,"Lagos Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T021,rest,over-budget,"The plan costs 804 euros a person, 18% over the 681 euro budget."
 T022,rest,none,
 T023,rest,none,
 T024,rest,none,
 T025,rest,none,
-T026,judge,ignores-mobility,"Faro Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T026,judge,ignores-mobility,"Belem Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 T027,sample,none,
-T028,rest,out-of-season,"Pinhao Sunset Sail runs April to October only, and this trip is in November."
+T028,rest,out-of-season,"Lagos Coast Kayak Trip runs April to October only, and this trip is in March."
 T029,rest,none,
 T030,rest,none,
-T031,judge,wrong-pace,7 stops in one day for a relaxed trip with a 4 year old.
+T031,judge,wrong-pace,7 stops in one day for a relaxed trip with a 3 year old.
 T032,rest,none,
 T033,rest,none,
 T034,sample,none,
@@ -42,20 +42,20 @@ T040,rest,none,
 T041,rest,none,
 T042,judge,none,
 T043,rest,none,
-T044,rest,not-in-catalogue,"Seaview Garden Restaurant is not in the supplier catalogue, so nobody can book it."
+T044,rest,not-in-catalogue,"Old Mill Wine Bar is not in the supplier catalogue, so nobody can book it."
 T045,sample,none,
 T046,judge,none,
-T047,rest,over-budget,"The plan costs 913 euros a person, 18% over the 774 euro budget."
+T047,rest,over-budget,"The plan costs 1004 euros a person, 18% over the 851 euro budget."
 T048,rest,none,
-T049,judge,over-budget,"The plan costs 402 euros a person, 18% over the 341 euro budget."
+T049,judge,over-budget,"The plan costs 768 euros a person, 18% over the 651 euro budget."
 T050,rest,none,
 T051,judge,none,
-T052,rest,over-budget,"The plan costs 931 euros a person, 18% over the 789 euro budget."
+T052,rest,over-budget,"The plan costs 1244 euros a person, 18% over the 1054 euro budget."
 T053,judge,none,
 T054,judge,none,
 T055,judge,wrong-pace,7 stops in one day for a relaxed trip with a 4 year old.
-T056,judge,ignores-mobility,"Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
-T057,rest,closed-on-the-day,"Faro Cork Workshop Museum is booked on a Monday, but it is closed on Mondays."
+T056,judge,ignores-mobility,"Foz Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T057,rest,closed-on-the-day,"Baixa Tile and Craft Museum is booked on a Monday, but it is closed on Mondays."
 T058,judge,none,
 T059,rest,none,
 T060,judge,none,
@@ -65,12 +65,12 @@ T063,judge,none,
 T064,rest,none,
 T065,judge,none,
 T066,sample,none,
-T067,judge,ignores-mobility,"Ribeira Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T067,judge,ignores-mobility,"Tavira Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T068,judge,none,
-T069,judge,ignores-mobility,"Foz Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T069,judge,ignores-mobility,"Pinhao Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T070,rest,none,
-T071,judge,ignores-mobility,"Regua Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
-T072,judge,impossible-transfer,"Tavira Hilltop Lanes Walk is 499 minutes by car from the stop before it, with no time to get there."
+T071,judge,ignores-mobility,"Faro Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T072,judge,impossible-transfer,"Tavira Hilltop Lanes Walk is 252 minutes by car from the stop before it, with no time to get there."
 T073,judge,none,
 T074,sample,none,
 T075,rest,none,
@@ -81,9 +81,9 @@ T079,judge,none,
 T080,rest,none,
 T081,judge,none,
 T082,judge,none,
-T083,rest,closed-on-the-day,"Sintra Old Trams Museum is booked on a Monday, but it is closed on Mondays."
+T083,rest,closed-on-the-day,"Foz Town History House is booked on a Monday, but it is closed on Mondays."
 T084,rest,none,
-T085,rest,over-budget,"The plan costs 546 euros a person, 18% over the 463 euro budget."
+T085,rest,over-budget,"The plan costs 387 euros a person, 18% over the 328 euro budget."
 T086,judge,none,
 T087,rest,none,
 T088,judge,none,
@@ -92,34 +92,34 @@ T090,judge,none,
 T091,judge,none,
 T092,judge,none,
 T093,judge,none,
-T094,rest,not-in-catalogue,"Seaview Garden Restaurant is not in the supplier catalogue, so nobody can book it."
+T094,rest,not-in-catalogue,"Hidden Courtyard Tavern is not in the supplier catalogue, so nobody can book it."
 T095,rest,none,
 T096,rest,none,
-T097,rest,ignores-mobility,"Tavira Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T097,rest,ignores-mobility,"Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T098,judge,none,
 T099,judge,none,
 T100,judge,none,
 T101,judge,none,
 T102,rest,none,
-T103,sample,diet-missed,"Tavira Kitchen No. 7 serves seafood only, and the party is vegetarian."
+T103,sample,diet-missed,"Foz Tasca No. 8 serves seafood only, and the party is vegan."
 T104,rest,none,
 T105,judge,none,
-T106,rest,out-of-season,"Ribeira Coast Kayak Trip runs April to October only, and this trip is in November."
+T106,rest,out-of-season,"Faro Coast Kayak Trip runs April to October only, and this trip is in February."
 T107,rest,none,
-T108,rest,diet-missed,"Pinhao Kitchen No. 4 serves seafood only, and the party is vegetarian."
-T109,judge,ignores-mobility,"Alfama Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T108,rest,diet-missed,"Ribeira Tasca No. 2 serves seafood only, and the party is vegetarian."
+T109,judge,ignores-mobility,"Belem Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T110,sample,none,
 T111,judge,ignores-mobility,"Tavira Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 T112,judge,none,
 T113,rest,none,
 T114,judge,none,
-T115,sample,impossible-transfer,"Evora Hilltop Lanes Walk is 306 minutes by car from the stop before it, with no time to get there."
+T115,sample,impossible-transfer,"Tavira Hilltop Lanes Walk is 504 minutes by car from the stop before it, with no time to get there."
 T116,judge,none,
 T117,rest,none,
 T118,rest,none,
-T119,sample,none,
-T120,judge,ignores-mobility,"Sintra Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
-T121,rest,impossible-transfer,"Foz Hilltop Lanes Walk is 279 minutes by car from the stop before it, with no time to get there."
+T119,sample,diet-missed,"Alfama Kitchen No. 7 serves seafood only, and the party is vegetarian."
+T120,judge,ignores-mobility,"Alfama Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T121,rest,impossible-transfer,"Tavira Hilltop Lanes Walk is 501 minutes by car from the stop before it, with no time to get there."
 T122,sample,closed-on-the-day,"Pinhao Cork Workshop Museum is booked on a Monday, but it is closed on Mondays."
 T123,rest,none,
 T124,rest,ignores-mobility,"Regua Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
@@ -127,17 +127,17 @@ T125,judge,none,
 T126,rest,none,
 T127,rest,none,
 T128,judge,none,
-T129,rest,ignores-mobility,"Pinhao Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T129,rest,ignores-mobility,"Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T130,rest,none,
-T131,rest,wrong-pace,7 stops in one day for a relaxed trip with a 2 year old.
+T131,rest,wrong-pace,7 stops in one day for a relaxed trip with a 3 year old.
 T132,judge,none,
 T133,rest,none,
 T134,rest,none,
 T135,judge,none,
 T136,rest,none,
-T137,judge,not-in-catalogue,"Fisherman's Rest Cafe is not in the supplier catalogue, so nobody can book it."
+T137,judge,not-in-catalogue,"Seaview Garden Restaurant is not in the supplier catalogue, so nobody can book it."
 T138,rest,none,
-T139,judge,closed-on-the-day,"Pinhao Cork Workshop Museum is booked on a Monday, but it is closed on Mondays."
+T139,judge,closed-on-the-day,"Ribeira Sea Stories Museum is booked on a Monday, but it is closed on Mondays."
 T140,rest,none,
 T141,rest,none,
 T142,rest,none,
@@ -155,78 +155,78 @@ T153,rest,none,
 T154,judge,none,
 T155,rest,none,
 T156,rest,none,
-T157,sample,closed-on-the-day,"Pinhao Cork Workshop Museum is booked on a Monday, but it is closed on Mondays."
+T157,sample,closed-on-the-day,"Sintra Old Trams Museum is booked on a Monday, but it is closed on Mondays."
 T158,judge,none,
 T159,rest,none,
 T160,rest,none,
 T161,rest,none,
-T162,rest,closed-on-the-day,"Lagos Sea Stories Museum is booked on a Monday, but it is closed on Mondays."
+T162,rest,closed-on-the-day,"Baixa Tile and Craft Museum is booked on a Monday, but it is closed on Mondays."
 T163,rest,none,
 T164,rest,none,
 T165,rest,none,
 T166,rest,none,
-T167,rest,out-of-season,"Belem Dolphin Boat Trip runs April to October only, and this trip is in March."
+T167,rest,out-of-season,"Foz Sunset Sail runs April to October only, and this trip is in February."
 T168,rest,none,
 T169,judge,none,
 T170,judge,none,
 T171,rest,none,
 T172,rest,none,
 T173,rest,none,
-T174,judge,closed-on-the-day,"Belem Sea Stories Museum is booked on a Monday, but it is closed on Mondays."
-T175,judge,ignores-mobility,"Faro Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T174,judge,closed-on-the-day,"Regua Cork Workshop Museum is booked on a Monday, but it is closed on Mondays."
+T175,judge,ignores-mobility,"Lagos Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 T176,rest,none,
-T177,judge,ignores-mobility,"Faro Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T177,judge,ignores-mobility,"Foz Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 T178,judge,none,
 T179,sample,none,
-T180,judge,ignores-mobility,"Belem Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T180,judge,ignores-mobility,"Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T181,rest,none,
 T182,judge,none,
 T183,judge,none,
 T184,judge,none,
 T185,rest,none,
 T186,judge,none,
-T187,sample,impossible-transfer,"Faro Hilltop Lanes Walk is 248 minutes by car from the stop before it, with no time to get there."
+T187,sample,over-budget,"The plan costs 471 euros a person, 18% over the 399 euro budget."
 T188,judge,none,
 T189,rest,none,
 T190,rest,none,
 T191,rest,wrong-pace,7 stops in one day for a relaxed trip with a 4 year old.
-T192,rest,over-budget,"The plan costs 508 euros a person, 18% over the 431 euro budget."
-T193,rest,closed-on-the-day,"Baixa Tile and Craft Museum is booked on a Monday, but it is closed on Mondays."
+T192,rest,over-budget,"The plan costs 462 euros a person, 18% over the 392 euro budget."
+T193,rest,closed-on-the-day,"Sintra Old Trams Museum is booked on a Monday, but it is closed on Mondays."
 T194,rest,none,
 T195,judge,ignores-mobility,"Regua Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
-T196,rest,over-budget,"The plan costs 528 euros a person, 18% over the 447 euro budget."
+T196,rest,over-budget,"The plan costs 788 euros a person, 18% over the 668 euro budget."
 T197,rest,none,
 T198,judge,none,
-T199,sample,ignores-mobility,"Alfama Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T199,sample,ignores-mobility,"Regua Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T200,judge,none,
 T201,rest,none,
 T202,rest,none,
 T203,rest,none,
-T204,rest,wrong-pace,7 stops in one day for a relaxed trip with a 3 year old.
+T204,rest,wrong-pace,7 stops in one day for a relaxed trip with a 4 year old.
 T205,judge,none,
 T206,judge,none,
-T207,sample,ignores-mobility,"Foz Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
-T208,rest,out-of-season,"Alfama River Boat Trip runs April to October only, and this trip is in March."
-T209,judge,ignores-mobility,"Lagos Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
-T210,rest,not-in-catalogue,"Old Mill Wine Bar is not in the supplier catalogue, so nobody can book it."
-T211,rest,closed-on-the-day,"Baixa Tile and Craft Museum is booked on a Monday, but it is closed on Mondays."
+T207,sample,ignores-mobility,"Belem Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T208,rest,out-of-season,"Tavira Dolphin Boat Trip runs April to October only, and this trip is in January."
+T209,judge,ignores-mobility,"Sintra Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T210,rest,not-in-catalogue,"Fisherman's Rest Cafe is not in the supplier catalogue, so nobody can book it."
+T211,rest,closed-on-the-day,"Alfama Old Trams Museum is booked on a Monday, but it is closed on Mondays."
 T212,rest,none,
 T213,rest,none,
 T214,rest,none,
 T215,judge,none,
-T216,judge,ignores-mobility,"Foz Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T216,judge,ignores-mobility,"Sintra Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T217,judge,none,
-T218,rest,impossible-transfer,"Pinhao Riverside Stroll is 306 minutes by car from the stop before it, with no time to get there."
+T218,rest,impossible-transfer,"Baixa Hilltop Lanes Walk is 302 minutes by car from the stop before it, with no time to get there."
 T219,rest,none,
 T220,rest,none,
 T221,sample,closed-on-the-day,"Regua Cork Workshop Museum is booked on a Monday, but it is closed on Mondays."
 T222,rest,none,
-T223,judge,closed-on-the-day,"Regua Cork Workshop Museum is booked on a Monday, but it is closed on Mondays."
+T223,judge,closed-on-the-day,"Pinhao Cork Workshop Museum is booked on a Monday, but it is closed on Mondays."
 T224,sample,none,
 T225,judge,none,
 T226,judge,none,
 T227,rest,none,
-T228,judge,ignores-mobility,"Sintra Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T228,judge,ignores-mobility,"Regua Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T229,judge,none,
 T230,judge,none,
 T231,rest,none,
@@ -234,40 +234,40 @@ T232,judge,none,
 T233,rest,none,
 T234,judge,none,
 T235,sample,none,
-T236,judge,ignores-mobility,"Regua Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
-T237,rest,diet-missed,"Regua Kitchen No. 4 serves seafood only, and the party is vegetarian."
+T236,judge,ignores-mobility,"Tavira Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T237,rest,diet-missed,"Baixa Kitchen No. 4 serves seafood only, and the party is vegetarian."
 T238,judge,none,
 T239,judge,none,
 T240,sample,none,
 T241,rest,none,
 T242,judge,none,
-T243,judge,ignores-mobility,"Pinhao Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T243,judge,ignores-mobility,"Tavira Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T244,judge,none,
 T245,rest,none,
 T246,rest,none,
 T247,judge,none,
 T248,judge,none,
-T249,judge,over-budget,"The plan costs 723 euros a person, 18% over the 613 euro budget."
+T249,judge,over-budget,"The plan costs 328 euros a person, 18% over the 278 euro budget."
 T250,rest,none,
 T251,judge,none,
 T252,rest,none,
-T253,judge,ignores-mobility,"Lagos Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
-T254,rest,closed-on-the-day,"Lagos Sea Stories Museum is booked on a Monday, but it is closed on Mondays."
-T255,sample,ignores-mobility,"Pinhao Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T253,judge,ignores-mobility,"Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T254,rest,closed-on-the-day,"Sintra Old Trams Museum is booked on a Monday, but it is closed on Mondays."
+T255,sample,ignores-mobility,"Baixa Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 T256,judge,none,
 T257,judge,none,
-T258,sample,diet-missed,"Ribeira Tasca No. 2 serves seafood only, and the party is vegan."
+T258,sample,impossible-transfer,"Alfama Hilltop Lanes Walk is 301 minutes by car from the stop before it, with no time to get there."
 T259,judge,none,
-T260,rest,impossible-transfer,"Faro Hilltop Lanes Walk is 506 minutes by car from the stop before it, with no time to get there."
+T260,rest,impossible-transfer,"Foz Hilltop Lanes Walk is 282 minutes by car from the stop before it, with no time to get there."
 T261,rest,none,
-T262,judge,ignores-mobility,"Foz Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
-T263,judge,ignores-mobility,"Alfama Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T262,judge,ignores-mobility,"Faro Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T263,judge,ignores-mobility,"Belem Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 T264,rest,none,
 T265,rest,none,
 T266,rest,none,
-T267,sample,over-budget,"The plan costs 433 euros a person, 18% over the 367 euro budget."
+T267,sample,over-budget,"The plan costs 830 euros a person, 18% over the 703 euro budget."
 T268,sample,none,
-T269,rest,impossible-transfer,"Belem Hilltop Lanes Walk is 282 minutes by car from the stop before it, with no time to get there."
+T269,rest,impossible-transfer,"Lagos Hilltop Lanes Walk is 242 minutes by car from the stop before it, with no time to get there."
 T270,judge,ignores-mobility,"Foz Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T271,rest,none,
 T272,rest,none,
@@ -276,26 +276,26 @@ T274,sample,none,
 T275,rest,none,
 T276,judge,none,
 T277,rest,none,
-T278,judge,ignores-mobility,"Foz Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
-T279,rest,impossible-transfer,"Evora Hilltop Lanes Walk is 309 minutes by car from the stop before it, with no time to get there."
+T278,judge,ignores-mobility,"Regua Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T279,rest,impossible-transfer,"Faro Riverside Stroll is 264 minutes by car from the stop before it, with no time to get there."
 T280,sample,none,
-T281,rest,wrong-pace,7 stops in one day for a relaxed trip with a 4 year old.
+T281,rest,wrong-pace,7 stops in one day for a relaxed trip with a 3 year old.
 T282,rest,none,
 T283,rest,wrong-pace,7 stops in one day for a relaxed trip with a 2 year old.
 T284,rest,none,
 T285,rest,none,
 T286,sample,none,
-T287,rest,not-in-catalogue,"Fisherman's Rest Cafe is not in the supplier catalogue, so nobody can book it."
+T287,rest,not-in-catalogue,"Seaview Garden Restaurant is not in the supplier catalogue, so nobody can book it."
 T288,rest,none,
-T289,judge,ignores-mobility,"Pinhao Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T289,judge,ignores-mobility,"Baixa Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 T290,judge,none,
 T291,judge,none,
 T292,rest,none,
-T293,judge,ignores-mobility,"Sintra Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T293,judge,ignores-mobility,"Belem Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
 T294,rest,none,
 T295,judge,none,
-T296,rest,not-in-catalogue,"Fisherman's Rest Cafe is not in the supplier catalogue, so nobody can book it."
+T296,rest,not-in-catalogue,"Blue Door Fado House is not in the supplier catalogue, so nobody can book it."
 T297,rest,none,
-T298,judge,ignores-mobility,"Alfama Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
-T299,rest,closed-on-the-day,"Lagos Sea Stories Museum is booked on a Monday, but it is closed on Mondays."
+T298,judge,ignores-mobility,"Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T299,rest,closed-on-the-day,"Faro Cork Workshop Museum is booked on a Monday, but it is closed on Mondays."
 T300,rest,none,

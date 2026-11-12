@@ -18,284 +18,284 @@ R016,city break,lisbon,2027-08-03,2,4,,none,none,balanced,"markets, history",500
 R017,city break,lisbon,2027-11-14,2,3,,none,none,relaxed,"wine, the sea",530
 R018,custom tour,lisbon,2027-11-17,4,4,,wheelchair,none,full,"art, gardens",970
 R019,city break,porto,2027-10-15,2,1,,none,none,relaxed,"gardens, views",500
-R020,city break,algarve,2027-06-24,2,1,,none,none,full,"art, wine",458
-R021,custom tour,porto,2027-06-16,4,4,,none,none,balanced,"gardens, food",724
-R022,city break,lisbon,2027-10-20,2,4,,none,none,balanced,"wine, art",530
-R023,city break,porto,2027-03-01,2,2,,none,none,full,"markets, food",580
-R024,city break,lisbon,2027-09-09,2,4,"9, 15",none,none,balanced,"history, markets",440
-R025,city break,algarve,2027-11-22,2,3,,none,none,balanced,"wine, the sea",460
-R026,city break,algarve,2027-07-19,2,3,"9, 14",limited walking,vegetarian,relaxed,"the sea, markets",490
-R027,city break,lisbon,2027-07-15,2,2,,none,none,relaxed,"gardens, history",540
-R028,city break,porto,2027-11-18,2,3,,none,none,full,"wine, art",570
-R029,custom tour,lisbon,2027-02-26,3,4,"5, 14",none,none,balanced,"food, the sea",730
-R030,custom tour,lisbon,2027-12-09,3,2,,wheelchair,none,relaxed,"art, views",800
-R031,custom tour,porto,2027-04-23,4,1,4,none,no seafood,relaxed,"views, history",1010
-R032,city break,porto,2027-05-03,2,2,,none,none,balanced,"views, food",630
-R033,city break,lisbon,2027-10-22,2,2,,limited walking,no seafood,balanced,"markets, history",520
-R034,city break,lisbon,2027-10-23,2,3,,none,none,full,"food, the sea",670
-R035,custom tour,lisbon,2027-08-05,3,4,,none,no seafood,relaxed,"art, the sea",740
-R036,custom tour,lisbon,2027-08-18,3,1,,none,none,balanced,"gardens, the sea",850
-R037,custom tour,porto,2027-04-08,4,3,,none,none,balanced,"wine, history",1010
-R038,city break,porto,2027-06-09,2,4,"5, 13",none,none,relaxed,"markets, art",450
-R039,custom tour,lisbon,2027-10-16,3,4,,none,vegetarian,full,"history, food",860
-R040,custom tour,algarve,2027-05-03,4,3,,limited walking,none,balanced,"wine, food",1170
-R041,city break,lisbon,2027-08-23,2,1,,none,none,full,"food, history",660
-R042,custom tour,lisbon,2027-06-04,3,1,"9, 12",wheelchair,vegetarian,balanced,"markets, food",650
-R043,custom tour,porto,2027-02-19,3,1,,none,none,balanced,"art, history",780
-R044,city break,lisbon,2027-02-12,2,2,,limited walking,vegetarian,balanced,"markets, gardens",640
-R045,custom tour,porto,2027-06-15,4,4,,none,vegetarian,relaxed,"markets, history",970
-R046,custom tour,porto,2027-10-23,4,4,"6, 12",none,no seafood,full,"wine, markets",1270
-R047,custom tour,porto,2027-05-07,4,3,,none,vegetarian,balanced,"food, the sea",774
-R048,city break,algarve,2027-09-19,2,2,,none,none,relaxed,"art, views",520
-R049,city break,algarve,2027-11-19,2,2,,none,no seafood,relaxed,"markets, gardens",341
-R050,city break,algarve,2027-10-12,2,2,"6, 14",none,no seafood,relaxed,"the sea, views",470
-R051,city break,lisbon,2027-04-10,2,1,,none,vegetarian,relaxed,"gardens, food",570
-R052,custom tour,lisbon,2027-05-24,4,3,,none,none,balanced,"art, food",789
-R053,custom tour,lisbon,2027-09-17,3,2,,none,no seafood,full,"art, food",950
-R054,custom tour,algarve,2027-07-06,4,2,,none,none,balanced,"history, wine",1080
-R055,custom tour,lisbon,2027-09-16,4,4,4,none,none,relaxed,"the sea, gardens",1300
-R056,city break,lisbon,2027-10-11,2,3,,wheelchair,no seafood,full,"history, gardens",580
-R057,custom tour,algarve,2027-09-19,4,3,,none,no seafood,balanced,"markets, views",1000
-R058,city break,lisbon,2027-08-02,2,1,,none,no seafood,full,"food, the sea",670
-R059,city break,lisbon,2027-02-07,2,2,,wheelchair,none,relaxed,"gardens, history",560
-R060,custom tour,porto,2027-01-25,3,3,"8, 15",none,none,balanced,"markets, the sea",820
-R061,city break,algarve,2027-01-02,2,2,,none,none,balanced,"history, food",560
-R062,city break,porto,2027-12-15,2,4,"6, 12",none,vegetarian,balanced,"markets, wine",460
-R063,city break,lisbon,2027-02-16,2,4,,none,none,relaxed,"wine, history",620
-R064,city break,porto,2027-07-07,2,2,"8, 14",none,none,balanced,"art, food",500
-R065,custom tour,algarve,2027-07-23,4,4,,none,vegetarian,relaxed,"wine, art",1020
-R066,city break,algarve,2027-10-20,2,2,,none,vegetarian,relaxed,"views, food",470
-R067,city break,porto,2027-05-08,2,3,,wheelchair,vegetarian,relaxed,"food, art",370
-R068,city break,lisbon,2027-07-26,2,1,,limited walking,vegetarian,full,"gardens, views",720
-R069,custom tour,porto,2027-04-20,4,4,,wheelchair,none,full,"wine, markets",1040
-R070,city break,algarve,2027-09-25,2,1,,none,none,relaxed,"markets, views",490
-R071,custom tour,porto,2027-06-15,3,2,,wheelchair,none,balanced,"wine, gardens",640
-R072,custom tour,porto,2027-02-05,3,1,"9, 13",none,none,full,"markets, gardens",750
-R073,custom tour,porto,2027-11-13,3,2,,none,none,balanced,"art, markets",740
-R074,custom tour,porto,2027-07-16,4,2,,none,none,full,"the sea, wine",1220
-R075,city break,lisbon,2027-07-19,2,3,,none,none,balanced,"food, gardens",520
-R076,custom tour,algarve,2027-05-10,4,2,,limited walking,none,balanced,"views, history",1200
-R077,custom tour,porto,2027-02-03,4,1,,none,none,balanced,"wine, views",1100
-R078,custom tour,lisbon,2027-08-21,4,3,,none,none,balanced,"art, the sea",1070
-R079,city break,porto,2027-03-12,2,1,,none,none,full,"markets, art",540
-R080,custom tour,porto,2027-01-12,4,4,,limited walking,none,full,"the sea, views",1170
-R081,city break,porto,2027-06-22,2,3,,none,none,balanced,"views, history",580
-R082,city break,porto,2027-12-13,2,4,,none,none,balanced,"wine, food",550
-R083,custom tour,lisbon,2027-09-05,4,3,,limited walking,none,full,"history, gardens",1360
-R084,city break,lisbon,2027-02-24,2,1,,none,vegetarian,balanced,"wine, views",430
-R085,city break,lisbon,2027-10-03,2,4,,none,none,balanced,"food, views",463
-R086,city break,porto,2027-09-02,2,4,"5, 14",none,none,balanced,"views, gardens",470
-R087,custom tour,algarve,2027-09-26,4,3,"8, 10",none,vegetarian,balanced,"art, the sea",1000
-R088,custom tour,lisbon,2027-01-06,3,2,,wheelchair,no seafood,full,"markets, food",790
-R089,city break,lisbon,2027-02-17,2,1,,none,vegetarian,balanced,"food, history",490
-R090,city break,lisbon,2027-09-01,2,3,,none,none,balanced,"gardens, art",490
-R091,custom tour,lisbon,2027-10-08,4,4,,none,none,relaxed,"history, food",1240
-R092,custom tour,lisbon,2027-12-18,3,1,"8, 12",none,none,balanced,"wine, the sea",770
-R093,city break,porto,2027-11-06,2,3,,none,none,balanced,"food, art",500
-R094,city break,lisbon,2027-12-20,2,2,,none,none,balanced,"gardens, views",660
-R095,city break,lisbon,2027-07-15,2,2,,none,none,balanced,"history, wine",480
-R096,city break,lisbon,2027-08-13,2,3,,none,none,balanced,"views, markets",550
-R097,custom tour,algarve,2027-07-26,3,1,,wheelchair,vegetarian,full,"history, art",870
-R098,custom tour,lisbon,2027-12-22,4,3,"6, 13",none,no seafood,full,"the sea, food",1310
-R099,city break,algarve,2027-11-10,2,2,,none,no seafood,relaxed,"gardens, the sea",570
-R100,custom tour,lisbon,2027-09-08,4,4,,none,none,balanced,"gardens, food",1220
-R101,custom tour,algarve,2027-02-11,4,4,,none,none,balanced,"markets, gardens",1000
-R102,city break,lisbon,2027-09-07,2,3,,none,none,full,"wine, art",650
-R103,custom tour,algarve,2027-11-22,3,3,,limited walking,vegetarian,relaxed,"history, views",600
-R104,custom tour,algarve,2027-12-14,4,1,"6, 12",none,none,balanced,"gardens, markets",1150
-R105,city break,lisbon,2027-12-16,2,4,,limited walking,none,full,"views, the sea",550
-R106,city break,porto,2027-11-02,2,2,,none,none,full,"wine, views",510
-R107,city break,porto,2027-05-17,2,1,,none,none,balanced,"views, art",550
-R108,city break,porto,2027-11-18,2,1,,none,vegetarian,full,"history, views",620
-R109,custom tour,lisbon,2027-05-14,3,3,,wheelchair,vegetarian,balanced,"food, views",780
-R110,city break,porto,2027-01-11,2,2,"7, 15",none,none,full,"the sea, views",590
-R111,city break,algarve,2027-10-26,2,1,,limited walking,none,full,"views, the sea",670
-R112,custom tour,lisbon,2027-02-15,3,2,,none,none,relaxed,"food, views",710
-R113,city break,lisbon,2027-05-19,2,1,,none,no seafood,balanced,"views, history",570
-R114,city break,porto,2027-09-21,2,2,,none,none,relaxed,"views, history",480
-R115,city break,porto,2027-06-09,2,3,,none,no seafood,balanced,"gardens, wine",520
-R116,city break,algarve,2027-04-10,2,4,,wheelchair,none,balanced,"history, views",470
-R117,custom tour,porto,2027-03-26,3,1,"8, 15",none,none,relaxed,"food, views",610
-R118,custom tour,algarve,2027-04-26,3,1,"7, 10",none,no seafood,full,"gardens, food",950
-R119,custom tour,porto,2027-08-26,3,1,"8, 11",none,none,relaxed,"markets, food",790
-R120,custom tour,lisbon,2027-01-24,3,2,,wheelchair,none,full,"the sea, gardens",820
-R121,custom tour,lisbon,2027-02-04,3,4,,none,vegetarian,full,"art, markets",920
-R122,custom tour,porto,2027-11-14,3,3,"7, 13",none,no seafood,balanced,"views, food",680
-R123,city break,lisbon,2027-01-26,2,3,,none,no seafood,balanced,"history, gardens",690
-R124,city break,porto,2027-12-15,2,2,,wheelchair,vegetarian,balanced,"wine, art",440
-R125,city break,lisbon,2027-05-08,2,4,,none,none,full,"wine, art",470
-R126,custom tour,algarve,2027-05-02,4,4,,none,vegetarian,full,"markets, art",1230
-R127,custom tour,lisbon,2027-11-04,3,3,,none,none,balanced,"art, markets",680
-R128,city break,porto,2027-07-21,2,1,,wheelchair,none,relaxed,"the sea, views",450
-R129,city break,porto,2027-07-18,2,3,"9, 11",wheelchair,vegetarian,balanced,"wine, art",480
-R130,city break,lisbon,2027-08-16,2,1,"8, 15",none,none,balanced,"art, markets",520
-R131,custom tour,porto,2027-05-22,4,2,2,none,none,relaxed,"the sea, art",1100
-R132,city break,porto,2027-07-26,2,1,,none,none,balanced,"wine, the sea",670
-R133,custom tour,lisbon,2027-11-03,3,1,,none,none,balanced,"wine, markets",780
-R134,custom tour,algarve,2027-06-22,3,3,"8, 12",none,none,full,"gardens, food",760
-R135,city break,lisbon,2027-10-19,2,4,,limited walking,none,balanced,"wine, food",580
-R136,city break,lisbon,2027-03-26,2,1,,limited walking,none,balanced,"art, food",500
-R137,city break,porto,2027-01-03,2,4,"6, 12",none,none,full,"gardens, the sea",540
-R138,custom tour,algarve,2027-01-08,3,2,,none,vegetarian,relaxed,"views, history",700
-R139,city break,porto,2027-12-12,2,1,,none,none,balanced,"the sea, views",530
-R140,city break,porto,2027-08-24,2,4,,limited walking,none,balanced,"history, food",480
-R141,custom tour,lisbon,2027-02-20,4,4,,none,none,balanced,"food, markets",1210
-R142,custom tour,porto,2027-02-07,4,2,"7, 10",none,no seafood,relaxed,"history, views",770
-R143,custom tour,algarve,2027-11-18,3,1,,none,none,full,"markets, views",850
-R144,custom tour,lisbon,2027-05-16,3,1,,none,none,full,"history, views",800
-R145,custom tour,porto,2027-10-07,3,1,,none,none,relaxed,"art, history",620
-R146,custom tour,lisbon,2027-12-20,4,3,,none,vegetarian,balanced,"gardens, art",1160
-R147,custom tour,porto,2027-06-06,3,1,"9, 10",none,none,full,"food, history",740
-R148,city break,lisbon,2027-01-03,2,1,,none,no seafood,full,"the sea, food",690
-R149,city break,porto,2027-04-14,2,3,,limited walking,no seafood,balanced,"the sea, views",500
-R150,city break,algarve,2027-01-02,2,3,,limited walking,none,balanced,"the sea, gardens",570
-R151,custom tour,lisbon,2027-08-18,3,4,,none,none,balanced,"art, markets",810
-R152,custom tour,lisbon,2027-10-19,3,1,,none,none,balanced,"views, wine",1020
-R153,custom tour,porto,2027-01-24,3,4,"7, 12",none,no seafood,relaxed,"art, history",610
-R154,city break,algarve,2027-05-23,2,1,,wheelchair,no seafood,balanced,"history, art",470
-R155,custom tour,porto,2027-02-12,4,3,,none,vegetarian,balanced,"the sea, views",980
-R156,custom tour,lisbon,2027-08-14,4,3,,none,none,full,"views, gardens",1230
-R157,city break,porto,2027-06-13,2,4,"7, 13",limited walking,no seafood,balanced,"wine, history",460
-R158,city break,porto,2027-12-04,2,3,,none,none,balanced,"art, markets",570
-R159,custom tour,lisbon,2027-08-17,4,2,,none,none,relaxed,"the sea, history",1080
-R160,custom tour,lisbon,2027-06-03,4,2,,none,none,balanced,"markets, gardens",1060
-R161,city break,lisbon,2027-04-24,2,4,,none,vegetarian,balanced,"history, markets",480
-R162,custom tour,algarve,2027-05-02,4,4,"5, 14",none,none,balanced,"views, the sea",1240
-R163,custom tour,lisbon,2027-02-17,4,3,,none,none,balanced,"wine, the sea",1150
-R164,city break,porto,2027-05-08,2,2,,none,none,balanced,"history, gardens",550
-R165,custom tour,lisbon,2027-11-23,4,4,,none,vegetarian,balanced,"art, wine",1270
-R166,city break,porto,2027-07-26,2,1,,none,vegetarian,relaxed,"views, wine",410
-R167,custom tour,lisbon,2027-03-04,4,2,,none,none,balanced,"history, art",1020
-R168,custom tour,lisbon,2027-09-17,4,4,"7, 11",limited walking,vegetarian,balanced,"food, gardens",1090
-R169,city break,porto,2027-03-10,2,4,,none,none,balanced,"views, art",460
-R170,custom tour,lisbon,2027-02-04,3,2,,none,none,relaxed,"gardens, art",760
-R171,city break,lisbon,2027-01-14,2,3,,none,none,balanced,"the sea, markets",490
-R172,custom tour,lisbon,2027-09-07,4,2,"5, 15",none,none,relaxed,"art, views",1060
-R173,custom tour,porto,2027-05-12,3,4,,none,no seafood,balanced,"history, markets",790
-R174,custom tour,lisbon,2027-04-04,4,1,,none,none,relaxed,"views, art",830
-R175,city break,algarve,2027-05-07,2,1,,limited walking,none,balanced,"markets, wine",730
-R176,city break,lisbon,2027-08-07,2,3,,none,none,relaxed,"the sea, food",640
-R177,custom tour,algarve,2027-12-10,4,1,"8, 12",limited walking,none,relaxed,"views, gardens",960
-R178,city break,lisbon,2027-03-16,2,2,,none,none,full,"history, views",530
-R179,city break,lisbon,2027-02-23,2,3,,none,no seafood,balanced,"history, views",570
-R180,custom tour,lisbon,2027-09-03,3,1,,wheelchair,none,balanced,"gardens, markets",840
-R181,city break,porto,2027-07-11,2,3,"7, 15",none,none,balanced,"views, history",520
-R182,custom tour,algarve,2027-06-19,3,4,,none,none,balanced,"food, history",810
-R183,custom tour,lisbon,2027-05-14,4,4,"7, 15",none,no seafood,relaxed,"markets, views",980
-R184,custom tour,porto,2027-12-12,3,4,,wheelchair,none,balanced,"gardens, food",730
-R185,city break,lisbon,2027-04-11,2,4,"6, 14",none,vegetarian,balanced,"food, markets",650
-R186,city break,algarve,2027-03-20,2,3,,none,none,full,"art, markets",680
-R187,custom tour,lisbon,2027-03-22,4,1,"7, 15",none,none,full,"the sea, wine",1080
-R188,custom tour,lisbon,2027-01-02,4,2,,none,none,full,"history, food",1330
-R189,custom tour,algarve,2027-11-02,4,3,,none,no seafood,balanced,"markets, the sea",1120
-R190,city break,lisbon,2027-09-11,2,4,,none,vegetarian,full,"views, markets",690
-R191,custom tour,porto,2027-03-11,3,2,4,none,vegetarian,relaxed,"the sea, food",690
-R192,city break,porto,2027-05-13,2,4,,none,none,balanced,"history, gardens",431
-R193,custom tour,lisbon,2027-07-04,4,1,,none,none,balanced,"the sea, gardens",1100
-R194,custom tour,algarve,2027-03-05,4,4,,none,vegetarian,balanced,"food, gardens",1120
-R195,custom tour,porto,2027-03-06,4,2,,limited walking,none,relaxed,"the sea, gardens",810
-R196,city break,porto,2027-07-11,2,2,,none,none,full,"markets, the sea",447
-R197,city break,algarve,2027-07-05,2,2,,wheelchair,none,balanced,"wine, views",470
-R198,custom tour,porto,2027-11-10,4,3,,none,vegetarian,relaxed,"the sea, history",830
-R199,city break,lisbon,2027-02-18,2,1,,wheelchair,none,full,"art, food",510
-R200,custom tour,porto,2027-08-07,4,4,,none,none,balanced,"gardens, the sea",1070
-R201,city break,lisbon,2027-09-10,2,1,,none,none,full,"history, views",800
-R202,custom tour,porto,2027-08-15,4,4,,none,none,balanced,"art, gardens",970
-R203,city break,lisbon,2027-06-08,2,3,,none,none,relaxed,"the sea, gardens",550
-R204,custom tour,lisbon,2027-02-12,3,1,3,none,no seafood,relaxed,"wine, gardens",730
-R205,custom tour,porto,2027-08-19,3,4,,none,none,balanced,"food, markets",750
-R206,custom tour,porto,2027-05-22,3,2,,none,none,full,"food, gardens",940
-R207,custom tour,porto,2027-09-09,4,1,,wheelchair,none,full,"gardens, views",1010
-R208,custom tour,lisbon,2027-03-12,4,2,,none,none,full,"history, gardens",1370
-R209,city break,algarve,2027-12-16,2,1,,wheelchair,none,balanced,"food, views",490
-R210,custom tour,lisbon,2027-11-17,4,2,,none,none,balanced,"markets, the sea",930
-R211,custom tour,lisbon,2027-10-17,3,1,,limited walking,none,balanced,"the sea, history",970
-R212,city break,lisbon,2027-12-08,2,1,"6, 12",none,none,balanced,"views, the sea",430
-R213,city break,algarve,2027-01-24,2,3,,none,none,balanced,"food, the sea",510
-R214,city break,porto,2027-01-05,2,3,,wheelchair,none,balanced,"history, views",390
-R215,custom tour,algarve,2027-07-26,3,4,"5, 10",none,no seafood,balanced,"views, art",840
-R216,custom tour,porto,2027-07-05,3,4,,wheelchair,none,full,"views, history",690
-R217,city break,porto,2027-02-07,2,4,,none,vegetarian,balanced,"gardens, markets",530
-R218,custom tour,lisbon,2027-11-13,3,3,,limited walking,none,balanced,"wine, markets",870
-R219,custom tour,algarve,2027-12-17,4,1,,none,none,relaxed,"art, markets",970
-R220,city break,lisbon,2027-07-01,2,3,"6, 14",none,none,balanced,"art, history",690
-R221,city break,porto,2027-07-04,2,2,,none,none,balanced,"gardens, views",590
-R222,city break,porto,2027-06-15,2,1,,limited walking,vegetarian,balanced,"art, history",600
-R223,custom tour,porto,2027-02-14,3,2,,none,none,balanced,"food, history",750
-R224,city break,porto,2027-08-03,2,4,"5, 14",none,vegetarian,full,"the sea, markets",510
-R225,custom tour,lisbon,2027-02-04,3,1,"5, 10",none,vegetarian,full,"the sea, views",990
-R226,custom tour,lisbon,2027-08-08,4,1,,none,none,relaxed,"views, markets",1090
-R227,custom tour,lisbon,2027-10-02,3,3,,none,no seafood,relaxed,"art, views",820
-R228,custom tour,lisbon,2027-05-09,3,4,,wheelchair,none,balanced,"gardens, the sea",870
-R229,custom tour,lisbon,2027-08-09,4,3,,none,vegetarian,relaxed,"art, views",1170
-R230,city break,porto,2027-04-06,2,3,,none,none,balanced,"the sea, gardens",430
-R231,city break,lisbon,2027-07-09,2,2,,limited walking,none,full,"the sea, art",640
-R232,custom tour,porto,2027-02-04,3,1,"9, 13",none,vegetarian,balanced,"gardens, markets",680
-R233,custom tour,algarve,2027-01-16,4,3,,none,none,balanced,"markets, the sea",800
-R234,custom tour,lisbon,2027-11-02,3,4,,none,none,balanced,"wine, the sea",870
-R235,city break,porto,2027-01-06,2,1,,none,none,balanced,"markets, food",550
-R236,city break,porto,2027-10-22,2,4,"7, 11",wheelchair,none,balanced,"the sea, food",490
-R237,custom tour,porto,2027-12-17,4,4,,none,vegetarian,full,"the sea, wine",1250
-R238,city break,lisbon,2027-01-09,2,3,,wheelchair,no seafood,balanced,"markets, the sea",490
-R239,city break,lisbon,2027-08-02,2,1,,none,none,balanced,"the sea, wine",600
-R240,city break,algarve,2027-05-02,2,1,"5, 13",none,no seafood,relaxed,"art, views",520
-R241,city break,porto,2027-12-21,2,3,,none,vegetarian,relaxed,"markets, gardens",460
-R242,city break,lisbon,2027-06-18,2,1,,none,none,balanced,"food, the sea",540
-R243,city break,porto,2027-10-14,2,2,,wheelchair,none,full,"food, the sea",590
-R244,custom tour,lisbon,2027-06-22,3,1,,none,no seafood,balanced,"wine, the sea",930
-R245,custom tour,porto,2027-05-19,4,3,,none,none,relaxed,"views, art",980
-R246,custom tour,lisbon,2027-02-01,3,4,"9, 11",none,none,relaxed,"the sea, history",750
-R247,custom tour,lisbon,2027-10-17,3,3,,none,none,full,"art, markets",1100
-R248,custom tour,lisbon,2027-08-26,3,3,,none,none,full,"art, the sea",1010
-R249,custom tour,porto,2027-07-19,4,4,,none,none,relaxed,"art, food",613
-R250,custom tour,porto,2027-01-17,3,3,,none,none,balanced,"the sea, gardens",740
-R251,custom tour,lisbon,2027-03-06,4,2,,none,none,balanced,"markets, gardens",1280
-R252,custom tour,porto,2027-05-20,4,1,"8, 14",none,none,relaxed,"views, markets",1010
-R253,custom tour,algarve,2027-06-23,4,3,,wheelchair,none,relaxed,"gardens, food",1040
-R254,city break,algarve,2027-02-28,2,2,,none,none,balanced,"markets, wine",490
-R255,custom tour,porto,2027-10-16,3,3,,wheelchair,no seafood,relaxed,"wine, views",640
-R256,custom tour,porto,2027-08-09,4,2,,limited walking,none,relaxed,"views, food",840
-R257,city break,algarve,2027-03-12,2,2,"6, 13",none,vegetarian,balanced,"food, history",530
-R258,custom tour,porto,2027-09-18,3,3,,none,vegan,relaxed,"wine, views",580
-R259,city break,lisbon,2027-05-09,2,1,"6, 10",wheelchair,no seafood,balanced,"gardens, the sea",590
-R260,custom tour,porto,2027-09-11,3,1,"6, 14",none,none,full,"markets, art",790
-R261,custom tour,algarve,2027-04-26,4,1,,none,no seafood,balanced,"gardens, art",1120
-R262,custom tour,porto,2027-10-24,4,1,,wheelchair,none,relaxed,"art, the sea",920
-R263,city break,lisbon,2027-08-10,2,3,,limited walking,vegetarian,relaxed,"history, views",590
-R264,custom tour,porto,2027-02-02,3,2,,none,none,full,"food, wine",890
-R265,custom tour,lisbon,2027-04-05,4,3,,none,none,full,"history, the sea",1410
-R266,city break,porto,2027-06-22,2,2,,limited walking,no seafood,relaxed,"markets, wine",450
-R267,city break,algarve,2027-10-06,2,3,,none,no seafood,balanced,"history, gardens",367
-R268,city break,porto,2027-09-14,2,1,,none,none,full,"the sea, art",600
-R269,city break,porto,2027-10-20,2,2,"9, 13",none,vegetarian,relaxed,"views, art",420
-R270,custom tour,porto,2027-01-07,3,2,,wheelchair,none,full,"history, gardens",610
-R271,city break,porto,2027-04-22,2,1,,none,no seafood,full,"wine, food",560
-R272,city break,algarve,2027-10-08,2,4,"7, 10",limited walking,none,relaxed,"art, gardens",380
-R273,city break,porto,2027-01-04,2,4,"9, 13",none,none,relaxed,"markets, wine",450
-R274,city break,porto,2027-07-19,2,4,,wheelchair,none,balanced,"food, art",490
-R275,custom tour,porto,2027-01-03,4,1,,none,vegetarian,full,"history, food",1140
-R276,city break,porto,2027-01-15,2,4,,none,no seafood,balanced,"the sea, food",530
-R277,custom tour,lisbon,2027-01-25,4,3,,none,none,full,"the sea, food",1310
-R278,city break,porto,2027-04-13,2,4,,limited walking,none,full,"the sea, history",620
-R279,custom tour,porto,2027-05-23,3,3,,none,no seafood,balanced,"views, gardens",770
-R280,custom tour,porto,2027-04-24,4,2,,none,none,full,"gardens, history",1180
-R281,custom tour,lisbon,2027-08-11,4,4,4,none,none,relaxed,"views, wine",1240
-R282,city break,lisbon,2027-06-08,2,4,,none,vegetarian,relaxed,"wine, views",480
-R283,custom tour,porto,2027-04-26,3,1,2,none,no seafood,relaxed,"the sea, history",770
-R284,custom tour,porto,2027-05-14,3,1,,none,no seafood,full,"markets, food",840
-R285,custom tour,porto,2027-07-06,4,3,,limited walking,no seafood,full,"the sea, art",1090
-R286,city break,lisbon,2027-01-15,2,3,,none,none,balanced,"views, the sea",510
-R287,custom tour,lisbon,2027-03-06,4,4,,none,none,full,"views, wine",1470
-R288,city break,porto,2027-09-12,2,2,,none,none,balanced,"views, food",580
-R289,city break,porto,2027-04-04,2,1,,limited walking,vegetarian,balanced,"history, wine",410
-R290,custom tour,lisbon,2027-05-17,4,2,,none,vegetarian,relaxed,"markets, food",1080
-R291,city break,algarve,2027-11-17,2,4,,none,none,balanced,"markets, views",630
-R292,custom tour,porto,2027-07-08,3,3,"7, 13",none,none,full,"food, views",960
-R293,city break,lisbon,2027-07-16,2,4,"6, 12",wheelchair,none,relaxed,"wine, the sea",420
-R294,custom tour,porto,2027-09-04,4,3,,none,none,relaxed,"art, history",930
-R295,custom tour,porto,2027-06-24,3,1,,none,none,balanced,"gardens, art",780
-R296,custom tour,porto,2027-06-22,3,1,"9, 10",none,none,balanced,"markets, art",780
-R297,custom tour,lisbon,2027-05-02,3,1,"8, 12",none,none,balanced,"gardens, markets",800
-R298,custom tour,lisbon,2027-12-12,3,4,,wheelchair,vegetarian,balanced,"the sea, views",870
-R299,city break,algarve,2027-10-17,2,3,"6, 10",none,none,balanced,"history, art",540
-R300,city break,porto,2027-07-24,2,2,"9, 15",none,none,relaxed,"the sea, views",470
+R020,city break,algarve,2027-06-24,2,1,,wheelchair,none,full,"art, wine",550
+R021,custom tour,lisbon,2027-10-10,3,4,,none,none,balanced,"gardens, views",681
+R022,city break,algarve,2027-02-26,2,4,,none,none,balanced,"markets, food",550
+R023,city break,lisbon,2027-06-10,2,1,,none,none,full,"wine, history",550
+R024,city break,algarve,2027-08-04,2,4,,none,none,balanced,"wine, art",590
+R025,custom tour,lisbon,2027-08-18,4,1,,none,none,relaxed,"markets, history",850
+R026,city break,lisbon,2027-12-12,2,3,,limited walking,none,full,"views, gardens",550
+R027,custom tour,lisbon,2027-08-10,4,1,,none,vegetarian,balanced,"markets, views",1290
+R028,custom tour,algarve,2027-03-14,3,4,"6, 10",none,none,balanced,"wine, gardens",800
+R029,city break,algarve,2027-02-12,2,3,,none,none,relaxed,"art, food",400
+R030,custom tour,lisbon,2027-03-17,3,4,,none,none,balanced,"markets, the sea",870
+R031,custom tour,porto,2027-11-09,3,3,3,none,no seafood,relaxed,"wine, gardens",910
+R032,city break,lisbon,2027-02-23,2,1,,none,none,balanced,"history, wine",480
+R033,city break,porto,2027-11-09,2,2,,none,none,full,"views, history",540
+R034,city break,algarve,2027-04-17,2,1,,none,none,balanced,"art, markets",570
+R035,custom tour,lisbon,2027-03-20,4,1,"8, 12",none,none,balanced,"art, views",1100
+R036,city break,porto,2027-09-20,2,1,,none,none,relaxed,"art, gardens",460
+R037,city break,lisbon,2027-05-25,2,3,,none,none,balanced,"views, history",540
+R038,custom tour,lisbon,2027-02-04,4,2,,none,none,balanced,"art, gardens",1100
+R039,city break,algarve,2027-11-05,2,3,,none,none,full,"food, the sea",550
+R040,city break,lisbon,2027-02-01,2,1,,none,none,balanced,"food, art",460
+R041,custom tour,lisbon,2027-09-16,3,4,"8, 15",none,none,balanced,"history, markets",850
+R042,custom tour,porto,2027-05-17,4,2,"6, 11",wheelchair,none,full,"history, art",1000
+R043,custom tour,lisbon,2027-02-21,3,1,"7, 11",none,none,relaxed,"the sea, art",680
+R044,custom tour,lisbon,2027-02-09,3,4,,none,no seafood,relaxed,"wine, the sea",780
+R045,city break,porto,2027-02-06,2,1,,none,none,full,"food, history",530
+R046,custom tour,algarve,2027-10-07,4,3,,none,none,balanced,"markets, history",1050
+R047,custom tour,lisbon,2027-11-24,4,3,,none,none,balanced,"food, gardens",851
+R048,custom tour,porto,2027-02-19,4,3,,none,none,relaxed,"the sea, art",840
+R049,custom tour,porto,2027-06-08,4,1,"6, 12",none,none,relaxed,"views, art",651
+R050,custom tour,lisbon,2027-10-16,4,1,,none,no seafood,relaxed,"food, views",1110
+R051,custom tour,lisbon,2027-08-10,4,4,"7, 14",none,none,balanced,"gardens, markets",1350
+R052,custom tour,lisbon,2027-09-20,4,4,"7, 12",none,none,full,"the sea, gardens",1054
+R053,city break,lisbon,2027-03-09,2,1,,none,vegetarian,balanced,"views, history",630
+R054,city break,porto,2027-09-23,2,1,,none,vegetarian,balanced,"markets, history",470
+R055,custom tour,porto,2027-10-16,4,2,4,none,none,relaxed,"history, art",1030
+R056,city break,porto,2027-04-06,2,1,"6, 15",wheelchair,none,balanced,"views, markets",440
+R057,custom tour,lisbon,2027-08-15,4,4,,limited walking,no seafood,full,"food, markets",1320
+R058,custom tour,lisbon,2027-04-20,3,3,,none,none,balanced,"wine, views",830
+R059,custom tour,lisbon,2027-12-05,4,1,,none,none,relaxed,"art, history",880
+R060,custom tour,porto,2027-11-12,4,1,,none,vegetarian,balanced,"food, history",990
+R061,city break,algarve,2027-04-05,2,1,,none,no seafood,balanced,"views, wine",640
+R062,custom tour,algarve,2027-10-13,3,1,,none,none,full,"markets, views",970
+R063,city break,algarve,2027-12-20,2,2,,none,vegetarian,relaxed,"history, food",420
+R064,custom tour,lisbon,2027-07-11,4,1,,none,vegetarian,relaxed,"food, wine",760
+R065,city break,porto,2027-02-20,2,1,,none,none,balanced,"art, gardens",500
+R066,city break,lisbon,2027-05-18,2,3,,none,vegetarian,full,"the sea, views",640
+R067,custom tour,algarve,2027-05-04,3,4,,wheelchair,no seafood,relaxed,"food, wine",600
+R068,city break,porto,2027-11-05,2,1,"8, 11",limited walking,none,relaxed,"the sea, art",400
+R069,city break,porto,2027-12-18,2,1,,wheelchair,none,relaxed,"markets, food",410
+R070,city break,algarve,2027-02-05,2,4,"9, 13",limited walking,none,relaxed,"food, history",440
+R071,custom tour,algarve,2027-10-11,3,4,,wheelchair,none,balanced,"history, food",850
+R072,city break,lisbon,2027-10-16,2,2,,none,none,full,"wine, history",760
+R073,custom tour,porto,2027-05-01,3,3,,none,vegetarian,relaxed,"views, art",660
+R074,custom tour,porto,2027-06-21,3,2,,none,none,balanced,"gardens, markets",820
+R075,city break,porto,2027-12-05,2,4,,none,no seafood,full,"markets, history",550
+R076,city break,lisbon,2027-06-16,2,3,,limited walking,vegetarian,full,"views, history",460
+R077,city break,porto,2027-02-04,2,3,"8, 10",none,none,full,"food, gardens",480
+R078,custom tour,lisbon,2027-09-22,4,3,,none,none,relaxed,"history, art",810
+R079,city break,lisbon,2027-04-26,2,3,"6, 11",none,none,full,"gardens, markets",570
+R080,city break,algarve,2027-06-13,2,1,"5, 12",none,none,relaxed,"wine, history",500
+R081,city break,porto,2027-07-24,2,4,"9, 10",none,none,relaxed,"food, art",510
+R082,custom tour,porto,2027-06-09,4,2,,none,none,full,"food, markets",1170
+R083,city break,porto,2027-11-21,2,1,,none,none,full,"history, markets",520
+R084,city break,lisbon,2027-03-09,2,3,,none,none,full,"views, the sea",680
+R085,city break,lisbon,2027-02-24,2,1,,none,vegetarian,balanced,"wine, views",328
+R086,city break,lisbon,2027-04-21,2,4,"9, 13",none,none,balanced,"food, views",610
+R087,city break,lisbon,2027-09-21,2,4,,none,none,relaxed,"markets, the sea",420
+R088,custom tour,porto,2027-05-17,4,3,,wheelchair,no seafood,relaxed,"views, art",880
+R089,custom tour,algarve,2027-10-26,3,1,,none,no seafood,full,"the sea, food",980
+R090,custom tour,algarve,2027-03-05,3,4,,none,none,balanced,"gardens, markets",910
+R091,custom tour,porto,2027-11-04,3,4,"7, 15",none,none,full,"history, art",880
+R092,custom tour,porto,2027-12-19,3,2,"7, 14",none,vegetarian,full,"gardens, art",850
+R093,city break,porto,2027-09-26,2,4,,none,none,full,"art, food",660
+R094,custom tour,algarve,2027-03-10,3,1,,none,none,balanced,"art, views",860
+R095,custom tour,porto,2027-03-20,4,3,"5, 10",none,none,balanced,"the sea, views",950
+R096,city break,algarve,2027-01-18,2,2,,none,none,balanced,"wine, art",600
+R097,city break,lisbon,2027-06-14,2,2,"5, 10",wheelchair,none,balanced,"art, wine",590
+R098,custom tour,lisbon,2027-11-10,3,2,,none,no seafood,relaxed,"gardens, the sea",740
+R099,custom tour,porto,2027-10-07,4,4,,none,none,balanced,"wine, art",1240
+R100,city break,porto,2027-04-24,2,2,"6, 13",none,none,balanced,"the sea, history",520
+R101,custom tour,porto,2027-03-19,3,2,,none,vegetarian,balanced,"the sea, food",670
+R102,city break,lisbon,2027-02-07,2,2,,none,none,full,"views, markets",610
+R103,custom tour,porto,2027-10-09,3,3,,none,vegan,balanced,"wine, art",810
+R104,city break,lisbon,2027-11-24,2,4,,none,none,relaxed,"the sea, history",480
+R105,city break,porto,2027-02-23,2,1,,limited walking,no seafood,balanced,"the sea, art",440
+R106,city break,algarve,2027-02-01,2,2,,none,vegetarian,full,"the sea, history",690
+R107,custom tour,lisbon,2027-06-03,3,4,,none,none,relaxed,"gardens, art",820
+R108,city break,porto,2027-12-04,2,2,"5, 13",none,vegetarian,full,"food, art",520
+R109,custom tour,lisbon,2027-04-07,3,1,,wheelchair,vegetarian,relaxed,"markets, art",890
+R110,custom tour,porto,2027-08-05,3,1,,none,vegetarian,balanced,"gardens, food",660
+R111,custom tour,algarve,2027-07-07,3,2,,limited walking,none,full,"food, markets",900
+R112,custom tour,algarve,2027-06-18,3,1,,none,none,balanced,"history, gardens",870
+R113,custom tour,lisbon,2027-09-21,3,2,,none,none,balanced,"history, wine",1060
+R114,city break,lisbon,2027-07-13,2,4,"5, 13",none,vegetarian,full,"views, markets",650
+R115,city break,porto,2027-02-02,2,4,,none,vegetarian,balanced,"history, food",460
+R116,custom tour,algarve,2027-05-18,3,3,,wheelchair,no seafood,relaxed,"markets, the sea",640
+R117,city break,lisbon,2027-09-23,2,1,"6, 13",none,none,full,"wine, the sea",530
+R118,city break,porto,2027-09-10,2,1,,wheelchair,no seafood,full,"markets, the sea",500
+R119,custom tour,lisbon,2027-03-14,3,4,,none,vegetarian,balanced,"views, wine",690
+R120,city break,lisbon,2027-05-24,2,3,,wheelchair,none,relaxed,"art, food",560
+R121,city break,porto,2027-07-24,2,4,,none,none,balanced,"views, gardens",480
+R122,custom tour,porto,2027-01-24,4,2,,none,none,full,"food, history",1050
+R123,custom tour,porto,2027-08-11,4,1,,none,none,balanced,"views, art",1060
+R124,custom tour,porto,2027-02-17,3,1,,wheelchair,vegetarian,balanced,"gardens, wine",630
+R125,custom tour,lisbon,2027-03-06,4,2,,none,none,balanced,"the sea, art",1210
+R126,custom tour,lisbon,2027-09-09,4,3,"5, 10",none,none,balanced,"food, views",1060
+R127,city break,porto,2027-10-04,2,3,,none,none,balanced,"history, markets",560
+R128,custom tour,porto,2027-02-01,3,4,,wheelchair,none,relaxed,"views, gardens",550
+R129,city break,lisbon,2027-10-22,2,4,,wheelchair,none,balanced,"markets, gardens",560
+R130,city break,porto,2027-02-23,2,1,,limited walking,none,balanced,"wine, art",440
+R131,custom tour,lisbon,2027-03-02,3,2,3,none,no seafood,relaxed,"markets, art",730
+R132,city break,lisbon,2027-10-09,2,4,,none,no seafood,balanced,"history, wine",620
+R133,city break,porto,2027-01-10,2,4,,none,none,full,"wine, history",520
+R134,custom tour,algarve,2027-07-09,4,3,,none,vegetarian,balanced,"the sea, wine",1150
+R135,city break,porto,2027-01-02,2,4,,limited walking,none,relaxed,"art, gardens",390
+R136,custom tour,porto,2027-11-14,3,3,,none,vegetarian,relaxed,"markets, wine",740
+R137,city break,lisbon,2027-02-16,2,4,,none,none,full,"food, the sea",660
+R138,custom tour,porto,2027-03-16,4,1,"5, 15",none,none,full,"the sea, markets",1080
+R139,custom tour,porto,2027-03-28,4,4,"7, 10",none,none,balanced,"wine, views",990
+R140,custom tour,porto,2027-10-14,4,2,,none,vegetarian,balanced,"food, art",990
+R141,custom tour,porto,2027-07-09,3,4,,none,vegetarian,full,"history, the sea",980
+R142,custom tour,porto,2027-09-13,4,4,,none,no seafood,balanced,"views, art",950
+R143,city break,algarve,2027-05-13,2,2,,none,none,balanced,"views, wine",600
+R144,custom tour,algarve,2027-07-21,3,1,,none,vegetarian,balanced,"wine, markets",660
+R145,custom tour,porto,2027-08-22,4,2,,none,none,relaxed,"food, views",840
+R146,city break,porto,2027-11-01,2,2,,none,none,balanced,"food, gardens",500
+R147,city break,lisbon,2027-02-21,2,2,"5, 15",wheelchair,no seafood,balanced,"history, wine",660
+R148,custom tour,algarve,2027-07-18,4,2,,none,no seafood,balanced,"gardens, wine",1120
+R149,city break,porto,2027-04-18,2,3,,limited walking,none,balanced,"views, art",510
+R150,custom tour,lisbon,2027-11-03,3,2,,limited walking,none,full,"history, wine",900
+R151,custom tour,porto,2027-07-16,3,2,,none,none,relaxed,"history, views",690
+R152,custom tour,lisbon,2027-09-21,3,4,,none,none,balanced,"gardens, views",800
+R153,city break,lisbon,2027-08-18,2,3,,none,none,balanced,"the sea, art",640
+R154,city break,lisbon,2027-06-21,2,2,,wheelchair,none,full,"history, views",530
+R155,custom tour,lisbon,2027-11-03,3,2,,none,none,balanced,"gardens, the sea",830
+R156,custom tour,porto,2027-02-14,3,3,,none,no seafood,balanced,"food, gardens",810
+R157,custom tour,lisbon,2027-11-14,4,4,,none,none,balanced,"art, food",1100
+R158,custom tour,porto,2027-05-24,3,4,,none,none,balanced,"the sea, food",830
+R159,custom tour,lisbon,2027-06-13,4,2,,none,none,relaxed,"gardens, views",960
+R160,city break,algarve,2027-04-14,2,1,,none,none,relaxed,"views, wine",440
+R161,city break,porto,2027-03-21,2,1,,none,vegetarian,balanced,"food, markets",540
+R162,custom tour,lisbon,2027-05-02,3,3,"6, 11",none,vegetarian,relaxed,"food, views",620
+R163,custom tour,porto,2027-05-17,4,3,,none,none,balanced,"history, views",1080
+R164,custom tour,lisbon,2027-09-04,4,3,,none,none,full,"history, views",1120
+R165,city break,porto,2027-07-03,2,1,,none,no seafood,balanced,"wine, gardens",480
+R166,custom tour,lisbon,2027-06-15,4,4,"7, 14",none,none,relaxed,"art, markets",1130
+R167,city break,porto,2027-02-07,2,1,,none,no seafood,balanced,"wine, markets",520
+R168,custom tour,porto,2027-12-02,4,2,"9, 11",none,none,balanced,"views, history",900
+R169,city break,lisbon,2027-01-01,2,2,"8, 11",none,none,full,"the sea, food",750
+R170,custom tour,porto,2027-12-08,4,2,,none,none,balanced,"history, art",1050
+R171,custom tour,lisbon,2027-09-08,3,2,,none,none,full,"gardens, food",960
+R172,city break,lisbon,2027-03-02,2,3,,none,none,relaxed,"food, gardens",440
+R173,custom tour,porto,2027-03-03,4,3,,none,none,balanced,"views, food",1090
+R174,custom tour,porto,2027-02-14,3,2,,none,none,full,"art, food",680
+R175,city break,algarve,2027-11-06,2,4,,limited walking,no seafood,relaxed,"the sea, history",530
+R176,custom tour,lisbon,2027-10-15,3,1,"5, 11",wheelchair,no seafood,balanced,"gardens, art",750
+R177,city break,porto,2027-04-17,2,2,"8, 14",limited walking,no seafood,relaxed,"food, the sea",480
+R178,custom tour,lisbon,2027-02-19,4,3,,none,none,relaxed,"gardens, markets",870
+R179,custom tour,algarve,2027-11-09,3,3,,none,none,full,"the sea, markets",780
+R180,city break,lisbon,2027-02-08,2,4,,wheelchair,vegetarian,relaxed,"history, art",570
+R181,custom tour,lisbon,2027-11-04,3,2,"8, 13",limited walking,vegetarian,full,"the sea, food",850
+R182,city break,porto,2027-03-18,2,4,,none,vegetarian,balanced,"food, markets",470
+R183,custom tour,lisbon,2027-03-20,3,3,,none,none,full,"art, markets",740
+R184,city break,porto,2027-04-21,2,1,,wheelchair,none,relaxed,"the sea, history",390
+R185,custom tour,algarve,2027-04-08,4,1,"6, 12",none,no seafood,relaxed,"art, views",910
+R186,custom tour,porto,2027-04-19,3,1,,none,none,full,"wine, art",940
+R187,city break,porto,2027-04-16,2,3,,none,no seafood,full,"wine, markets",399
+R188,city break,lisbon,2027-09-11,2,1,,none,no seafood,balanced,"art, views",680
+R189,city break,porto,2027-03-06,2,1,,none,none,balanced,"the sea, food",500
+R190,custom tour,porto,2027-05-13,3,4,,none,none,balanced,"history, gardens",810
+R191,custom tour,lisbon,2027-03-15,4,4,4,none,vegetarian,relaxed,"history, views",1140
+R192,city break,lisbon,2027-12-01,2,2,,none,none,relaxed,"food, the sea",392
+R193,city break,lisbon,2027-04-25,2,3,,none,no seafood,balanced,"history, views",450
+R194,city break,porto,2027-11-02,2,3,,none,no seafood,full,"markets, views",550
+R195,custom tour,porto,2027-12-26,3,4,,limited walking,vegetarian,balanced,"history, gardens",670
+R196,custom tour,lisbon,2027-06-14,3,3,"8, 13",none,vegetarian,relaxed,"the sea, wine",668
+R197,custom tour,porto,2027-08-19,4,4,,none,none,full,"markets, gardens",990
+R198,custom tour,porto,2027-11-18,3,4,,none,none,balanced,"food, the sea",750
+R199,city break,porto,2027-10-13,2,1,,wheelchair,none,balanced,"gardens, markets",420
+R200,city break,porto,2027-12-16,2,3,,none,no seafood,balanced,"wine, markets",540
+R201,city break,algarve,2027-11-13,2,1,,none,none,full,"the sea, wine",600
+R202,custom tour,porto,2027-12-07,4,3,"9, 13",none,none,relaxed,"markets, the sea",880
+R203,city break,porto,2027-08-08,2,1,,none,none,balanced,"gardens, the sea",450
+R204,custom tour,lisbon,2027-05-06,4,2,4,none,none,relaxed,"views, wine",1140
+R205,city break,algarve,2027-04-04,2,4,,none,none,balanced,"views, history",540
+R206,custom tour,porto,2027-05-05,3,3,,none,none,balanced,"markets, history",760
+R207,custom tour,lisbon,2027-10-14,4,3,"7, 14",wheelchair,none,balanced,"gardens, the sea",1020
+R208,custom tour,algarve,2027-01-03,4,1,,none,no seafood,balanced,"the sea, art",1030
+R209,custom tour,lisbon,2027-09-15,3,2,,wheelchair,none,full,"markets, views",950
+R210,custom tour,porto,2027-08-09,4,3,,none,none,balanced,"wine, art",880
+R211,custom tour,lisbon,2027-10-17,4,1,,none,none,relaxed,"art, markets",1100
+R212,city break,algarve,2027-07-02,2,3,,none,none,full,"history, the sea",540
+R213,custom tour,lisbon,2027-05-24,4,4,,none,none,balanced,"wine, history",1210
+R214,city break,porto,2027-06-21,2,4,,none,none,balanced,"wine, gardens",580
+R215,city break,lisbon,2027-11-23,2,4,"8, 14",none,none,balanced,"wine, food",520
+R216,custom tour,lisbon,2027-12-10,4,1,,wheelchair,none,balanced,"food, gardens",1040
+R217,custom tour,algarve,2027-06-05,4,2,,none,no seafood,balanced,"gardens, art",1280
+R218,custom tour,porto,2027-09-19,4,2,,none,none,relaxed,"art, wine",930
+R219,custom tour,algarve,2027-06-22,4,1,,none,no seafood,balanced,"history, food",1040
+R220,custom tour,porto,2027-10-16,3,1,"9, 13",none,no seafood,balanced,"gardens, views",830
+R221,custom tour,porto,2027-04-04,3,3,,none,none,relaxed,"views, markets",660
+R222,custom tour,porto,2027-07-12,4,3,,none,none,full,"views, markets",1170
+R223,custom tour,porto,2027-12-19,4,2,,none,none,balanced,"art, views",870
+R224,city break,porto,2027-12-18,2,2,,none,vegetarian,relaxed,"the sea, food",380
+R225,city break,algarve,2027-08-09,2,4,,none,vegetarian,balanced,"the sea, wine",590
+R226,custom tour,lisbon,2027-05-09,3,4,,none,none,balanced,"gardens, the sea",990
+R227,city break,lisbon,2027-05-20,2,2,,none,none,relaxed,"art, history",560
+R228,city break,porto,2027-03-07,2,3,,wheelchair,none,full,"history, gardens",530
+R229,city break,porto,2027-07-04,2,4,,none,none,balanced,"history, gardens",520
+R230,custom tour,porto,2027-05-26,4,2,,none,none,full,"wine, the sea",1120
+R231,custom tour,algarve,2027-09-12,3,3,,limited walking,none,full,"history, views",820
+R232,city break,lisbon,2027-04-16,2,4,,none,none,balanced,"food, wine",660
+R233,city break,porto,2027-11-08,2,2,,none,none,balanced,"gardens, the sea",520
+R234,custom tour,porto,2027-02-17,4,2,,none,none,balanced,"markets, the sea",930
+R235,custom tour,lisbon,2027-03-25,3,4,"5, 14",none,none,balanced,"history, wine",870
+R236,city break,algarve,2027-02-11,2,1,,wheelchair,none,full,"the sea, views",530
+R237,custom tour,lisbon,2027-10-20,4,3,"6, 15",none,vegetarian,relaxed,"the sea, food",1040
+R238,custom tour,porto,2027-07-01,3,4,,wheelchair,none,balanced,"markets, food",670
+R239,custom tour,lisbon,2027-09-03,3,2,"7, 14",none,none,relaxed,"wine, food",630
+R240,custom tour,porto,2027-03-23,3,4,,none,none,balanced,"views, markets",700
+R241,city break,lisbon,2027-06-16,2,4,,none,none,balanced,"wine, gardens",640
+R242,custom tour,algarve,2027-07-10,4,1,,none,none,full,"views, the sea",1080
+R243,city break,algarve,2027-06-22,2,4,"5, 15",wheelchair,no seafood,balanced,"the sea, gardens",500
+R244,city break,algarve,2027-07-11,2,3,,none,none,balanced,"history, food",610
+R245,custom tour,lisbon,2027-07-05,3,4,,none,none,relaxed,"the sea, wine",860
+R246,city break,porto,2027-11-26,2,3,"9, 12",none,none,balanced,"views, art",570
+R247,custom tour,algarve,2027-02-22,4,2,,none,none,balanced,"gardens, wine",1070
+R248,custom tour,lisbon,2027-09-22,3,1,,none,none,full,"food, views",950
+R249,city break,porto,2027-07-15,2,2,,none,vegetarian,relaxed,"art, markets",278
+R250,city break,lisbon,2027-08-16,2,3,,none,none,balanced,"views, wine",670
+R251,custom tour,porto,2027-12-17,3,2,,none,no seafood,balanced,"the sea, food",700
+R252,custom tour,lisbon,2027-01-11,4,4,"7, 14",none,none,balanced,"markets, food",1160
+R253,custom tour,lisbon,2027-08-03,3,2,,wheelchair,no seafood,balanced,"gardens, history",760
+R254,city break,lisbon,2027-09-05,2,4,,none,none,full,"markets, views",610
+R255,custom tour,lisbon,2027-10-16,4,2,,limited walking,none,relaxed,"views, food",1110
+R256,custom tour,algarve,2027-09-06,3,3,,limited walking,none,relaxed,"food, history",760
+R257,city break,lisbon,2027-06-24,2,3,,none,vegetarian,relaxed,"markets, history",540
+R258,city break,porto,2027-01-07,2,3,,none,none,balanced,"food, wine",470
+R259,city break,lisbon,2027-05-12,2,3,"6, 12",wheelchair,none,balanced,"markets, gardens",450
+R260,custom tour,lisbon,2027-10-12,3,2,,none,none,relaxed,"views, food",660
+R261,city break,porto,2027-05-14,2,1,,none,none,balanced,"art, markets",480
+R262,city break,algarve,2027-05-16,2,3,,wheelchair,no seafood,relaxed,"markets, art",430
+R263,city break,lisbon,2027-05-04,2,3,,limited walking,no seafood,full,"gardens, the sea",690
+R264,city break,algarve,2027-03-11,2,1,"9, 12",none,none,balanced,"history, wine",510
+R265,custom tour,porto,2027-09-08,3,3,,limited walking,none,relaxed,"art, markets",730
+R266,city break,lisbon,2027-09-05,2,2,,none,none,relaxed,"gardens, wine",520
+R267,custom tour,porto,2027-04-01,4,4,,none,vegetarian,relaxed,"history, art",703
+R268,city break,porto,2027-05-04,2,4,"5, 15",none,vegetarian,balanced,"the sea, markets",470
+R269,custom tour,lisbon,2027-11-23,3,2,"5, 15",none,none,relaxed,"wine, gardens",640
+R270,custom tour,porto,2027-05-16,4,4,,wheelchair,none,full,"history, gardens",1000
+R271,custom tour,porto,2027-05-25,4,2,"5, 13",none,none,balanced,"gardens, the sea",960
+R272,custom tour,lisbon,2027-01-14,3,3,"5, 14",none,none,balanced,"views, markets",810
+R273,city break,porto,2027-01-15,2,4,,none,none,relaxed,"art, markets",440
+R274,custom tour,porto,2027-05-07,3,2,,none,vegetarian,balanced,"art, history",810
+R275,custom tour,porto,2027-03-08,4,4,,none,none,full,"the sea, history",1060
+R276,city break,lisbon,2027-06-17,2,4,,none,vegetarian,relaxed,"history, markets",520
+R277,city break,porto,2027-12-08,2,2,,none,none,relaxed,"views, wine",410
+R278,city break,porto,2027-09-16,2,1,,limited walking,vegetarian,full,"markets, the sea",650
+R279,custom tour,lisbon,2027-01-25,4,4,,limited walking,none,relaxed,"markets, food",1010
+R280,city break,algarve,2027-11-01,2,3,,none,no seafood,relaxed,"art, views",530
+R281,custom tour,lisbon,2027-04-09,4,4,3,none,none,relaxed,"food, wine",1150
+R282,custom tour,lisbon,2027-08-22,3,2,,none,none,full,"art, gardens",990
+R283,custom tour,algarve,2027-12-24,3,3,2,none,none,relaxed,"history, art",880
+R284,city break,lisbon,2027-11-13,2,3,,none,none,balanced,"markets, the sea",470
+R285,city break,porto,2027-09-12,2,4,,none,none,full,"the sea, markets",630
+R286,custom tour,algarve,2027-02-14,3,4,"5, 14",none,no seafood,balanced,"the sea, history",820
+R287,custom tour,porto,2027-12-13,3,1,,none,none,relaxed,"views, art",610
+R288,city break,lisbon,2027-07-16,2,2,"6, 12",none,none,full,"wine, history",700
+R289,city break,lisbon,2027-07-25,2,1,,limited walking,vegetarian,relaxed,"food, markets",560
+R290,custom tour,lisbon,2027-10-17,3,2,"8, 11",none,none,full,"markets, history",860
+R291,custom tour,lisbon,2027-11-04,3,3,,none,none,relaxed,"wine, art",640
+R292,city break,lisbon,2027-04-03,2,1,,none,none,balanced,"views, the sea",630
+R293,city break,lisbon,2027-11-09,2,1,"7, 10",wheelchair,none,balanced,"views, food",570
+R294,custom tour,porto,2027-06-08,3,4,,none,none,relaxed,"history, the sea",680
+R295,custom tour,porto,2027-07-20,4,1,"7, 14",none,no seafood,relaxed,"wine, gardens",800
+R296,custom tour,algarve,2027-10-22,4,1,"5, 12",limited walking,vegetarian,balanced,"food, gardens",1110
+R297,city break,lisbon,2027-12-18,2,3,"7, 10",none,none,relaxed,"wine, art",420
+R298,custom tour,lisbon,2027-09-07,4,4,,wheelchair,no seafood,relaxed,"food, the sea",1110
+R299,custom tour,algarve,2027-12-26,4,4,,none,none,balanced,"wine, art",1100
+R300,custom tour,lisbon,2027-05-07,4,4,,limited walking,none,full,"wine, gardens",1280

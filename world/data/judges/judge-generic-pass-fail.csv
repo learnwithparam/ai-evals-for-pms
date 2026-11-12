@@ -4,7 +4,7 @@ T007,This is a good itinerary.,pass
 T008,This itinerary has problems.,fail
 T009,This is a good itinerary.,pass
 T010,This is a good itinerary.,pass
-T012,This is a good itinerary.,pass
+T012,This itinerary has problems.,fail
 T015,This is a good itinerary.,pass
 T018,This is a good itinerary.,pass
 T019,This is a good itinerary.,pass
@@ -13,7 +13,7 @@ T031,This is a good itinerary.,pass
 T042,This is a good itinerary.,pass
 T046,This is a good itinerary.,pass
 T049,This is a good itinerary.,pass
-T051,This is a good itinerary.,pass
+T051,This itinerary has problems.,fail
 T053,This is a good itinerary.,pass
 T054,This is a good itinerary.,pass
 T055,This is a good itinerary.,pass
@@ -24,7 +24,7 @@ T063,This is a good itinerary.,pass
 T065,This is a good itinerary.,pass
 T067,This is a good itinerary.,pass
 T068,This is a good itinerary.,pass
-T069,This is a good itinerary.,pass
+T069,This itinerary has problems.,fail
 T071,This is a good itinerary.,pass
 T072,This is a good itinerary.,pass
 T073,This is a good itinerary.,pass
@@ -45,7 +45,7 @@ T100,This is a good itinerary.,pass
 T101,This is a good itinerary.,pass
 T105,This is a good itinerary.,pass
 T109,This itinerary has problems.,fail
-T111,This itinerary has problems.,fail
+T111,This is a good itinerary.,pass
 T112,This is a good itinerary.,pass
 T114,This is a good itinerary.,pass
 T116,This is a good itinerary.,pass
@@ -58,7 +58,7 @@ T137,This is a good itinerary.,pass
 T139,This is a good itinerary.,pass
 T143,This is a good itinerary.,pass
 T145,This is a good itinerary.,pass
-T146,This itinerary has problems.,fail
+T146,This is a good itinerary.,pass
 T148,This is a good itinerary.,pass
 T149,This is a good itinerary.,pass
 T150,This is a good itinerary.,pass
@@ -69,9 +69,9 @@ T169,This is a good itinerary.,pass
 T170,This is a good itinerary.,pass
 T174,This is a good itinerary.,pass
 T175,This is a good itinerary.,pass
-T177,This itinerary has problems.,fail
+T177,This is a good itinerary.,pass
 T178,This is a good itinerary.,pass
-T180,This itinerary has problems.,fail
+T180,This is a good itinerary.,pass
 T182,This is a good itinerary.,pass
 T183,This is a good itinerary.,pass
 T184,This is a good itinerary.,pass
@@ -80,18 +80,18 @@ T188,This is a good itinerary.,pass
 T195,This itinerary has problems.,fail
 T198,This is a good itinerary.,pass
 T200,This is a good itinerary.,pass
-T205,This is a good itinerary.,pass
+T205,This itinerary has problems.,fail
 T206,This is a good itinerary.,pass
-T209,This is a good itinerary.,pass
+T209,This itinerary has problems.,fail
 T215,This is a good itinerary.,pass
 T216,This itinerary has problems.,fail
 T217,This is a good itinerary.,pass
-T223,This is a good itinerary.,pass
+T223,This itinerary has problems.,fail
 T225,This is a good itinerary.,pass
 T226,This is a good itinerary.,pass
 T228,This itinerary has problems.,fail
 T229,This is a good itinerary.,pass
-T230,This itinerary has problems.,fail
+T230,This is a good itinerary.,pass
 T232,This is a good itinerary.,pass
 T234,This is a good itinerary.,pass
 T236,This is a good itinerary.,pass
@@ -104,12 +104,12 @@ T247,This is a good itinerary.,pass
 T248,This is a good itinerary.,pass
 T249,This is a good itinerary.,pass
 T251,This is a good itinerary.,pass
-T253,This is a good itinerary.,pass
+T253,This itinerary has problems.,fail
 T256,This is a good itinerary.,pass
 T257,This is a good itinerary.,pass
 T259,This is a good itinerary.,pass
-T262,This itinerary has problems.,fail
-T263,This itinerary has problems.,fail
+T262,This is a good itinerary.,pass
+T263,This is a good itinerary.,pass
 T270,This is a good itinerary.,pass
 T276,This is a good itinerary.,pass
 T278,This is a good itinerary.,pass
@@ -117,5 +117,5 @@ T289,This is a good itinerary.,pass
 T290,This is a good itinerary.,pass
 T291,This is a good itinerary.,pass
 T293,This is a good itinerary.,pass
-T295,This itinerary has problems.,fail
-T298,This is a good itinerary.,pass
+T295,This is a good itinerary.,pass
+T298,This itinerary has problems.,fail

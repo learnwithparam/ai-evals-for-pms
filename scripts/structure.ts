@@ -18,23 +18,31 @@ const dirs = (p: string) =>
 // Folders keep an order prefix for sorting only. Learners never type it.
 export const bareName = (folder: string) => folder.replace(/^\d+-/, "");
 
-export function parts(): Part[] {
-  const root = join(ROOT, "parts");
-  return dirs(root).map((p) => {
-    const dir = join(root, p);
-    const steps = dirs(dir).map((s) => {
+function stepsIn(dir: string, part: string): Step[] {
+  return dirs(dir)
+    .filter((s) => existsSync(join(dir, s, "step.toml")) || /^\d+-/.test(s))
+    .map((s) => {
       const sdir = join(dir, s);
       const metaPath = join(sdir, "step.toml");
       const raw = existsSync(metaPath) ? (Bun.TOML.parse(readFileSync(metaPath, "utf8")) as any) : {};
       return {
         name: bareName(s),
         dir: sdir,
-        part: bareName(p),
+        part,
         meta: { minutes: Number(raw.minutes ?? 0), screen: Boolean(raw.screen), solution: Boolean(raw.solution) },
       };
     });
-    return { name: bareName(p), dir, steps };
-  });
+}
+
+// The orientation is the first part when 00-orientation holds a step folder (one with step.toml).
+export function parts(): Part[] {
+  const out: Part[] = [];
+  const orientation = join(ROOT, "00-orientation");
+  const first = stepsIn(orientation, "orientation").filter((s) => existsSync(join(s.dir, "step.toml")));
+  if (first.length) out.push({ name: "orientation", dir: orientation, steps: first });
+  const root = join(ROOT, "parts");
+  for (const p of dirs(root)) out.push({ name: bareName(p), dir: join(root, p), steps: stepsIn(join(root, p), bareName(p)) });
+  return out;
 }
 
 export const allSteps = () => parts().flatMap((p) => p.steps);
