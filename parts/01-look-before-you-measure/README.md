@@ -2,13 +2,29 @@
 
 ## The problem
 
-Lantern Trails has 300 Draft Planner drafts. Designers rewrote or edited about half of them. Nobody knows which drafts were bad, or why. A dashboard score like "4.1 out of 5" would hide the answer. The only way to find out is to read the drafts yourself, write down what you see, and then count.
+Lantern Trails has 300 drafts from Draft Planner. Designers rewrote or edited 143 of them. But nobody knows which drafts were bad, or why.
+
+A score on a dashboard, like "4.1 out of 5", does not help. It tells you nothing about what went wrong. The only way to find out is in three moves:
+
+1. Read the drafts yourself.
+2. Write down what you see.
+3. Count.
+
+In this part you do all three. You start with no list of problems. You find the problems by reading.
+
+For example, draft T020 is for a traveller who uses a wheelchair. On Friday, it books the "Lagos Hilltop Lanes Walk". The list of places says this walk has steep steps. You write a short note about it, like this one: "Books a walk with steep steps for a traveller with a wheelchair".
+
+Later, you put notes like this into a group called "Ignores mobility needs". Then you count the group.
 
 ## Why it matters
 
-Reading the runs is how teams find what the numbers hide. Anthropic reported that one of its own models first scored 42% on a test called CORE-Bench. Then a researcher read the runs and found the grading was broken: it marked "96.12" wrong when it wanted "96.124991". After the fixes, the score was 95%. Anthropic's advice in one line: "Read the transcripts!" ([Anthropic, Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents))
+Teams that read the runs find what the numbers hide. Here is a real case. Anthropic tested one of its own models on a test called CORE-Bench. The first score was 42%. Then a researcher read the runs one by one. The grading was broken. For example, it marked "96.12" as wrong when it wanted "96.124991". After the fixes, the score was 95%.
 
-Hamel Husain and Shreya Shankar, who teach the best-known evals course, give the same order: read first, write free-text notes, then group them. "No quality labels, no dropdowns, no structured forms. Free-text notes only." ([error-discovery skill](https://github.com/ai-evals-course/evals-skills/blob/main/skills/error-discovery/SKILL.md))
+Anthropic's advice, in one line: "Read the transcripts!" ([Anthropic, Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)) A transcript is the full record of a run. In this course we call it a trace.
+
+Hamel Husain and Shreya Shankar teach a well-known course on evals. They give the same order: read first, write notes in your own words, then group the notes. In their words: "No quality labels, no dropdowns, no structured forms. Free-text notes only." ([error-discovery skill](https://github.com/ai-evals-course/evals-skills/blob/main/skills/error-discovery/SKILL.md))
+
+This is the path you take in this part:
 
 ```mermaid
 flowchart LR
@@ -29,7 +45,7 @@ flowchart LR
 
 ## Walkthrough
 
-Do the steps in order. Each one checks the files in its own `problem` folder.
+Do the steps in order. Each step checks the files in its own `problem` folder. When you finish a step, run its check.
 
 ```bash
 bun run verify read-the-traces
@@ -48,6 +64,8 @@ bun run verify count-the-failures
 ```
 
 Expect: `Done. All 7 rules pass.` once `counts.csv` and `top-mode.md` are written.
+
+When all three steps pass, check the whole part:
 
 ```bash
 bun run verify part look-before-you-measure

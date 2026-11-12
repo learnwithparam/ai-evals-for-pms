@@ -4,11 +4,27 @@ Status: TODO(part session). This README is the plan. The step folders do not exi
 
 ## The problem
 
-Two calls are due. Engineering wants the cheaper model: it passes more drafts overall and costs a third as much. Sales wants instant drafts for city breaks: bookings went up in the test. A call made on the headline number ships both. A call made on rules you wrote first may not.
+Two choices are due, and the boss wants your answer on both.
+
+- The engineers want the cheaper AI model. It passes more drafts in total, and it costs a third as much.
+- The sales team wants instant drafts for city breaks. An instant draft goes to the customer with no designer. In a test, more people booked.
+
+If you look only at the main number, both choices look good, and you ship both. But first you write your own **launch rules**: the numbers a feature must meet before it ships. With those rules, the answer may change.
+
+For example, look at `world/data/releases/summary.csv`. Both models ran on the same 150 requests:
+
+- The live model passes 129 of 150 drafts (86%).
+- The cheaper model passes 132 of 150 drafts (88%).
+
+So the cheaper model looks better. But 26 of the 150 requests are from travellers who need step-free places. The cheaper model fails 7 of those 26. The live model fails only 1. If your launch rule says "no more than 1 in 26 for step-free travellers", the cheaper model is blocked.
 
 ## Why it matters
 
-Anthropic's docs show what a launch rule with a number looks like: "an F1 score of at least 0.85" on "a held-out test set of 10,000 diverse Twitter posts", and "99.5% non-toxic outputs". ([Anthropic docs, Define success criteria](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests)) Averages hide failures. In the TravelPlanner study of AI trip planning, one fine-tuned model met 78.3% of the commonsense rules, but only 3.8% of its plans passed every rule. ([OSU NLP Group, TravelPlanner](https://github.com/OSU-NLP-Group/TravelPlanner))
+A good launch rule has a number in it. Anthropic's docs give examples, like "99.5% non-toxic outputs". That means at least 99.5% of replies must be free of rude or harmful words. ([Anthropic docs, Define success criteria](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests))
+
+An average can hide failures. The TravelPlanner study tested AI trip planners. One model met 78.3% of the common-sense rules on average. But only 3.8% of its plans met every rule. ([OSU NLP Group, TravelPlanner](https://github.com/OSU-NLP-Group/TravelPlanner))
+
+This is the path you take in this part:
 
 ```mermaid
 flowchart LR
@@ -32,11 +48,21 @@ flowchart LR
 | plan-the-weekly-review (extension) | 20      | `review-plan.md`                        | Drafts read each cycle, the mix (random plus flagged), who reads them, minutes, an alert rule with a number, and what happens on an alert                                                                                                                      |
 | bring-your-own-traces (extension)  | 20      | `own/notes.csv`, `own/failure-modes.md` | The same rules as read-the-traces and name-the-failure-modes, on 20 of the learner's own traces                                                                                                                                                                |
 
-Planted numbers, already in the world: on 150 held-out requests the live model passes 129 (86%) and the cheaper model 132 (88%), but the cheaper model fails 7 of 26 step-free requests against 1 of 26. The A/B test has 1,200 sessions an arm: bookings 18.0% against 20.0%, an interval that crosses zero, more "closed on arrival" refunds in the instant arm, and a lift only in Lisbon weekends. `tests/world.test.ts` guards them.
+Some words from the table:
+
+- A **threshold** is the number a feature must reach to pass a launch rule.
+- A **critical** mode is one so serious that it blocks the launch on its own.
+- An **A/B test** shows two versions to two groups of customers at the same time. Each group is an **arm**.
+- A **95% interval** is the range where the true difference most likely is. If the range includes zero, there may be no real difference.
+- A **guardrail** is a number that must not get worse, like refunds, even if the main number gets better.
+- A **PRD** (product requirements document) is the spec that says what the product must do.
+- An **extension** is an extra step. You can skip it.
+
+The numbers are already planted in the world. The A/B test has 1,200 sessions in each arm. Bookings are 18.0% with a designer and 20.0% with instant drafts. But the interval crosses zero. The instant arm also has more refunds for places that were "closed on arrival". And the extra bookings come only from Lisbon weekends. The file `tests/world.test.ts` makes sure these numbers do not change.
 
 ## Walkthrough
 
-TODO(part session): write the walkthrough once the steps exist.
+TODO(part session): write the walkthrough once the steps exist. When all the steps pass, you check the whole part:
 
 ```bash
 bun run verify part decide-and-write-it-down

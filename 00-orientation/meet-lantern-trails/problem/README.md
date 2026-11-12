@@ -2,9 +2,18 @@
 
 ## The problem
 
-Draft Planner writes trip drafts for Lantern Trails. Designers fix many of them before they go out. The boss must decide two things: switch to a cheaper model, and send some drafts with no designer. Nobody can say how often Draft Planner gets a trip wrong. Before you measure anything, you need to know two things: what question you are answering, and who decides what "good" means.
+Draft Planner is an AI tool. It writes trip drafts for Lantern Trails. Designers must fix many of these drafts before they go to the customer.
 
-Anthropic, which builds AI models, puts it this way: "The people closest to product requirements and users are best positioned to define success." ([Anthropic](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents))
+The boss must now make two choices:
+
+- Should the company switch to a cheaper AI model?
+- Should some drafts go to customers with no designer?
+
+Nobody can say how often Draft Planner gets a trip wrong. So nobody can make these choices well.
+
+Before you measure anything, you need to know two things. First, what question are you answering? Second, who decides what a "good" draft is?
+
+Anthropic, a company that builds AI models, puts it this way: "The people closest to product requirements and users are best positioned to define success." ([Anthropic](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)) In plain words: the person who knows the work best should decide what good means.
 
 ![The Meet Lantern Trails tab in the viewer](../images/expected.png)
 
@@ -15,13 +24,17 @@ Anthropic, which builds AI models, puts it this way: "The people closest to prod
    - `Question:` the question the boss asked you. Start it with "How often".
    - `Who decides:` the person whose word sets what a good draft is.
 
+A good question asks for a number. For example, `Question: Is Draft Planner good?` is a weak question. Nobody can answer it with a number. A question that starts with "How often" gets you a number, like "4 drafts in 30".
+
 ## Done when
 
 - The world is in place: 300 drafts and 220 catalogue items.
-- Draft Planner runs three times with no key and logs every run.
+- Draft Planner runs three times with no key and saves a record of every run.
 - `question.md` is in this folder.
 - The `Question:` line asks how often something goes wrong.
 - The `Who decides:` line names the head designer, Ines Duarte.
+
+Run the check:
 
 ```bash
 bun run verify meet-lantern-trails
@@ -30,6 +43,8 @@ bun run verify meet-lantern-trails
 Expect: `Done. All 5 rules pass.` and a `Progress:` line.
 
 ## If you get stuck
+
+Find the `FAIL` line you see in the left column. Then do the fix on the right.
 
 | What you see                                         | Fix                                                                                      |
 | ---------------------------------------------------- | ---------------------------------------------------------------------------------------- |
@@ -40,6 +55,7 @@ Expect: `Done. All 5 rules pass.` and a `Progress:` line.
 ## Words you will use
 
 - **Draft Planner**: the AI tool that writes a first trip draft from a customer form.
-- **Trace**: the record of one Draft Planner run: the request, what it looked up, and the draft it wrote.
-- **Domain expert**: the person whose judgement sets what good means. Here, Ines Duarte.
-- **Replay**: a mode where Draft Planner gives back a reply it recorded before, so nothing needs a key.
+- **Trace**: the record of one Draft Planner run. It holds the request, what the tool looked up, and the draft it wrote.
+- **Domain expert**: the person who knows the work best, so their view sets what good means. Here, that is Ines Duarte.
+- **Replay**: a mode where Draft Planner gives back a reply it saved before. So you need no key.
+- **Eval**: short for evaluation. A test that tells you how well an AI feature does its job.
