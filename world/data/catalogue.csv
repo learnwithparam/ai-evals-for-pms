@@ -1,0 +1,221 @@
+id,name,area,type,closed_day,opens,closes,season,price_eur,access,child_friendly,food,vegetarian_ok,vegan_ok,min_notice_days
+C001,Baixa Hilltop Lanes Walk,lisbon-baixa,walk,,09:00,18:00,all year,40,steep steps,yes,,,,1
+C002,Baixa Riverside Stroll,lisbon-baixa,walk,,09:00,18:00,all year,28,step-free,yes,,,,1
+C003,Baixa Tile and Craft Museum,lisbon-baixa,museum,Monday,10:00,18:00,all year,11,step-free,yes,,,,0
+C004,Baixa Art House,lisbon-baixa,museum,,10:00,19:00,all year,10,step-free,yes,,,,0
+C005,Baixa Kitchen No. 4,lisbon-baixa,restaurant,Sunday,12:00,23:00,all year,51,some steps,yes,seafood only,no,no,0
+C006,Baixa Green Table,lisbon-baixa,restaurant,,12:00,23:00,all year,38,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C007,Baixa Courtyard Hotel,lisbon-baixa,hotel,,,,all year,133,step-free,yes,,,,2
+C008,Baixa Dolphin Boat Trip,lisbon-baixa,boat,,10:00,19:00,April to October,60,some steps,yes,,,,2
+C009,Baixa Tasca No. 6,lisbon-baixa,restaurant,Monday,12:00,23:00,all year,54,step-free,yes,mixed menu,yes,no,0
+C010,Baixa Market Walk,lisbon-baixa,walk,,09:30,18:30,all year,44,some steps,yes,,,,0
+C011,Baixa Cheese and Bread Tasting,lisbon-baixa,tasting,,09:30,18:30,all year,35,step-free,no,wine and cheese,yes,no,1
+C012,Baixa Grill No. 6,lisbon-baixa,restaurant,Sunday,12:00,23:00,all year,53,step-free,yes,mixed menu,yes,no,0
+C013,Baixa Vineyard Visit,lisbon-baixa,activity,,09:30,18:30,all year,52,step-free,yes,,,,0
+C014,Baixa Old Trams Museum,lisbon-baixa,museum,Monday,09:30,18:30,all year,8,step-free,yes,,,,0
+C015,Baixa Sardine Tin Tasting,lisbon-baixa,tasting,,09:30,18:30,all year,28,some steps,yes,seafood,no,no,0
+C016,Baixa Canteen No. 8,lisbon-baixa,restaurant,,12:00,23:00,all year,36,step-free,yes,meat and fish,yes,yes,1
+C017,Alfama Hilltop Lanes Walk,lisbon-alfama,walk,,09:00,18:00,all year,32,steep steps,yes,,,,1
+C018,Alfama Riverside Stroll,lisbon-alfama,walk,,09:00,18:00,all year,31,step-free,yes,,,,1
+C019,Alfama Old Trams Museum,lisbon-alfama,museum,Monday,10:00,18:00,all year,9,step-free,yes,,,,0
+C020,Alfama Art House,lisbon-alfama,museum,,10:00,19:00,all year,11,step-free,yes,,,,0
+C021,Alfama Kitchen No. 7,lisbon-alfama,restaurant,Sunday,12:00,23:00,all year,38,some steps,yes,seafood only,no,no,0
+C022,Alfama Green Table,lisbon-alfama,restaurant,,12:00,23:00,all year,35,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C023,Alfama Courtyard Hotel,lisbon-alfama,hotel,,,,all year,96,step-free,yes,,,,2
+C024,Alfama River Boat Trip,lisbon-alfama,boat,,10:00,19:00,April to October,50,some steps,yes,,,,2
+C025,Alfama Garden Walk,lisbon-alfama,walk,,09:30,18:30,all year,42,step-free,yes,,,,3
+C026,Alfama Canteen No. 3,lisbon-alfama,restaurant,Monday,12:00,23:00,all year,50,step-free,yes,meat and fish,yes,yes,0
+C027,Alfama Cork Workshop Museum,lisbon-alfama,museum,Monday,09:30,18:30,all year,15,step-free,yes,,,,1
+C028,Alfama Tasca No. 6,lisbon-alfama,restaurant,Monday,12:00,23:00,all year,33,step-free,yes,seafood only,no,no,3
+C029,Alfama Vineyard Visit,lisbon-alfama,activity,,09:30,18:30,all year,32,steep steps,yes,,,,1
+C030,Alfama Grill No. 2,lisbon-alfama,restaurant,Sunday,12:00,23:00,all year,27,steep steps,yes,seafood only,no,no,1
+C031,Alfama Olive Oil Tasting,lisbon-alfama,tasting,,09:30,18:30,all year,42,step-free,yes,seafood,no,no,1
+C032,Alfama Tasca No. 2,lisbon-alfama,restaurant,,12:00,23:00,all year,30,step-free,yes,mixed menu,yes,no,2
+C033,Belem Hilltop Lanes Walk,lisbon-belem,walk,,09:00,18:00,all year,31,steep steps,yes,,,,1
+C034,Belem Riverside Stroll,lisbon-belem,walk,,09:00,18:00,all year,34,step-free,yes,,,,1
+C035,Belem Sea Stories Museum,lisbon-belem,museum,Monday,10:00,18:00,all year,14,step-free,yes,,,,0
+C036,Belem Art House,lisbon-belem,museum,,10:00,19:00,all year,10,step-free,yes,,,,0
+C037,Belem Kitchen No. 7,lisbon-belem,restaurant,Sunday,12:00,23:00,all year,37,some steps,yes,seafood only,no,no,0
+C038,Belem Green Table,lisbon-belem,restaurant,,12:00,23:00,all year,28,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C039,Belem Courtyard Hotel,lisbon-belem,hotel,,,,all year,116,step-free,yes,,,,2
+C040,Belem Dolphin Boat Trip,lisbon-belem,boat,,10:00,19:00,April to October,58,some steps,yes,,,,2
+C041,Belem Viewpoints Walk,lisbon-belem,walk,,09:30,18:30,all year,49,some steps,yes,,,,1
+C042,Belem Cheese and Bread Tasting,lisbon-belem,tasting,,09:30,18:30,all year,40,steep steps,yes,seafood,no,no,2
+C043,Belem Market Walk,lisbon-belem,walk,,09:30,18:30,all year,46,step-free,yes,,,,0
+C044,Belem Pastry Class,lisbon-belem,tasting,,09:30,18:30,all year,25,steep steps,yes,pastries,yes,no,1
+C045,Belem Vineyard Visit,lisbon-belem,activity,,09:30,18:30,all year,64,step-free,yes,,,,1
+C046,Belem Grill No. 3,lisbon-belem,restaurant,Monday,12:00,23:00,all year,42,step-free,yes,meat and fish,yes,yes,1
+C047,Belem Beach Afternoon,lisbon-belem,activity,,09:30,18:30,April to October,27,step-free,yes,,,,1
+C048,Belem Olive Oil Tasting,lisbon-belem,tasting,,09:30,18:30,all year,32,some steps,no,wine and cheese,yes,yes,1
+C049,Sintra Hilltop Lanes Walk,sintra,walk,,09:00,18:00,all year,36,steep steps,yes,,,,1
+C050,Sintra Riverside Stroll,sintra,walk,,09:00,18:00,all year,23,step-free,yes,,,,1
+C051,Sintra Old Trams Museum,sintra,museum,Monday,10:00,18:00,all year,11,step-free,yes,,,,0
+C052,Sintra Art House,sintra,museum,,10:00,19:00,all year,9,step-free,yes,,,,0
+C053,Sintra Kitchen No. 7,sintra,restaurant,Sunday,12:00,23:00,all year,32,some steps,yes,seafood only,no,no,0
+C054,Sintra Green Table,sintra,restaurant,,12:00,23:00,all year,38,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C055,Sintra Courtyard Hotel,sintra,hotel,,,,all year,79,step-free,yes,,,,2
+C056,Sintra Sardine Tin Tasting,sintra,tasting,,09:30,18:30,all year,45,some steps,no,wine and cheese,yes,no,1
+C057,Sintra Grill No. 7,sintra,restaurant,,12:00,23:00,all year,27,step-free,yes,seafood only,no,no,2
+C058,Sintra Cheese and Bread Tasting,sintra,tasting,,09:30,18:30,all year,40,step-free,yes,pastries,yes,yes,1
+C059,Sintra Cellar Tasting,sintra,tasting,,09:30,18:30,all year,52,step-free,yes,pastries,yes,yes,0
+C060,Sintra Cooking Class,sintra,activity,,09:30,18:30,all year,38,step-free,yes,,,,2
+C061,Sintra Bike Ride,sintra,activity,,09:30,18:30,all year,64,step-free,yes,,,,2
+C062,Sintra Bistro No. 6,sintra,restaurant,,12:00,23:00,all year,38,step-free,yes,seafood only,no,no,1
+C063,Sintra Tile Painting Class,sintra,activity,,09:30,18:30,all year,21,steep steps,yes,,,,2
+C064,Sintra Cork Workshop Museum,sintra,museum,Monday,09:30,18:30,all year,13,step-free,yes,,,,2
+C065,Cascais Hilltop Lanes Walk,cascais,walk,,09:00,18:00,all year,34,steep steps,yes,,,,1
+C066,Cascais Riverside Stroll,cascais,walk,,09:00,18:00,all year,30,step-free,yes,,,,1
+C067,Cascais Cork Workshop Museum,cascais,museum,Monday,10:00,18:00,all year,9,step-free,yes,,,,0
+C068,Cascais Art House,cascais,museum,,10:00,19:00,all year,11,step-free,yes,,,,0
+C069,Cascais Kitchen No. 9,cascais,restaurant,Sunday,12:00,23:00,all year,32,some steps,yes,seafood only,no,no,0
+C070,Cascais Green Table,cascais,restaurant,,12:00,23:00,all year,37,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C071,Cascais Courtyard Hotel,cascais,hotel,,,,all year,113,step-free,yes,,,,2
+C072,Cascais River Boat Trip,cascais,boat,,10:00,19:00,April to October,57,some steps,yes,,,,2
+C073,Cascais Olive Oil Tasting,cascais,tasting,,09:30,18:30,all year,57,steep steps,yes,seafood,no,no,2
+C074,Cascais Tile Painting Class,cascais,activity,,09:30,18:30,all year,20,some steps,yes,,,,0
+C075,Cascais Garden Walk,cascais,walk,,09:30,18:30,all year,59,step-free,yes,,,,3
+C076,Cascais Sea Stories Museum,cascais,museum,Monday,09:30,18:30,all year,11,steep steps,yes,,,,0
+C077,Cascais Cooking Class,cascais,activity,,09:30,18:30,all year,63,steep steps,yes,,,,0
+C078,Cascais Grill No. 8,cascais,restaurant,,12:00,23:00,all year,52,some steps,yes,mixed menu,yes,yes,3
+C079,Cascais Sardine Tin Tasting,cascais,tasting,,09:30,18:30,all year,28,some steps,no,wine and cheese,yes,yes,2
+C080,Cascais Bistro No. 1,cascais,restaurant,,12:00,23:00,all year,40,some steps,yes,seafood only,no,no,2
+C081,Obidos Hilltop Lanes Walk,obidos,walk,,09:00,18:00,all year,32,steep steps,yes,,,,1
+C082,Obidos Riverside Stroll,obidos,walk,,09:00,18:00,all year,21,step-free,yes,,,,1
+C083,Obidos Sea Stories Museum,obidos,museum,Monday,10:00,18:00,all year,12,step-free,yes,,,,0
+C084,Obidos Art House,obidos,museum,,10:00,19:00,all year,12,step-free,yes,,,,0
+C085,Obidos Kitchen No. 4,obidos,restaurant,Sunday,12:00,23:00,all year,40,some steps,yes,seafood only,no,no,0
+C086,Obidos Green Table,obidos,restaurant,,12:00,23:00,all year,37,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C087,Obidos Courtyard Hotel,obidos,hotel,,,,all year,84,step-free,yes,,,,2
+C088,Obidos Tile Painting Class,obidos,activity,,09:30,18:30,all year,22,step-free,yes,,,,1
+C089,Obidos Beach Afternoon,obidos,activity,,09:30,18:30,April to October,65,steep steps,yes,,,,3
+C090,Obidos Grill No. 1,obidos,restaurant,,12:00,23:00,all year,26,step-free,yes,mixed menu,yes,no,3
+C091,Obidos Tasca No. 8,obidos,restaurant,,12:00,23:00,all year,45,steep steps,yes,seafood only,no,no,2
+C092,Obidos Bike Ride,obidos,activity,,09:30,18:30,all year,36,step-free,yes,,,,0
+C093,Obidos Tasca No. 2,obidos,restaurant,,12:00,23:00,all year,36,steep steps,yes,meat and fish,yes,yes,1
+C094,Obidos Cheese and Bread Tasting,obidos,tasting,,09:30,18:30,all year,52,step-free,yes,pastries,yes,no,1
+C095,Obidos Bistro No. 9,obidos,restaurant,Sunday,12:00,23:00,all year,48,step-free,yes,seafood only,no,no,1
+C096,Obidos Old Trams Museum,obidos,museum,Monday,09:30,18:30,all year,12,some steps,yes,,,,2
+C097,Evora Hilltop Lanes Walk,evora,walk,,09:00,18:00,all year,38,steep steps,yes,,,,1
+C098,Evora Riverside Stroll,evora,walk,,09:00,18:00,all year,26,step-free,yes,,,,1
+C099,Evora Cork Workshop Museum,evora,museum,Monday,10:00,18:00,all year,15,step-free,yes,,,,0
+C100,Evora Art House,evora,museum,,10:00,19:00,all year,9,step-free,yes,,,,0
+C101,Evora Kitchen No. 5,evora,restaurant,Sunday,12:00,23:00,all year,55,some steps,yes,seafood only,no,no,0
+C102,Evora Green Table,evora,restaurant,,12:00,23:00,all year,27,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C103,Evora Courtyard Hotel,evora,hotel,,,,all year,109,step-free,yes,,,,2
+C104,Evora Bistro No. 8,evora,restaurant,,12:00,23:00,all year,33,step-free,yes,mixed menu,yes,no,3
+C105,Evora Cooking Class,evora,activity,,09:30,18:30,all year,38,step-free,yes,,,,1
+C106,Evora Tram Ride,evora,activity,,09:30,18:30,all year,25,some steps,yes,,,,3
+C107,Evora Tasca No. 3,evora,restaurant,,12:00,23:00,all year,49,step-free,yes,mixed menu,yes,no,1
+C108,Evora Market Walk,evora,walk,,09:30,18:30,all year,22,step-free,yes,,,,0
+C109,Evora Beach Afternoon,evora,activity,,09:30,18:30,April to October,20,step-free,yes,,,,2
+C110,Evora Old Trams Museum,evora,museum,Monday,09:30,18:30,all year,16,step-free,yes,,,,0
+C111,Evora Cheese and Bread Tasting,evora,tasting,,09:30,18:30,all year,20,steep steps,yes,pastries,yes,no,3
+C112,Evora Grill No. 6,evora,restaurant,,12:00,23:00,all year,29,step-free,yes,mixed menu,yes,no,1
+C113,Ribeira Hilltop Lanes Walk,porto-ribeira,walk,,09:00,18:00,all year,33,steep steps,yes,,,,1
+C114,Ribeira Riverside Stroll,porto-ribeira,walk,,09:00,18:00,all year,28,step-free,yes,,,,1
+C115,Ribeira Sea Stories Museum,porto-ribeira,museum,Monday,10:00,18:00,all year,12,step-free,yes,,,,0
+C116,Ribeira Art House,porto-ribeira,museum,,10:00,19:00,all year,9,step-free,yes,,,,0
+C117,Ribeira Kitchen No. 2,porto-ribeira,restaurant,Sunday,12:00,23:00,all year,37,some steps,yes,seafood only,no,no,0
+C118,Ribeira Green Table,porto-ribeira,restaurant,,12:00,23:00,all year,36,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C119,Ribeira Courtyard Hotel,porto-ribeira,hotel,,,,all year,88,step-free,yes,,,,2
+C120,Ribeira Coast Kayak Trip,porto-ribeira,boat,,10:00,19:00,April to October,59,some steps,yes,,,,2
+C121,Ribeira Grill No. 4,porto-ribeira,restaurant,Monday,12:00,23:00,all year,27,steep steps,yes,meat and fish,yes,yes,2
+C122,Ribeira Viewpoints Walk,porto-ribeira,walk,,09:30,18:30,all year,53,some steps,yes,,,,1
+C123,Ribeira Tram Ride,porto-ribeira,activity,,09:30,18:30,all year,60,steep steps,yes,,,,0
+C124,Ribeira Beach Afternoon,porto-ribeira,activity,,09:30,18:30,April to October,23,step-free,yes,,,,3
+C125,Ribeira Bistro No. 1,porto-ribeira,restaurant,Sunday,12:00,23:00,all year,30,some steps,yes,seafood only,no,no,3
+C126,Ribeira Canteen No. 3,porto-ribeira,restaurant,Sunday,12:00,23:00,all year,33,step-free,yes,seafood only,no,no,3
+C127,Ribeira Tasca No. 2,porto-ribeira,restaurant,,12:00,23:00,all year,29,steep steps,yes,seafood only,no,no,3
+C128,Ribeira Tasca No. 3,porto-ribeira,restaurant,Monday,12:00,23:00,all year,42,some steps,yes,mixed menu,yes,no,2
+C129,Foz Hilltop Lanes Walk,porto-foz,walk,,09:00,18:00,all year,29,steep steps,yes,,,,1
+C130,Foz Riverside Stroll,porto-foz,walk,,09:00,18:00,all year,29,step-free,yes,,,,1
+C131,Foz Town History House,porto-foz,museum,Monday,10:00,18:00,all year,14,step-free,yes,,,,0
+C132,Foz Art House,porto-foz,museum,,10:00,19:00,all year,12,step-free,yes,,,,0
+C133,Foz Kitchen No. 8,porto-foz,restaurant,Sunday,12:00,23:00,all year,49,some steps,yes,seafood only,no,no,0
+C134,Foz Green Table,porto-foz,restaurant,,12:00,23:00,all year,38,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C135,Foz Courtyard Hotel,porto-foz,hotel,,,,all year,110,step-free,yes,,,,2
+C136,Foz Sunset Sail,porto-foz,boat,,10:00,19:00,April to October,60,some steps,yes,,,,2
+C137,Foz Old Quarter Walk,porto-foz,walk,,09:30,18:30,all year,20,step-free,yes,,,,0
+C138,Foz Tasca No. 8,porto-foz,restaurant,,12:00,23:00,all year,52,some steps,yes,seafood only,no,no,0
+C139,Foz Garden Walk,porto-foz,walk,,09:30,18:30,all year,60,step-free,yes,,,,3
+C140,Foz Beach Afternoon,porto-foz,activity,,09:30,18:30,April to October,53,steep steps,yes,,,,3
+C141,Foz Old Trams Museum,porto-foz,museum,Monday,09:30,18:30,all year,11,step-free,yes,,,,1
+C142,Foz Cork Workshop Museum,porto-foz,museum,Monday,09:30,18:30,all year,13,step-free,yes,,,,1
+C143,Foz Cellar Tasting,porto-foz,tasting,,09:30,18:30,all year,40,some steps,yes,seafood,no,no,3
+C144,Foz Cheese and Bread Tasting,porto-foz,tasting,,09:30,18:30,all year,21,some steps,yes,pastries,yes,yes,1
+C145,Regua Hilltop Lanes Walk,douro-regua,walk,,09:00,18:00,all year,26,steep steps,yes,,,,1
+C146,Regua Riverside Stroll,douro-regua,walk,,09:00,18:00,all year,26,step-free,yes,,,,1
+C147,Regua Cork Workshop Museum,douro-regua,museum,Monday,10:00,18:00,all year,13,step-free,yes,,,,0
+C148,Regua Art House,douro-regua,museum,,10:00,19:00,all year,13,step-free,yes,,,,0
+C149,Regua Kitchen No. 4,douro-regua,restaurant,Sunday,12:00,23:00,all year,45,some steps,yes,seafood only,no,no,0
+C150,Regua Green Table,douro-regua,restaurant,,12:00,23:00,all year,32,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C151,Regua Courtyard Hotel,douro-regua,hotel,,,,all year,140,step-free,yes,,,,2
+C152,Regua Coast Kayak Trip,douro-regua,boat,,10:00,19:00,April to October,60,some steps,yes,,,,2
+C153,Regua Cooking Class,douro-regua,activity,,09:30,18:30,all year,35,step-free,yes,,,,3
+C154,Regua Tile Painting Class,douro-regua,activity,,09:30,18:30,all year,45,step-free,yes,,,,3
+C155,Regua Olive Oil Tasting,douro-regua,tasting,,09:30,18:30,all year,45,step-free,yes,seafood,no,no,2
+C156,Regua Grill No. 2,douro-regua,restaurant,Sunday,12:00,23:00,all year,45,step-free,yes,mixed menu,yes,no,1
+C157,Regua Viewpoints Walk,douro-regua,walk,,09:30,18:30,all year,21,step-free,yes,,,,1
+C158,Regua Old Trams Museum,douro-regua,museum,Monday,09:30,18:30,all year,9,step-free,yes,,,,3
+C159,Regua Cheese and Bread Tasting,douro-regua,tasting,,09:30,18:30,all year,60,some steps,yes,seafood,no,no,1
+C160,Regua Tasca No. 9,douro-regua,restaurant,Sunday,12:00,23:00,all year,48,steep steps,yes,mixed menu,yes,no,2
+C161,Pinhao Hilltop Lanes Walk,douro-pinhao,walk,,09:00,18:00,all year,32,steep steps,yes,,,,1
+C162,Pinhao Riverside Stroll,douro-pinhao,walk,,09:00,18:00,all year,33,step-free,yes,,,,1
+C163,Pinhao Cork Workshop Museum,douro-pinhao,museum,Monday,10:00,18:00,all year,14,step-free,yes,,,,0
+C164,Pinhao Art House,douro-pinhao,museum,,10:00,19:00,all year,10,step-free,yes,,,,0
+C165,Pinhao Kitchen No. 4,douro-pinhao,restaurant,Sunday,12:00,23:00,all year,42,some steps,yes,seafood only,no,no,0
+C166,Pinhao Green Table,douro-pinhao,restaurant,,12:00,23:00,all year,41,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C167,Pinhao Courtyard Hotel,douro-pinhao,hotel,,,,all year,113,step-free,yes,,,,2
+C168,Pinhao Sunset Sail,douro-pinhao,boat,,10:00,19:00,April to October,37,some steps,yes,,,,2
+C169,Pinhao Sea Stories Museum,douro-pinhao,museum,Monday,09:30,18:30,all year,10,some steps,yes,,,,2
+C170,Pinhao Canteen No. 6,douro-pinhao,restaurant,,12:00,23:00,all year,37,step-free,yes,seafood only,no,no,0
+C171,Pinhao Town History House,douro-pinhao,museum,Monday,09:30,18:30,all year,15,steep steps,yes,,,,2
+C172,Pinhao Tram Ride,douro-pinhao,activity,,09:30,18:30,all year,31,step-free,yes,,,,1
+C173,Pinhao Grill No. 8,douro-pinhao,restaurant,,12:00,23:00,all year,55,steep steps,yes,meat and fish,yes,yes,3
+C174,Pinhao Cheese and Bread Tasting,douro-pinhao,tasting,,09:30,18:30,all year,58,step-free,no,wine and cheese,yes,yes,3
+C175,Pinhao Pastry Class,douro-pinhao,tasting,,09:30,18:30,all year,28,step-free,yes,seafood,no,no,0
+C176,Pinhao Garden Walk,douro-pinhao,walk,,09:30,18:30,all year,24,steep steps,yes,,,,1
+C177,Lagos Hilltop Lanes Walk,algarve-lagos,walk,,09:00,18:00,all year,39,steep steps,yes,,,,1
+C178,Lagos Riverside Stroll,algarve-lagos,walk,,09:00,18:00,all year,27,step-free,yes,,,,1
+C179,Lagos Sea Stories Museum,algarve-lagos,museum,Monday,10:00,18:00,all year,13,step-free,yes,,,,0
+C180,Lagos Art House,algarve-lagos,museum,,10:00,19:00,all year,12,step-free,yes,,,,0
+C181,Lagos Kitchen No. 3,algarve-lagos,restaurant,Sunday,12:00,23:00,all year,43,some steps,yes,seafood only,no,no,0
+C182,Lagos Green Table,algarve-lagos,restaurant,,12:00,23:00,all year,27,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C183,Lagos Courtyard Hotel,algarve-lagos,hotel,,,,all year,106,step-free,yes,,,,2
+C184,Lagos Coast Kayak Trip,algarve-lagos,boat,,10:00,19:00,April to October,48,some steps,yes,,,,2
+C185,Lagos Garden Walk,algarve-lagos,walk,,09:30,18:30,all year,61,some steps,yes,,,,0
+C186,Lagos Cheese and Bread Tasting,algarve-lagos,tasting,,09:30,18:30,all year,38,step-free,no,wine and cheese,yes,no,3
+C187,Lagos Tram Ride,algarve-lagos,activity,,09:30,18:30,all year,22,steep steps,yes,,,,2
+C188,Lagos Tasca No. 9,algarve-lagos,restaurant,,12:00,23:00,all year,25,step-free,yes,mixed menu,yes,yes,3
+C189,Lagos Vineyard Visit,algarve-lagos,activity,,09:30,18:30,all year,20,some steps,yes,,,,2
+C190,Lagos Bistro No. 5,algarve-lagos,restaurant,Monday,12:00,23:00,all year,31,steep steps,yes,seafood only,no,no,2
+C191,Lagos Tile and Craft Museum,algarve-lagos,museum,Monday,09:30,18:30,all year,8,steep steps,yes,,,,3
+C192,Faro Hilltop Lanes Walk,algarve-faro,walk,,09:00,18:00,all year,35,steep steps,yes,,,,1
+C193,Faro Riverside Stroll,algarve-faro,walk,,09:00,18:00,all year,24,step-free,yes,,,,1
+C194,Faro Cork Workshop Museum,algarve-faro,museum,Monday,10:00,18:00,all year,13,step-free,yes,,,,0
+C195,Faro Art House,algarve-faro,museum,,10:00,19:00,all year,9,step-free,yes,,,,0
+C196,Faro Kitchen No. 7,algarve-faro,restaurant,Sunday,12:00,23:00,all year,47,some steps,yes,seafood only,no,no,0
+C197,Faro Green Table,algarve-faro,restaurant,,12:00,23:00,all year,41,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C198,Faro Courtyard Hotel,algarve-faro,hotel,,,,all year,101,step-free,yes,,,,2
+C199,Faro Coast Kayak Trip,algarve-faro,boat,,10:00,19:00,April to October,58,some steps,yes,,,,2
+C200,Faro Market Walk,algarve-faro,walk,,09:30,18:30,all year,60,steep steps,yes,,,,1
+C201,Faro Old Quarter Walk,algarve-faro,walk,,09:30,18:30,all year,61,steep steps,yes,,,,3
+C202,Faro Viewpoints Walk,algarve-faro,walk,,09:30,18:30,all year,56,step-free,yes,,,,2
+C203,Faro Grill No. 4,algarve-faro,restaurant,Monday,12:00,23:00,all year,25,steep steps,yes,meat and fish,yes,no,2
+C204,Faro Cellar Tasting,algarve-faro,tasting,,09:30,18:30,all year,39,some steps,no,wine and cheese,yes,yes,2
+C205,Faro Bistro No. 5,algarve-faro,restaurant,,12:00,23:00,all year,38,step-free,yes,seafood only,no,no,2
+C206,Faro Olive Oil Tasting,algarve-faro,tasting,,09:30,18:30,all year,55,some steps,no,wine and cheese,yes,no,1
+C207,Tavira Hilltop Lanes Walk,algarve-tavira,walk,,09:00,18:00,all year,27,steep steps,yes,,,,1
+C208,Tavira Riverside Stroll,algarve-tavira,walk,,09:00,18:00,all year,31,step-free,yes,,,,1
+C209,Tavira Sea Stories Museum,algarve-tavira,museum,Monday,10:00,18:00,all year,9,step-free,yes,,,,0
+C210,Tavira Art House,algarve-tavira,museum,,10:00,19:00,all year,12,step-free,yes,,,,0
+C211,Tavira Kitchen No. 7,algarve-tavira,restaurant,Sunday,12:00,23:00,all year,30,some steps,yes,seafood only,no,no,0
+C212,Tavira Green Table,algarve-tavira,restaurant,,12:00,23:00,all year,37,step-free,yes,vegetarian and vegan dishes,yes,yes,0
+C213,Tavira Courtyard Hotel,algarve-tavira,hotel,,,,all year,126,step-free,yes,,,,2
+C214,Tavira Dolphin Boat Trip,algarve-tavira,boat,,10:00,19:00,April to October,54,some steps,yes,,,,2
+C215,Tavira Cork Workshop Museum,algarve-tavira,museum,Monday,09:30,18:30,all year,11,step-free,yes,,,,2
+C216,Tavira Viewpoints Walk,algarve-tavira,walk,,09:30,18:30,all year,38,step-free,yes,,,,1
+C217,Tavira Town History House,algarve-tavira,museum,Monday,09:30,18:30,all year,11,step-free,yes,,,,0
+C218,Tavira Canteen No. 1,algarve-tavira,restaurant,,12:00,23:00,all year,40,step-free,yes,mixed menu,yes,yes,1
+C219,Tavira Beach Afternoon,algarve-tavira,activity,,09:30,18:30,April to October,50,some steps,yes,,,,2
+C220,Tavira Bistro No. 9,algarve-tavira,restaurant,Monday,12:00,23:00,all year,33,step-free,yes,mixed menu,yes,yes,0
