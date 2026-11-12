@@ -1067,6 +1067,8 @@ export function writeWorld() {
         sample: planted.filter((p) => p.set === "sample").map((p) => p.trace_id),
         golden: sets.dev.slice(0, 40),
       },
+      null,
+      2,
     )};\n`,
   );
   return { cat, traces, planted };
