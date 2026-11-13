@@ -1,0 +1,121 @@
+trace_id,critique,verdict
+T003,This is a good itinerary.,pass
+T007,This is a good itinerary.,pass
+T008,This itinerary has problems.,fail
+T009,This is a good itinerary.,pass
+T010,This is a good itinerary.,pass
+T012,This itinerary has problems.,fail
+T015,This is a good itinerary.,pass
+T018,This is a good itinerary.,pass
+T019,This is a good itinerary.,pass
+T026,This is a good itinerary.,pass
+T031,This is a good itinerary.,pass
+T042,This is a good itinerary.,pass
+T046,This is a good itinerary.,pass
+T049,This is a good itinerary.,pass
+T051,This itinerary has problems.,fail
+T053,This is a good itinerary.,pass
+T054,This is a good itinerary.,pass
+T055,This is a good itinerary.,pass
+T056,This is a good itinerary.,pass
+T058,This is a good itinerary.,pass
+T060,This is a good itinerary.,pass
+T063,This is a good itinerary.,pass
+T065,This is a good itinerary.,pass
+T067,This is a good itinerary.,pass
+T068,This is a good itinerary.,pass
+T069,This itinerary has problems.,fail
+T071,This is a good itinerary.,pass
+T072,This is a good itinerary.,pass
+T073,This is a good itinerary.,pass
+T076,This is a good itinerary.,pass
+T077,This is a good itinerary.,pass
+T079,This is a good itinerary.,pass
+T081,This is a good itinerary.,pass
+T082,This is a good itinerary.,pass
+T086,This is a good itinerary.,pass
+T088,This is a good itinerary.,pass
+T090,This is a good itinerary.,pass
+T091,This is a good itinerary.,pass
+T092,This is a good itinerary.,pass
+T093,This is a good itinerary.,pass
+T098,This is a good itinerary.,pass
+T099,This is a good itinerary.,pass
+T100,This is a good itinerary.,pass
+T101,This is a good itinerary.,pass
+T105,This is a good itinerary.,pass
+T109,This itinerary has problems.,fail
+T111,This is a good itinerary.,pass
+T112,This is a good itinerary.,pass
+T114,This is a good itinerary.,pass
+T116,This is a good itinerary.,pass
+T120,This is a good itinerary.,pass
+T125,This is a good itinerary.,pass
+T128,This is a good itinerary.,pass
+T132,This is a good itinerary.,pass
+T135,This is a good itinerary.,pass
+T137,This is a good itinerary.,pass
+T139,This is a good itinerary.,pass
+T143,This is a good itinerary.,pass
+T145,This is a good itinerary.,pass
+T146,This is a good itinerary.,pass
+T148,This is a good itinerary.,pass
+T149,This is a good itinerary.,pass
+T150,This is a good itinerary.,pass
+T152,This is a good itinerary.,pass
+T154,This is a good itinerary.,pass
+T158,This is a good itinerary.,pass
+T169,This is a good itinerary.,pass
+T170,This is a good itinerary.,pass
+T174,This is a good itinerary.,pass
+T175,This is a good itinerary.,pass
+T177,This is a good itinerary.,pass
+T178,This is a good itinerary.,pass
+T180,This is a good itinerary.,pass
+T182,This is a good itinerary.,pass
+T183,This is a good itinerary.,pass
+T184,This is a good itinerary.,pass
+T186,This is a good itinerary.,pass
+T188,This is a good itinerary.,pass
+T195,This itinerary has problems.,fail
+T198,This is a good itinerary.,pass
+T200,This is a good itinerary.,pass
+T205,This itinerary has problems.,fail
+T206,This is a good itinerary.,pass
+T209,This itinerary has problems.,fail
+T215,This is a good itinerary.,pass
+T216,This itinerary has problems.,fail
+T217,This is a good itinerary.,pass
+T223,This itinerary has problems.,fail
+T225,This is a good itinerary.,pass
+T226,This is a good itinerary.,pass
+T228,This itinerary has problems.,fail
+T229,This is a good itinerary.,pass
+T230,This is a good itinerary.,pass
+T232,This is a good itinerary.,pass
+T234,This is a good itinerary.,pass
+T236,This is a good itinerary.,pass
+T238,This is a good itinerary.,pass
+T239,This is a good itinerary.,pass
+T242,This is a good itinerary.,pass
+T243,This itinerary has problems.,fail
+T244,This is a good itinerary.,pass
+T247,This is a good itinerary.,pass
+T248,This is a good itinerary.,pass
+T249,This is a good itinerary.,pass
+T251,This is a good itinerary.,pass
+T253,This itinerary has problems.,fail
+T256,This is a good itinerary.,pass
+T257,This is a good itinerary.,pass
+T259,This is a good itinerary.,pass
+T262,This is a good itinerary.,pass
+T263,This is a good itinerary.,pass
+T270,This is a good itinerary.,pass
+T276,This is a good itinerary.,pass
+T278,This is a good itinerary.,pass
+T289,This is a good itinerary.,pass
+T290,This is a good itinerary.,pass
+T291,This is a good itinerary.,pass
+T293,This is a good itinerary.,pass
+T295,This is a good itinerary.,pass
+T298,This itinerary has problems.,fail

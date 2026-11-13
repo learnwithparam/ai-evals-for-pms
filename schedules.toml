@@ -1,5 +1,35 @@
+# Parts mapped onto formats. Minutes are working minutes; breaks sit between sessions.
+# Part totals: orientation 15, look-before-you-measure 55, define-good 50,
+# check-the-judge 80 (45 core plus 35 extension), decide-and-write-it-down 125 (85 core plus 40 extension).
+# All parts: 325 minutes.
+
 [one-day]
-sessions = [{ parts = ["meet-the-world"], minutes = 60 }]
+sessions = [
+  { parts = ["orientation", "look-before-you-measure"], minutes = 70 },
+  { parts = ["define-good"], minutes = 50 },
+  { parts = ["check-the-judge"], minutes = 80 },
+  { parts = ["decide-and-write-it-down"], minutes = 125 },
+]
+
+[two-half-days]
+sessions = [
+  { parts = ["orientation", "look-before-you-measure", "define-good"], minutes = 120 },
+  { parts = ["check-the-judge", "decide-and-write-it-down"], minutes = 205 },
+]
 
 [four-evenings]
-sessions = [{ parts = ["meet-the-world"], minutes = 60 }]
+sessions = [
+  { parts = ["orientation", "look-before-you-measure"], minutes = 70 },
+  { parts = ["define-good"], minutes = 50 },
+  { parts = ["check-the-judge"], minutes = 80 },
+  { parts = ["decide-and-write-it-down"], minutes = 125 },
+]
+
+# One live session a week, plus 30 minutes on the learner's own feature between sessions.
+[four-weeks-with-your-own-feature]
+sessions = [
+  { parts = ["orientation", "look-before-you-measure"], minutes = 100 },
+  { parts = ["define-good"], minutes = 80 },
+  { parts = ["check-the-judge"], minutes = 110 },
+  { parts = ["decide-and-write-it-down"], minutes = 155 },
+]
