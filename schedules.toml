@@ -1,7 +1,8 @@
 # Parts mapped onto formats. Minutes are working minutes; breaks sit between sessions.
 # Part totals: orientation 15, look-before-you-measure 55, define-good 50,
 # check-the-judge 80 (45 core plus 35 extension), decide-and-write-it-down 125 (85 core plus 40 extension).
-# All parts: 325 minutes.
+# review-answers-with-the-langfuse-queue 20 (optional in the live session, expected as homework).
+# All parts: 345 minutes.
 
 [one-day]
 sessions = [
@@ -9,12 +10,14 @@ sessions = [
   { parts = ["define-good"], minutes = 50 },
   { parts = ["check-the-judge"], minutes = 80 },
   { parts = ["decide-and-write-it-down"], minutes = 125 },
+  { parts = ["review-answers-with-the-langfuse-queue"], minutes = 20 },
 ]
 
 [two-half-days]
 sessions = [
   { parts = ["orientation", "look-before-you-measure", "define-good"], minutes = 120 },
   { parts = ["check-the-judge", "decide-and-write-it-down"], minutes = 205 },
+  { parts = ["review-answers-with-the-langfuse-queue"], minutes = 20 },
 ]
 
 [four-evenings]
@@ -23,6 +26,7 @@ sessions = [
   { parts = ["define-good"], minutes = 50 },
   { parts = ["check-the-judge"], minutes = 80 },
   { parts = ["decide-and-write-it-down"], minutes = 125 },
+  { parts = ["review-answers-with-the-langfuse-queue"], minutes = 20 },
 ]
 
 # One live session a week, plus 30 minutes on the learner's own feature between sessions.
@@ -32,4 +36,5 @@ sessions = [
   { parts = ["define-good"], minutes = 80 },
   { parts = ["check-the-judge"], minutes = 110 },
   { parts = ["decide-and-write-it-down"], minutes = 155 },
+  { parts = ["review-answers-with-the-langfuse-queue"], minutes = 20 },
 ]

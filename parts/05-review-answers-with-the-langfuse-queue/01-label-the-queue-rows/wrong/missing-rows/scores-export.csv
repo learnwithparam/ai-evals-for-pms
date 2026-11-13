@@ -1,0 +1,38 @@
+trace_id,label,comment
+T276,pass,
+T058,pass,
+T135,fail,"Ribeira Kitchen No. 2 has some steps, and the traveller has limited walking."
+T077,pass,
+T093,pass,
+T042,pass,
+T251,pass,
+T244,pass,
+T152,pass,
+T290,pass,
+T289,fail,"Baixa Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T049,pass,
+T053,pass,
+T239,pass,
+T137,pass,
+T154,pass,
+T082,pass,
+T079,pass,
+T223,pass,
+T071,fail,"Faro Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T216,fail,"Sintra Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T012,fail,"Regua Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T198,pass,
+T026,fail,"Belem Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T018,fail,"Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T143,pass,
+T031,pass,
+T215,pass,
+T010,pass,
+T253,fail,"Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T249,pass,
+T238,pass,
+T256,fail,"Faro Coast Kayak Trip has some steps, and the traveller has limited walking."
+T099,pass,
+T091,pass,
+T270,fail,"Foz Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T174,pass,
