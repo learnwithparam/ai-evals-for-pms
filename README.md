@@ -38,7 +38,7 @@ Expect: `Lantern Trails is ready: 300 traces, 220 catalogue items, 300 requests.
 bun run finished
 ```
 
-Expect: `The finished work passes: 4 of 4 steps.`
+Expect: `The finished work passes: 17 of 17 steps.`
 
 `bun run finished` does three things, with no key:
 

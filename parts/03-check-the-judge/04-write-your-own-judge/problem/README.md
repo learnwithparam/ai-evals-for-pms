@@ -19,7 +19,7 @@ Ines also fails T071, so the judge got this one right.
 ## Your challenge
 
 1. Open `batch.txt` in this folder. It holds the 40 drafts to judge, one after the other. They all come from `world/data/splits/dev.csv`.
-2. Open an AI chat tool, like Claude Desktop. Paste your `judge-prompt.md` from the last step.
+2. Open an AI chat tool, like Claude Desktop. Paste your `judge-prompt.md` from the `choose-the-judge-prompt` step.
 3. Then paste `batch.txt`. Ask for one line per draft, in this shape: `trace_id,critique,verdict`.
 4. Copy the answer into `my-judge-verdicts.csv` in this folder. Keep the first row as it is.
 5. Run the check. It works out your judge's TPR and TNR against Ines.

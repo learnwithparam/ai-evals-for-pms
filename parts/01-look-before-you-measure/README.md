@@ -18,7 +18,7 @@ Later, you put notes like this into a group called "Ignores mobility needs". The
 
 ## Why it matters
 
-Teams that read the runs find what the numbers hide. Here is a real case. Anthropic tested one of its own models on a test called CORE-Bench. The first score was 42%. Then a researcher read the runs one by one. The grading was broken. For example, it marked "96.12" as wrong when it wanted "96.124991". After the fixes, the score was 95%.
+Teams that read the runs find what the numbers hide. Here is a real case. Anthropic tested its Claude Opus 4.5 model on a test called CORE-Bench. The first score was 42%. Then a researcher looked closely and found problems in the test itself. For example, the grading marked "96.12" as wrong when it wanted "96.124991". After the bugs were fixed and the model got a looser setup, the score was 95%.
 
 Anthropic's advice, in one line: "Read the transcripts!" ([Anthropic, Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)) A transcript is the full record of a run. In this course we call it a trace.
 

@@ -96,6 +96,8 @@ export default [
   {
     says: "top-mode.md names the mode at the top of counts.csv and its count",
     test: (folder) => safely(() => topModeIsNamed(folder)),
-    tryNext: "write one sentence like: The top failure mode is Closed on the day, with 4 drafts",
+    tryNext:
+      "use the first row of counts.csv in one sentence, " +
+      "like: The top failure mode is Over budget, with 5 drafts out of 30",
   },
 ] satisfies Rule[];

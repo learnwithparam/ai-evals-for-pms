@@ -52,7 +52,7 @@ Now see what the course looks like when all the work is done.
 bun run finished
 ```
 
-Expect: `The finished work passes: 4 of 4 steps.`
+Expect: `The finished work passes: 17 of 17 steps.`
 
 ![bun run finished: a draft, the checks, and the counts](../images/finished-system.png)
 

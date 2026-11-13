@@ -20,7 +20,7 @@ So the cheaper model looks better. But 26 of the 150 requests are from traveller
 
 A good launch rule has a number in it. Anthropic's docs give examples, like "99.5% non-toxic outputs" and "95% response time < 200ms". The first means at least 99.5% of replies are free of rude or harmful words. ([Anthropic docs, Define success criteria](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests))
 
-An average can hide failures. The TravelPlanner study tested AI trip planners. One model met 78.3% of the common-sense rules on average. But only 3.8% of its plans met every rule. ([OSU NLP Group, TravelPlanner](https://github.com/OSU-NLP-Group/TravelPlanner))
+An average can hide failures. The TravelPlanner study tested AI trip planners. For example, one model (a fine-tuned Llama 3.1 8B) met 78.3% of the common-sense rules on average. But only 17.8% of its plans met every common-sense rule. Only 3.8% met every rule of any kind. ([OSU NLP Group, TravelPlanner](https://github.com/OSU-NLP-Group/TravelPlanner))
 
 This is the path you take in this part:
 
@@ -55,8 +55,6 @@ Some words from the table:
 - A **guardrail** is a number that must not get worse, like refunds, even if the main number gets better.
 - A **PRD** (product requirements document) is the spec that says what the product must do.
 - An **extension** is an extra step. You can skip it.
-
-The numbers are already planted in the world. The A/B test has 1,200 sessions in each arm. Bookings are 18.0% with a designer and 20.0% with instant drafts. But the interval crosses zero. The instant arm also has more refunds for places that were "closed on arrival". And the extra bookings come only from Lisbon weekends. The file `tests/world.test.ts` makes sure these numbers do not change.
 
 ## Walkthrough
 
