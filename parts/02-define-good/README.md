@@ -1,7 +1,5 @@
 # Define good
 
-Status: TODO(part session). This README is the plan. The step folders do not exist yet.
-
 ## The problem
 
 Right now, "good" lives only in Ines Duarte's head. When the team looks at drafts together, people argue. Nobody wrote the rule down.
@@ -19,9 +17,9 @@ Both travellers have limited walking. Both places have steps. But one passes and
 
 ## Why it matters
 
-You do not need a big test set to start. Anthropic says this: "20-50 simple tasks drawn from real failures is a great start".
+You do not need a big test set to start. "20-50 simple tasks drawn from real failures is a great start."
 
-Anthropic also says the rule for success must be clear, so that two people who read it give the same answer. ([Anthropic, Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents))
+Anthropic says this in [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents). The same page tells how Descript grades its product. It uses "criteria defined by the product team and periodic human calibration". Calibration here means a person checks that the grades still match their own.
 
 This is the path you take in this part:
 
@@ -41,26 +39,69 @@ You label 40 drafts with your rubric. Then you compare your labels with Ines's l
 
 ## Steps
 
-| Step                    | Minutes | You make                                | The check reads                                                                                                                                                                                             |
-| ----------------------- | ------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| write-the-rubric        | 20      | `rubric.md` for the mobility mode       | Headings Pass, Fail, Borderline rule, Examples. At least 2 pass and 2 fail examples, each a real trace id. No scale words (1 to 5, partly, mostly). One line on what it does not cover                      |
-| label-the-golden-set    | 20      | `labels.csv`: pass or fail on 40 drafts | 40 rows, all ids from `world/data/golden-set.csv`. Every label is pass or fail, and both appear. Each fail has a reason of at least 6 words                                                                 |
-| compare-with-the-expert | 10      | `compare.md`                            | Agreement and Cohen's kappa with Ines, each within 0.01 of the true value from `world/data/expert-labels.csv`. Every disagreement listed with one resolution: keep mine, adopt Ines's, or change the rubric |
+| Step                                                                    | Minutes | You make                                | The check reads                                                                                    |
+| ----------------------------------------------------------------------- | ------- | --------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [write-the-rubric](01-write-the-rubric/problem/README.md)               | 20      | `rubric.md` for the mobility mode       | The four headings, the borderline rule, 2 pass and 2 fail examples that match Ines, no scale words |
+| [label-the-golden-set](02-label-the-golden-set/problem/README.md)       | 20      | `labels.csv`: pass or fail on 40 drafts | The 40 ids of `world/data/golden-set.csv`, pass or fail on each, a reason on each fail             |
+| [compare-with-the-expert](03-compare-with-the-expert/problem/README.md) | 10      | `compare.md`                            | Agreement and kappa against `world/data/expert-labels.csv`, and a resolution on every disagreement |
 
 The data for this part is already in the world:
 
 - `world/data/golden-set.csv`: 40 drafts. 8 of them fail. A **golden set** is a fixed set of drafts with trusted answers that you test against again and again.
-- `world/data/expert-labels.csv`: Ines's labels and her reasons.
-- The draft view in the viewer.
+- `world/data/expert-labels.csv`: Ines's labels and her reasons, for 120 drafts.
+- The viewer: `world/viewer.html#read/T068` opens any draft by its id.
 
 The borderline case is planted on purpose. Ines passes a traveller with limited walking at a place with "some steps".
 
 ## Walkthrough
 
-TODO(part session): write the walkthrough once the steps exist. Each step gets its own command. When all the steps pass, you check the whole part:
+Do the steps in order. Each step checks the files in its own `problem` folder. Each starter already holds the sample answer from the step before, so you can start any step.
+
+```bash
+bun run verify write-the-rubric
+```
+
+Expect: `Done. All 7 rules pass.` once `rubric.md` has its four parts, its examples and no scale.
+
+```bash
+bun run verify label-the-golden-set
+```
+
+Expect: `Done. All 5 rules pass.` once all 40 drafts in `labels.csv` have a label.
+
+```bash
+bun run verify compare-with-the-expert
+```
+
+Expect: `Done. All 6 rules pass.` once `compare.md` has the two numbers and a resolution for each disagreement.
+
+When all three steps pass, check the whole part:
 
 ```bash
 bun run verify part define-good
 ```
 
-Expect: TODO(part session). Once the steps exist: `Part define-good is done: 3/3 steps pass.`
+Expect: `Part define-good is done: 3/3 steps pass.`
+
+## Assignment
+
+The problem: "good" lives in Ines's head, so reviews turn into arguments.
+
+Hand in the three files from this part: `rubric.md`, `labels.csv` and `compare.md`. The steps above check them. In a cohort, a grader also asks these yes or no questions:
+
+| #   | Question                                                                            | Check                     |
+| --- | ----------------------------------------------------------------------------------- | ------------------------- |
+| 1   | Does the rubric have Pass, Fail, Borderline rule and Examples, with no scale words? | `write-the-rubric`        |
+| 2   | Are all 40 golden drafts labelled pass or fail, with a reason on every fail?        | `label-the-golden-set`    |
+| 3   | Are the stated agreement and kappa within 0.01 of the true values?                  | `compare-with-the-expert` |
+| 4   | Does every disagreement have one resolution?                                        | `compare-with-the-expert` |
+
+Four yes answers is a pass. In a cohort, question 3 is run again on 40 private labels from Ines, so copying her file does not help.
+
+Extension: write a second rubric for "wrong pace". Add one line on why pace is harder to make pass or fail than mobility.
+
+## Finished
+
+You now have a written rule for the top failure mode. You tested it on 40 drafts and know how close it comes to Ines. For example, the sample answer agrees with her on 38 of 40 drafts, with a kappa of 0.86.
+
+Your labels cannot scale. Nobody reads every draft by hand forever. In the next part, [check the judge](../03-check-the-judge/README.md), an AI model grades the drafts. You use Ines's labels to test whether that grader can be trusted.
