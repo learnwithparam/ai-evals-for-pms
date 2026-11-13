@@ -1,0 +1,19 @@
+# Judge check: three judges against Ines on 120 drafts
+
+Pick: judge-generic-pass-fail. It has the highest TPR, 0.97.
+
+## judge-generic-pass-fail
+
+TPR: 0.97 (87 of the 90 drafts Ines passed)
+TNR: 0.37 (11 of the 30 drafts Ines failed)
+
+It passes almost everything, so it misses most real failures.
+
+## judge-mobility-pass-fail
+
+TPR: 0.93 (84 of 90)
+TNR: 0.87 (26 of 30)
+
+## judge-score-1-to-5
+
+Why it cannot be checked: Ines says pass or fail, and a 4 is neither. We first need a pass line, like "4 or more is a pass", before we can compare it with her.
