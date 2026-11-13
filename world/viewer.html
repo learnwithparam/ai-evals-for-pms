@@ -37,8 +37,11 @@
     padding:16px 18px; margin-bottom:16px;
   }
   .muted { color:var(--muted); }
-  .grid { display:grid; grid-template-columns: 220px 1fr; gap:16px; }
-  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  .grid { display:grid; grid-template-columns: 220px minmax(0, 1fr); gap:16px; }
+  @media (max-width: 760px) {
+    .grid { grid-template-columns: minmax(0, 1fr); }
+    .list { max-height: 220px; }
+  }
   .list { max-height: 78vh; overflow:auto; }
   .list button {
     display:flex; justify-content:space-between; width:100%; text-align:left; border:0;
@@ -57,6 +60,7 @@
   }
   th { color:var(--muted); font-weight:600; }
   .day { margin-top:14px; font-weight:600; }
+  .scroll { overflow-x:auto; }
   .facts {
     display:grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap:6px 16px;
   }
@@ -234,7 +238,7 @@ const DAY_TABLE_HEADINGS =
 function dayTable(day) {
   const heading = `<div class="day">${escapeHtml(day.weekday)} ${escapeHtml(day.date)}</div>`;
   const rows = day.items.map(itemRow).join("");
-  return `${heading}${DAY_TABLE_HEADINGS}${rows}</table>`;
+  return `${heading}<div class="scroll">${DAY_TABLE_HEADINGS}${rows}</table></div>`;
 }
 
 function fact(label, valueHtml) {
@@ -252,9 +256,14 @@ function partyText(request) {
   return party;
 }
 
+function capitalise(text) {
+  const plain = String(text);
+  return plain.charAt(0).toUpperCase() + plain.slice(1);
+}
+
 function requestFacts(request) {
-  const tripType = escapeHtml(request.trip_type);
-  const region = escapeHtml(request.region);
+  const tripType = escapeHtml(capitalise(request.trip_type));
+  const region = escapeHtml(capitalise(request.region));
   return [
     '<h3>The request</h3><div class="facts">',
     fact("Trip", `${tripType}, ${request.nights} nights, ${region}`),
@@ -269,10 +278,10 @@ function requestFacts(request) {
 }
 
 function traceHeading(trace) {
-  const requestLabel = `request ${trace.request.request_id}`;
+  const requestLabel = `for request ${trace.request.request_id}`;
   return [
     '<div class="row" style="justify-content:space-between">',
-    `<h2 style="margin:0">${trace.trace_id} `,
+    `<h2 style="margin:0">Draft ${trace.trace_id}, `,
     `<span class="muted" style="font-size:15px">${requestLabel}</span></h2>`,
     `<span class="muted">What the designer did: <b>${escapeHtml(trace.outcome)}</b></span>`,
     "</div>",
@@ -294,15 +303,15 @@ function draftSection(trace) {
 
 function noteCard(traceId) {
   return [
-    '<div class="card"><h3 style="margin-top:0">Your note</h3>',
+    '<div class="card"><h3 id="noteTitle" style="margin-top:0">Your note</h3>',
     '<p class="muted">Write what you see, not why it happened. ',
     "If the draft is fine, write <code>ok</code>.</p>",
-    '<textarea id="note" placeholder="Example: the museum is booked on the day it is closed">',
+    '<textarea id="note" aria-labelledby="noteTitle" placeholder="Example: the museum is booked on the day it is closed">',
     escapeHtml(readSaved(noteKey(traceId))),
     "</textarea>",
     '<div class="row" style="margin-top:8px">',
-    '<button class="btn ghost" id="prev">Previous</button>',
-    '<button class="btn ghost" id="next">Next</button>',
+    '<button class="btn ghost" id="prev">Previous draft</button>',
+    '<button class="btn ghost" id="next">Next draft</button>',
     '<span class="muted" id="saved"></span></div></div>',
   ].join("");
 }
@@ -347,7 +356,9 @@ function traceButton(traceId) {
   if (savedNote(traceId)) {
     dotClass = "dot done";
   }
-  const label = `<span>${traceId}</span><span class="${dotClass}"></span>`;
+  const request = traceById[traceId].request;
+  const summary = `Open ${traceId}: ${capitalise(request.region)}, ${request.nights} nights`;
+  const label = `<span>${summary}</span><span class="${dotClass}"></span>`;
   return `<button data-id="${traceId}" class="${buttonClass}">${label}</button>`;
 }
 
@@ -522,6 +533,7 @@ function renderChartTab() {
     '<div class="card"><h2>Chart your counts</h2>',
     "<p>Choose your <code>counts.csv</code>. The viewer draws one bar for each failure mode, ",
     "in the order of your file.</p>",
+    '<label for="countsFile">Your counts.csv file</label> ',
     '<input type="file" id="countsFile" accept=".csv,text/csv"></div>',
     '<div class="card" id="chartOut"><p class="muted">No file chosen yet.</p></div>',
   ].join("");
@@ -540,17 +552,17 @@ function renderGoal() {
     "<p>By the end you hand the boss one pack of files. Each one is checked.</p>",
     '<ol class="goal">',
     "<li><b>What goes wrong, counted.</b> A bar chart of failure modes. ",
-    '<span class="muted">Steps: read-the-traces, name-the-failure-modes, count-the-failures',
+    '<span class="muted">Steps: read the traces, name the failure modes, count the failures',
     "</span></li>",
     "<li><b>What good means.</b> A pass and fail rule for one failure mode, ",
-    'and your labels next to Ines. <span class="muted">Part: define-good</span></li>',
+    'and your labels next to Ines. <span class="muted">Part: define good</span></li>',
     "<li><b>A judge you can trust.</b> Which AI grader agrees with Ines, with numbers. ",
-    '<span class="muted">Part: check-the-judge</span></li>',
+    '<span class="muted">Part: check the judge</span></li>',
     "<li><b>Two decisions.</b> The cheaper model, and instant drafts, ",
     "each with the numbers behind it. ",
-    '<span class="muted">Part: decide-and-write-it-down</span></li>',
+    '<span class="muted">Part: decide and write it down</span></li>',
     "<li><b>The eval section of your PRD.</b> What you measure, the bar to ship, ",
-    'and who checks it. <span class="muted">Part: decide-and-write-it-down</span></li></ol></div>',
+    'and who checks it. <span class="muted">Part: decide and write it down</span></li></ol></div>',
   ].join("");
 }
 
