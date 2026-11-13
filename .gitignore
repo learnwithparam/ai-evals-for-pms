@@ -1,4 +1,5 @@
 verify-report.json
+test-results
 node_modules
 .env
 world/logs/
