@@ -8,7 +8,7 @@ But you wrote launch rules in the last step. Now you apply them, row by row, and
 
 For example, `world/data/releases/summary.csv` says the cheaper model passes 132 of 150 drafts (88%). The live model passes 129 (86%). But look at the `ignores-mobility` column. The cheaper model fails it 7 times. The live model fails it once.
 
-This matches a public study. In TravelPlanner, one model met 78.3% of the common-sense rules on average. But only 3.8% of its plans passed every rule. ([OSU NLP Group, TravelPlanner](https://github.com/OSU-NLP-Group/TravelPlanner))
+This matches a public study. In TravelPlanner, one model met 78.3% of the common-sense rules on average. But only 17.8% of its plans met every common-sense rule. ([OSU NLP Group, TravelPlanner](https://github.com/OSU-NLP-Group/TravelPlanner))
 
 ## Your challenge
 
@@ -16,6 +16,7 @@ This folder has a sample `launch-criteria.md` and `failure-modes.md`. You can co
 
 1. Open `world/data/releases/summary.csv`. Find the `cheaper-model` row.
 2. For each row of your launch criteria, find the matching column. Is the count within your threshold?
+   The columns use short names. For example, `ignores-mobility` is Ignores mobility needs, `impossible-transfer` is Impossible travel, and `diet-missed` is Wrong food for the diet.
 3. Decide, with the rule in the picture below:
    - a critical row broken: `block`;
    - only other rows broken: `ship with conditions`;

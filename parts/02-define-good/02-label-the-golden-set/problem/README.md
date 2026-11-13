@@ -22,7 +22,7 @@ For example, draft T135 is for a traveller with limited walking. One stop is "Ri
 
 Most travellers have no mobility need, so most drafts pass. Expect about 1 in 5 to fail.
 
-Do not open `world/data/expert-labels.csv` yet. Label first, then compare in the next step. If you look first, you copy Ines and learn nothing about your rubric.
+Do not look up these 40 ids in `world/data/expert-labels.csv` yet. Label first, then compare in the next step. If you look first, you copy Ines and learn nothing about your rubric.
 
 ## Done when
 

@@ -10,11 +10,11 @@ Three judges ran on the same 120 drafts. Only one of them is good enough to trus
 
 For example, look at draft T015. Ines says it fails: the "Regua Hilltop Lanes Walk" has steep steps, and the traveller has limited walking. Here is what each judge says about T015:
 
-- The general judge says pass: "This is a good itinerary." (An itinerary is a trip plan.)
+- The generic judge says pass: "This is a good itinerary." (An itinerary is a trip plan. The generic judge asks only if the trip is good, not about one kind of mistake.)
 - The mobility judge says fail: "A stop on this trip is not step-free for this traveller."
 - The 1 to 5 judge gives it a 4. But a 4 is not a pass or a fail, so you cannot check it against Ines.
 
-The general judge misses many failures like this one. It passes 106 of the 120 drafts. Ines passes only 90.
+The generic judge misses many failures like this one. It passes 106 of the 120 drafts. Ines passes only 90.
 
 ## Why it matters
 
@@ -25,7 +25,7 @@ Hamel Husain and Shreya Shankar give two numbers to check a judge:
 - **TPR** (true positive rate): of the drafts Ines passes, the share the judge also passes.
 - **TNR** (true negative rate): of the drafts Ines fails, the share the judge also fails.
 
-Both should be above 90%, and never below 80%. A judge that is a bit off gives you the wrong pass rate. In their worked example, a judge has a TPR of 0.92 and a TNR of 0.88. It reports an 80% pass rate. The true pass rate is about 85%. ([validate-evaluator skill](https://github.com/ai-evals-course/evals-skills/blob/main/skills/validate-evaluator/SKILL.md))
+They aim for both above 90%. The lowest they accept is above 80%. A judge that is a bit off gives you the wrong pass rate. In their worked example, a judge has a TPR of 0.92 and a TNR of 0.88. It reports an 80% pass rate. The true pass rate is about 85%. ([validate-evaluator skill](https://github.com/ai-evals-course/evals-skills/blob/main/skills/validate-evaluator/SKILL.md))
 
 This is the path you take in this part:
 
@@ -53,8 +53,6 @@ A few more words from the table:
 - A **prompt** is the text you give an AI model to tell it what to do.
 - **Leakage** means the judge saw a test draft while you built it. Then its test score looks better than it really is.
 - An **extension** is an extra step. You can skip it.
-
-The numbers are already planted in the world. The mobility judge gets TPR 84 of 90 and TNR 26 of 30. The general judge gets TPR 87 of 90 but TNR only 11 of 30. The file `tests/world.test.ts` makes sure these numbers do not change.
 
 ## Walkthrough
 

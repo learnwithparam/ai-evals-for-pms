@@ -20,7 +20,7 @@ This folder has a sample `failure-modes.md` from part 1. You can copy your own o
 6. **Critical**: `yes` or `no`. Ask: would this mistake hurt a traveller if no designer caught it?
 7. **Owner**: the person who acts when the row fails.
 
-Write the rules before you open the release results. That is the point.
+Write the rules before you check the release results against them. A rule you write after you see the answer only repeats the answer.
 
 This is how the rules work in the next step:
 
