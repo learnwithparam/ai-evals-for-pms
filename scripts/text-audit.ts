@@ -13,6 +13,8 @@ if (!existsSync(routesFile)) {
 }
 
 const configFile = join(ROOT, "e2e", "playwright.config.ts");
+// The check workflow does not install packages, so make sure the local copy of Playwright exists.
+Bun.spawnSync(["bun", "install", "--frozen-lockfile"], { cwd: ROOT, stdout: "ignore" });
 const install = Bun.spawnSync(["bunx", "playwright", "install", "chromium"], { cwd: ROOT });
 if (install.exitCode !== 0) {
   console.error("Could not get the browser. Try next: run bunx playwright install chromium.");
