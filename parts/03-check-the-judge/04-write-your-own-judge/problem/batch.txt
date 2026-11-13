@@ -1,0 +1,614 @@
+The 40 drafts to judge. Each one starts with its id.
+
+=== T276
+Request: city break, 2 nights, lisbon. Mobility: none.
+Hotel: Alfama Courtyard Hotel. Access: step-free.
+Thursday 09:30: Alfama Riverside Stroll. Access: step-free.
+Thursday 11:30: Alfama Vineyard Visit. Access: steep steps.
+Thursday 19:30: Alfama Canteen No. 3. Access: step-free.
+Friday 09:30: Belem Dolphin Boat Trip. Access: some steps.
+Friday 11:30: Belem Olive Oil Tasting. Access: some steps.
+Friday 19:30: Belem Grill No. 3. Access: step-free.
+
+=== T058
+Request: custom tour, 3 nights, lisbon. Mobility: none.
+Hotel: Alfama Courtyard Hotel. Access: step-free.
+Tuesday 09:30: Alfama Art House. Access: step-free.
+Tuesday 11:30: Alfama Vineyard Visit. Access: steep steps.
+Tuesday 14:30: Alfama Garden Walk. Access: step-free.
+Tuesday 19:30: Alfama Canteen No. 3. Access: step-free.
+Wednesday 09:30: Belem Riverside Stroll. Access: step-free.
+Wednesday 11:30: Belem Pastry Class. Access: steep steps.
+Wednesday 14:30: Belem Beach Afternoon. Access: step-free.
+Wednesday 19:30: Belem Kitchen No. 7. Access: some steps.
+Thursday 09:30: Belem Vineyard Visit. Access: step-free.
+Thursday 11:30: Belem Hilltop Lanes Walk. Access: steep steps.
+Thursday 14:30: Belem Olive Oil Tasting. Access: some steps.
+Thursday 19:30: Belem Grill No. 3. Access: step-free.
+
+=== T135
+Request: city break, 2 nights, porto. Mobility: limited walking.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Saturday 09:30: Ribeira Riverside Stroll. Access: step-free.
+Saturday 11:30: Ribeira Sea Stories Museum. Access: step-free.
+Saturday 19:30: Ribeira Kitchen No. 2. Access: some steps.
+Sunday 09:30: Pinhao Sea Stories Museum. Access: some steps.
+Sunday 11:30: Pinhao Riverside Stroll. Access: step-free.
+Sunday 19:30: Pinhao Green Table. Access: step-free.
+
+=== T077
+Request: city break, 2 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Thursday 09:30: Ribeira Art House. Access: step-free.
+Thursday 11:30: Ribeira Hilltop Lanes Walk. Access: steep steps.
+Thursday 14:30: Ribeira Sea Stories Museum. Access: step-free.
+Thursday 16:30: Ribeira Riverside Stroll. Access: step-free.
+Thursday 19:30: Ribeira Tasca No. 3. Access: some steps.
+Friday 09:30: Ribeira Viewpoints Walk. Access: some steps.
+Friday 11:30: Ribeira Tram Ride. Access: steep steps.
+Friday 19:30: Ribeira Grill No. 4. Access: steep steps.
+
+=== T093
+Request: city break, 2 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Sunday 09:30: Ribeira Tram Ride. Access: steep steps.
+Sunday 11:30: Ribeira Coast Kayak Trip. Access: some steps.
+Sunday 14:30: Ribeira Hilltop Lanes Walk. Access: steep steps.
+Sunday 16:30: Ribeira Viewpoints Walk. Access: some steps.
+Sunday 19:30: Ribeira Tasca No. 2. Access: steep steps.
+Monday 09:30: Regua Olive Oil Tasting. Access: step-free.
+Monday 11:30: Regua Coast Kayak Trip. Access: some steps.
+Monday 14:30: Regua Viewpoints Walk. Access: step-free.
+Monday 16:30: Regua Cooking Class. Access: step-free.
+Monday 19:30: Regua Tasca No. 9. Access: steep steps.
+
+=== T042
+Request: custom tour, 4 nights, porto. Mobility: wheelchair.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Monday 09:30: Ribeira Beach Afternoon. Access: step-free.
+Monday 11:30: Ribeira Riverside Stroll. Access: step-free.
+Monday 14:30: Ribeira Art House. Access: step-free.
+Monday 19:30: Ribeira Green Table. Access: step-free.
+Tuesday 09:30: Regua Olive Oil Tasting. Access: step-free.
+Tuesday 11:30: Regua Cooking Class. Access: step-free.
+Tuesday 14:30: Regua Viewpoints Walk. Access: step-free.
+Tuesday 16:30: Regua Tile Painting Class. Access: step-free.
+Tuesday 19:30: Regua Grill No. 2. Access: step-free.
+Wednesday 09:30: Pinhao Tram Ride. Access: step-free.
+Wednesday 11:30: Pinhao Art House. Access: step-free.
+Wednesday 14:30: Pinhao Riverside Stroll. Access: step-free.
+Wednesday 16:30: Pinhao Pastry Class. Access: step-free.
+Wednesday 19:30: Pinhao Green Table. Access: step-free.
+Thursday 09:30: Foz Old Trams Museum. Access: step-free.
+Thursday 11:30: Foz Old Quarter Walk. Access: step-free.
+Thursday 14:30: Foz Art House. Access: step-free.
+Thursday 16:30: Foz Cork Workshop Museum. Access: step-free.
+Thursday 19:30: Foz Green Table. Access: step-free.
+
+=== T251
+Request: custom tour, 3 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Friday 09:30: Ribeira Sea Stories Museum. Access: step-free.
+Friday 11:30: Ribeira Riverside Stroll. Access: step-free.
+Friday 14:30: Ribeira Tram Ride. Access: steep steps.
+Friday 19:30: Ribeira Tasca No. 3. Access: some steps.
+Saturday 09:30: Regua Hilltop Lanes Walk. Access: steep steps.
+Saturday 11:30: Regua Art House. Access: step-free.
+Saturday 14:30: Regua Riverside Stroll. Access: step-free.
+Saturday 19:30: Regua Tasca No. 9. Access: steep steps.
+Sunday 09:30: Pinhao Sea Stories Museum. Access: some steps.
+Sunday 11:30: Pinhao Tram Ride. Access: step-free.
+Sunday 14:30: Pinhao Garden Walk. Access: steep steps.
+Sunday 19:30: Pinhao Grill No. 8. Access: steep steps.
+
+=== T244
+Request: city break, 2 nights, algarve. Mobility: none.
+Hotel: Faro Courtyard Hotel. Access: step-free.
+Sunday 09:30: Faro Hilltop Lanes Walk. Access: steep steps.
+Sunday 11:30: Faro Viewpoints Walk. Access: step-free.
+Sunday 14:30: Faro Market Walk. Access: steep steps.
+Sunday 19:30: Faro Green Table. Access: step-free.
+Monday 09:30: Tavira Hilltop Lanes Walk. Access: steep steps.
+Monday 11:30: Tavira Viewpoints Walk. Access: step-free.
+Monday 14:30: Tavira Riverside Stroll. Access: step-free.
+Monday 19:30: Tavira Green Table. Access: step-free.
+
+=== T152
+Request: custom tour, 3 nights, lisbon. Mobility: none.
+Hotel: Alfama Courtyard Hotel. Access: step-free.
+Tuesday 09:30: Alfama River Boat Trip. Access: some steps.
+Tuesday 11:30: Alfama Garden Walk. Access: step-free.
+Tuesday 14:30: Alfama Cork Workshop Museum. Access: step-free.
+Tuesday 19:30: Alfama Green Table. Access: step-free.
+Wednesday 09:30: Alfama Old Trams Museum. Access: step-free.
+Wednesday 11:30: Alfama Vineyard Visit. Access: steep steps.
+Wednesday 14:30: Alfama Art House. Access: step-free.
+Wednesday 19:30: Alfama Grill No. 2. Access: steep steps.
+Thursday 09:30: Alfama Riverside Stroll. Access: step-free.
+Thursday 11:30: Alfama Hilltop Lanes Walk. Access: steep steps.
+Thursday 14:30: Alfama Olive Oil Tasting. Access: step-free.
+Thursday 19:30: Alfama Tasca No. 6. Access: step-free.
+
+=== T290
+Request: custom tour, 3 nights, lisbon. Mobility: none.
+Hotel: Alfama Courtyard Hotel. Access: step-free.
+Sunday 09:30: Alfama Riverside Stroll. Access: step-free.
+Sunday 11:30: Alfama Olive Oil Tasting. Access: step-free.
+Sunday 14:30: Alfama Cork Workshop Museum. Access: step-free.
+Sunday 16:30: Alfama Hilltop Lanes Walk. Access: steep steps.
+Sunday 19:30: Alfama Canteen No. 3. Access: step-free.
+Monday 09:30: Belem Beach Afternoon. Access: step-free.
+Monday 11:30: Belem Hilltop Lanes Walk. Access: steep steps.
+Monday 14:30: Belem Riverside Stroll. Access: step-free.
+Monday 16:30: Belem Viewpoints Walk. Access: some steps.
+Monday 19:30: Belem Kitchen No. 7. Access: some steps.
+Tuesday 09:30: Belem Vineyard Visit. Access: step-free.
+Tuesday 11:30: Belem Sea Stories Museum. Access: step-free.
+Tuesday 14:30: Belem Cheese and Bread Tasting. Access: steep steps.
+Tuesday 16:30: Belem Art House. Access: step-free.
+Tuesday 19:30: Belem Grill No. 3. Access: step-free.
+
+=== T289
+Request: city break, 2 nights, lisbon. Mobility: limited walking.
+Hotel: Baixa Courtyard Hotel. Access: step-free.
+Sunday 09:30: Baixa Tile and Craft Museum. Access: step-free.
+Sunday 11:30: Baixa Riverside Stroll. Access: step-free.
+Sunday 19:30: Baixa Tasca No. 6. Access: step-free.
+Monday 09:30: Baixa Hilltop Lanes Walk. Access: steep steps.
+Monday 11:30: Baixa Market Walk. Access: some steps.
+Monday 19:30: Baixa Grill No. 6. Access: step-free.
+
+=== T049
+Request: custom tour, 4 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Tuesday 09:30: Ribeira Hilltop Lanes Walk. Access: steep steps.
+Tuesday 11:30: Ribeira Sea Stories Museum. Access: step-free.
+Tuesday 19:30: Ribeira Bistro No. 1. Access: some steps.
+Wednesday 09:30: Ribeira Art House. Access: step-free.
+Wednesday 11:30: Ribeira Riverside Stroll. Access: step-free.
+Wednesday 19:30: Ribeira Green Table. Access: step-free.
+Thursday 09:30: Foz Riverside Stroll. Access: step-free.
+Thursday 11:30: Foz Cellar Tasting. Access: some steps.
+Thursday 19:30: Foz Kitchen No. 8. Access: some steps.
+Friday 09:30: Ribeira Tram Ride. Access: steep steps.
+Friday 11:30: Ribeira Viewpoints Walk. Access: some steps.
+Friday 19:30: Ribeira Kitchen No. 2. Access: some steps.
+
+=== T053
+Request: city break, 2 nights, lisbon. Mobility: none.
+Hotel: Baixa Courtyard Hotel. Access: step-free.
+Tuesday 09:30: Baixa Tile and Craft Museum. Access: step-free.
+Tuesday 11:30: Baixa Hilltop Lanes Walk. Access: steep steps.
+Tuesday 14:30: Baixa Cheese and Bread Tasting. Access: step-free.
+Tuesday 19:30: Baixa Green Table. Access: step-free.
+Wednesday 09:30: Alfama Old Trams Museum. Access: step-free.
+Wednesday 11:30: Alfama Vineyard Visit. Access: steep steps.
+Wednesday 14:30: Alfama Hilltop Lanes Walk. Access: steep steps.
+Wednesday 19:30: Alfama Green Table. Access: step-free.
+
+=== T239
+Request: custom tour, 3 nights, lisbon. Mobility: none.
+Hotel: Alfama Courtyard Hotel. Access: step-free.
+Friday 09:30: Alfama Olive Oil Tasting. Access: step-free.
+Friday 11:30: Alfama Garden Walk. Access: step-free.
+Friday 19:30: Alfama Grill No. 2. Access: steep steps.
+Saturday 09:30: Alfama Art House. Access: step-free.
+Saturday 11:30: Alfama Hilltop Lanes Walk. Access: steep steps.
+Saturday 19:30: Alfama Tasca No. 6. Access: step-free.
+Sunday 09:30: Alfama Riverside Stroll. Access: step-free.
+Sunday 11:30: Alfama Old Trams Museum. Access: step-free.
+Sunday 19:30: Alfama Tasca No. 2. Access: step-free.
+
+=== T137
+Request: city break, 2 nights, lisbon. Mobility: none.
+Hotel: Baixa Courtyard Hotel. Access: step-free.
+Tuesday 09:30: Baixa Vineyard Visit. Access: step-free.
+Tuesday 11:30: Baixa Market Walk. Access: some steps.
+Tuesday 14:30: Baixa Art House. Access: step-free.
+Tuesday 16:30: Baixa Cheese and Bread Tasting. Access: step-free.
+Tuesday 19:30: Baixa Grill No. 6. Access: step-free.
+Wednesday 09:30: Sintra Art House. Access: step-free.
+Wednesday 11:30: Sintra Cheese and Bread Tasting. Access: step-free.
+Wednesday 14:30: Sintra Tile Painting Class. Access: steep steps.
+Wednesday 16:30: Sintra Sardine Tin Tasting. Access: some steps.
+Wednesday 19:30: Seaview Garden Restaurant. Access: .
+
+=== T154
+Request: city break, 2 nights, lisbon. Mobility: wheelchair.
+Hotel: Alfama Courtyard Hotel. Access: step-free.
+Monday 09:30: Alfama Olive Oil Tasting. Access: step-free.
+Monday 11:30: Alfama Art House. Access: step-free.
+Monday 14:30: Alfama Garden Walk. Access: step-free.
+Monday 16:30: Alfama Riverside Stroll. Access: step-free.
+Monday 19:30: Alfama Tasca No. 2. Access: step-free.
+Tuesday 09:30: Alfama Old Trams Museum. Access: step-free.
+Tuesday 11:30: Alfama Cork Workshop Museum. Access: step-free.
+Tuesday 19:30: Alfama Canteen No. 3. Access: step-free.
+
+=== T082
+Request: custom tour, 4 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Wednesday 09:30: Ribeira Riverside Stroll. Access: step-free.
+Wednesday 11:30: Ribeira Viewpoints Walk. Access: some steps.
+Wednesday 14:30: Ribeira Art House. Access: step-free.
+Wednesday 16:30: Ribeira Sea Stories Museum. Access: step-free.
+Wednesday 19:30: Ribeira Kitchen No. 2. Access: some steps.
+Thursday 09:30: Foz Cork Workshop Museum. Access: step-free.
+Thursday 11:30: Foz Riverside Stroll. Access: step-free.
+Thursday 14:30: Foz Garden Walk. Access: step-free.
+Thursday 16:30: Foz Hilltop Lanes Walk. Access: steep steps.
+Thursday 19:30: Foz Kitchen No. 8. Access: some steps.
+Friday 09:30: Pinhao Town History House. Access: steep steps.
+Friday 11:30: Pinhao Garden Walk. Access: steep steps.
+Friday 14:30: Pinhao Sunset Sail. Access: some steps.
+Friday 16:30: Pinhao Hilltop Lanes Walk. Access: steep steps.
+Friday 19:30: Pinhao Kitchen No. 4. Access: some steps.
+Saturday 09:30: Regua Hilltop Lanes Walk. Access: steep steps.
+Saturday 11:30: Regua Old Trams Museum. Access: step-free.
+Saturday 14:30: Regua Art House. Access: step-free.
+Saturday 16:30: Regua Cooking Class. Access: step-free.
+Saturday 19:30: Regua Kitchen No. 4. Access: some steps.
+
+=== T079
+Request: city break, 2 nights, lisbon. Mobility: none.
+Hotel: Alfama Courtyard Hotel. Access: step-free.
+Monday 09:30: Alfama Riverside Stroll. Access: step-free.
+Monday 11:30: Alfama Garden Walk. Access: step-free.
+Monday 14:30: Alfama Hilltop Lanes Walk. Access: steep steps.
+Monday 16:30: Alfama Art House. Access: step-free.
+Monday 19:30: Alfama Green Table. Access: step-free.
+Tuesday 09:30: Baixa Sardine Tin Tasting. Access: some steps.
+Tuesday 11:30: Baixa Tile and Craft Museum. Access: step-free.
+Tuesday 14:30: Baixa Art House. Access: step-free.
+Tuesday 16:30: Baixa Riverside Stroll. Access: step-free.
+Tuesday 19:30: Baixa Canteen No. 8. Access: step-free.
+
+=== T223
+Request: custom tour, 4 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Sunday 09:30: Ribeira Riverside Stroll. Access: step-free.
+Sunday 11:30: Ribeira Sea Stories Museum. Access: step-free.
+Sunday 14:30: Ribeira Art House. Access: step-free.
+Sunday 19:30: Ribeira Green Table. Access: step-free.
+Monday 09:30: Pinhao Cork Workshop Museum. Access: step-free.
+Monday 11:30: Pinhao Pastry Class. Access: step-free.
+Monday 14:30: Pinhao Tram Ride. Access: step-free.
+Monday 19:30: Pinhao Kitchen No. 4. Access: some steps.
+Tuesday 09:30: Pinhao Cork Workshop Museum. Access: step-free.
+Tuesday 11:30: Pinhao Garden Walk. Access: steep steps.
+Tuesday 14:30: Pinhao Cheese and Bread Tasting. Access: step-free.
+Tuesday 19:30: Pinhao Canteen No. 6. Access: step-free.
+Wednesday 09:30: Foz Cellar Tasting. Access: some steps.
+Wednesday 11:30: Foz Cork Workshop Museum. Access: step-free.
+Wednesday 14:30: Foz Cheese and Bread Tasting. Access: some steps.
+Wednesday 19:30: Foz Green Table. Access: step-free.
+
+=== T071
+Request: custom tour, 3 nights, algarve. Mobility: wheelchair.
+Hotel: Tavira Courtyard Hotel. Access: step-free.
+Monday 09:30: Tavira Riverside Stroll. Access: step-free.
+Monday 11:30: Tavira Viewpoints Walk. Access: step-free.
+Monday 14:30: Tavira Art House. Access: step-free.
+Monday 19:30: Tavira Canteen No. 1. Access: step-free.
+Tuesday 09:30: Faro Hilltop Lanes Walk. Access: steep steps.
+Tuesday 11:30: Faro Riverside Stroll. Access: step-free.
+Tuesday 14:30: Faro Viewpoints Walk. Access: step-free.
+Tuesday 19:30: Faro Bistro No. 5. Access: step-free.
+Wednesday 09:30: Tavira Sea Stories Museum. Access: step-free.
+Wednesday 11:30: Tavira Cork Workshop Museum. Access: step-free.
+Wednesday 14:30: Tavira Town History House. Access: step-free.
+Wednesday 19:30: Tavira Green Table. Access: step-free.
+
+=== T216
+Request: custom tour, 4 nights, lisbon. Mobility: wheelchair.
+Hotel: Baixa Courtyard Hotel. Access: step-free.
+Friday 09:30: Baixa Tile and Craft Museum. Access: step-free.
+Friday 11:30: Baixa Old Trams Museum. Access: step-free.
+Friday 14:30: Baixa Riverside Stroll. Access: step-free.
+Friday 19:30: Baixa Green Table. Access: step-free.
+Saturday 09:30: Sintra Hilltop Lanes Walk. Access: steep steps.
+Saturday 11:30: Sintra Cooking Class. Access: step-free.
+Saturday 14:30: Sintra Cork Workshop Museum. Access: step-free.
+Saturday 19:30: Sintra Grill No. 7. Access: step-free.
+Sunday 09:30: Sintra Old Trams Museum. Access: step-free.
+Sunday 11:30: Sintra Cheese and Bread Tasting. Access: step-free.
+Sunday 14:30: Sintra Art House. Access: step-free.
+Sunday 19:30: Sintra Green Table. Access: step-free.
+Monday 09:30: Belem Vineyard Visit. Access: step-free.
+Monday 11:30: Belem Art House. Access: step-free.
+Monday 14:30: Belem Market Walk. Access: step-free.
+Monday 19:30: Belem Green Table. Access: step-free.
+
+=== T012
+Request: custom tour, 3 nights, porto. Mobility: wheelchair.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Wednesday 09:30: Ribeira Sea Stories Museum. Access: step-free.
+Wednesday 11:30: Ribeira Beach Afternoon. Access: step-free.
+Wednesday 14:30: Ribeira Art House. Access: step-free.
+Wednesday 16:30: Ribeira Riverside Stroll. Access: step-free.
+Wednesday 19:30: Ribeira Green Table. Access: step-free.
+Thursday 09:30: Regua Hilltop Lanes Walk. Access: steep steps.
+Thursday 11:30: Regua Tile Painting Class. Access: step-free.
+Thursday 14:30: Regua Riverside Stroll. Access: step-free.
+Thursday 16:30: Regua Olive Oil Tasting. Access: step-free.
+Thursday 19:30: Regua Green Table. Access: step-free.
+Friday 09:30: Pinhao Pastry Class. Access: step-free.
+Friday 11:30: Pinhao Riverside Stroll. Access: step-free.
+Friday 14:30: Pinhao Cork Workshop Museum. Access: step-free.
+Friday 16:30: Pinhao Tram Ride. Access: step-free.
+Friday 19:30: Pinhao Green Table. Access: step-free.
+
+=== T198
+Request: custom tour, 3 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Thursday 09:30: Ribeira Tram Ride. Access: steep steps.
+Thursday 11:30: Ribeira Art House. Access: step-free.
+Thursday 14:30: Ribeira Sea Stories Museum. Access: step-free.
+Thursday 19:30: Ribeira Kitchen No. 2. Access: some steps.
+Friday 09:30: Foz Old Quarter Walk. Access: step-free.
+Friday 11:30: Foz Art House. Access: step-free.
+Friday 14:30: Foz Hilltop Lanes Walk. Access: steep steps.
+Friday 19:30: Foz Kitchen No. 8. Access: some steps.
+Saturday 09:30: Regua Cork Workshop Museum. Access: step-free.
+Saturday 11:30: Regua Riverside Stroll. Access: step-free.
+Saturday 14:30: Regua Olive Oil Tasting. Access: step-free.
+Saturday 19:30: Regua Grill No. 2. Access: step-free.
+
+=== T026
+Request: city break, 2 nights, lisbon. Mobility: limited walking.
+Hotel: Alfama Courtyard Hotel. Access: step-free.
+Sunday 09:30: Alfama Cork Workshop Museum. Access: step-free.
+Sunday 11:30: Alfama Riverside Stroll. Access: step-free.
+Sunday 14:30: Alfama Art House. Access: step-free.
+Sunday 16:30: Alfama Olive Oil Tasting. Access: step-free.
+Sunday 19:30: Alfama Canteen No. 3. Access: step-free.
+Monday 09:30: Belem Hilltop Lanes Walk. Access: steep steps.
+Monday 11:30: Belem Olive Oil Tasting. Access: some steps.
+Monday 14:30: Belem Market Walk. Access: step-free.
+Monday 16:30: Belem Art House. Access: step-free.
+Monday 19:30: Belem Green Table. Access: step-free.
+
+=== T018
+Request: custom tour, 4 nights, lisbon. Mobility: wheelchair.
+Hotel: Alfama Courtyard Hotel. Access: step-free.
+Wednesday 09:30: Alfama Riverside Stroll. Access: step-free.
+Wednesday 11:30: Alfama Garden Walk. Access: step-free.
+Wednesday 14:30: Alfama Art House. Access: step-free.
+Wednesday 16:30: Alfama Olive Oil Tasting. Access: step-free.
+Wednesday 19:30: Alfama Tasca No. 6. Access: step-free.
+Thursday 09:30: Baixa Hilltop Lanes Walk. Access: steep steps.
+Thursday 11:30: Baixa Cheese and Bread Tasting. Access: step-free.
+Thursday 14:30: Baixa Art House. Access: step-free.
+Thursday 16:30: Baixa Tile and Craft Museum. Access: step-free.
+Thursday 19:30: Baixa Canteen No. 8. Access: step-free.
+Friday 09:30: Alfama Old Trams Museum. Access: step-free.
+Friday 11:30: Alfama Cork Workshop Museum. Access: step-free.
+Friday 19:30: Alfama Green Table. Access: step-free.
+Saturday 09:30: Sintra Art House. Access: step-free.
+Saturday 11:30: Sintra Cheese and Bread Tasting. Access: step-free.
+Saturday 14:30: Sintra Cooking Class. Access: step-free.
+Saturday 16:30: Sintra Riverside Stroll. Access: step-free.
+Saturday 19:30: Sintra Green Table. Access: step-free.
+
+=== T143
+Request: city break, 2 nights, algarve. Mobility: none.
+Hotel: Lagos Courtyard Hotel. Access: step-free.
+Thursday 09:30: Lagos Hilltop Lanes Walk. Access: steep steps.
+Thursday 11:30: Lagos Cheese and Bread Tasting. Access: step-free.
+Thursday 14:30: Lagos Garden Walk. Access: some steps.
+Thursday 19:30: Lagos Bistro No. 5. Access: steep steps.
+Friday 09:30: Tavira Dolphin Boat Trip. Access: some steps.
+Friday 11:30: Tavira Hilltop Lanes Walk. Access: steep steps.
+Friday 14:30: Tavira Cork Workshop Museum. Access: step-free.
+Friday 19:30: Tavira Kitchen No. 7. Access: some steps.
+
+=== T031
+Request: custom tour, 3 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Tuesday 09:30: Ribeira Viewpoints Walk. Access: some steps.
+Tuesday 11:30: Ribeira Hilltop Lanes Walk. Access: steep steps.
+Tuesday 19:30: Ribeira Tasca No. 3. Access: some steps.
+Wednesday 09:30: Ribeira Art House. Access: step-free.
+Wednesday 11:30: Ribeira Sea Stories Museum. Access: step-free.
+Wednesday 14:30: Ribeira Hilltop Lanes Walk. Access: steep steps.
+Wednesday 16:30: Ribeira Riverside Stroll. Access: step-free.
+Wednesday 17:45: Ribeira Viewpoints Walk. Access: some steps.
+Wednesday 18:30: Ribeira Tram Ride. Access: steep steps.
+Wednesday 19:30: Ribeira Grill No. 4. Access: steep steps.
+Thursday 09:30: Ribeira Riverside Stroll. Access: step-free.
+Thursday 11:30: Ribeira Tram Ride. Access: steep steps.
+Thursday 19:30: Ribeira Green Table. Access: step-free.
+
+=== T215
+Request: city break, 2 nights, lisbon. Mobility: none.
+Hotel: Alfama Courtyard Hotel. Access: step-free.
+Tuesday 09:30: Alfama Olive Oil Tasting. Access: step-free.
+Tuesday 11:30: Alfama Old Trams Museum. Access: step-free.
+Tuesday 14:30: Alfama Cork Workshop Museum. Access: step-free.
+Tuesday 19:30: Alfama Tasca No. 6. Access: step-free.
+Wednesday 09:30: Alfama Art House. Access: step-free.
+Wednesday 11:30: Alfama Riverside Stroll. Access: step-free.
+Wednesday 14:30: Alfama Garden Walk. Access: step-free.
+Wednesday 19:30: Alfama Canteen No. 3. Access: step-free.
+
+=== T010
+Request: city break, 2 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Friday 09:30: Ribeira Coast Kayak Trip. Access: some steps.
+Friday 11:30: Ribeira Beach Afternoon. Access: step-free.
+Friday 19:30: Ribeira Tasca No. 3. Access: some steps.
+Saturday 09:30: Pinhao Tram Ride. Access: step-free.
+Saturday 11:30: Pinhao Sea Stories Museum. Access: some steps.
+Saturday 19:30: Pinhao Green Table. Access: step-free.
+
+=== T253
+Request: custom tour, 3 nights, lisbon. Mobility: wheelchair.
+Hotel: Alfama Courtyard Hotel. Access: step-free.
+Tuesday 09:30: Alfama Cork Workshop Museum. Access: step-free.
+Tuesday 11:30: Alfama Riverside Stroll. Access: step-free.
+Tuesday 14:30: Alfama Garden Walk. Access: step-free.
+Tuesday 19:30: Alfama Canteen No. 3. Access: step-free.
+Wednesday 09:30: Baixa Hilltop Lanes Walk. Access: steep steps.
+Wednesday 11:30: Baixa Cheese and Bread Tasting. Access: step-free.
+Wednesday 14:30: Baixa Art House. Access: step-free.
+Wednesday 19:30: Baixa Tasca No. 6. Access: step-free.
+Thursday 09:30: Alfama Art House. Access: step-free.
+Thursday 11:30: Alfama Old Trams Museum. Access: step-free.
+Thursday 19:30: Alfama Tasca No. 2. Access: step-free.
+
+=== T249
+Request: city break, 2 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Thursday 09:30: Ribeira Art House. Access: step-free.
+Thursday 11:30: Ribeira Viewpoints Walk. Access: some steps.
+Thursday 19:30: Ribeira Grill No. 4. Access: steep steps.
+Friday 09:30: Foz Cork Workshop Museum. Access: step-free.
+Friday 11:30: Foz Art House. Access: step-free.
+Friday 19:30: Foz Green Table. Access: step-free.
+
+=== T238
+Request: custom tour, 3 nights, porto. Mobility: wheelchair.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Thursday 09:30: Ribeira Beach Afternoon. Access: step-free.
+Thursday 11:30: Ribeira Riverside Stroll. Access: step-free.
+Thursday 14:30: Ribeira Art House. Access: step-free.
+Thursday 19:30: Ribeira Canteen No. 3. Access: step-free.
+Friday 09:30: Foz Cork Workshop Museum. Access: step-free.
+Friday 11:30: Foz Art House. Access: step-free.
+Friday 14:30: Foz Town History House. Access: step-free.
+Friday 19:30: Foz Green Table. Access: step-free.
+Saturday 09:30: Foz Old Trams Museum. Access: step-free.
+Saturday 11:30: Foz Garden Walk. Access: step-free.
+Saturday 14:30: Foz Riverside Stroll. Access: step-free.
+Saturday 19:30: Ribeira Green Table. Access: step-free.
+
+=== T256
+Request: custom tour, 3 nights, algarve. Mobility: limited walking.
+Hotel: Faro Courtyard Hotel. Access: step-free.
+Monday 09:30: Faro Coast Kayak Trip. Access: some steps.
+Monday 11:30: Faro Art House. Access: step-free.
+Monday 19:30: Faro Bistro No. 5. Access: step-free.
+Tuesday 09:30: Lagos Coast Kayak Trip. Access: some steps.
+Tuesday 11:30: Lagos Riverside Stroll. Access: step-free.
+Tuesday 19:30: Lagos Green Table. Access: step-free.
+Wednesday 09:30: Faro Viewpoints Walk. Access: step-free.
+Wednesday 11:30: Faro Cellar Tasting. Access: some steps.
+Wednesday 19:30: Faro Green Table. Access: step-free.
+
+=== T099
+Request: custom tour, 4 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Thursday 09:30: Ribeira Beach Afternoon. Access: step-free.
+Thursday 11:30: Ribeira Coast Kayak Trip. Access: some steps.
+Thursday 14:30: Ribeira Tram Ride. Access: steep steps.
+Thursday 19:30: Ribeira Tasca No. 2. Access: steep steps.
+Friday 09:30: Foz Beach Afternoon. Access: steep steps.
+Friday 11:30: Foz Sunset Sail. Access: some steps.
+Friday 14:30: Foz Cellar Tasting. Access: some steps.
+Friday 19:30: Foz Kitchen No. 8. Access: some steps.
+Saturday 09:30: Pinhao Cork Workshop Museum. Access: step-free.
+Saturday 11:30: Pinhao Pastry Class. Access: step-free.
+Saturday 14:30: Pinhao Sunset Sail. Access: some steps.
+Saturday 19:30: Pinhao Canteen No. 6. Access: step-free.
+Sunday 09:30: Pinhao Riverside Stroll. Access: step-free.
+Sunday 11:30: Pinhao Garden Walk. Access: steep steps.
+Sunday 14:30: Pinhao Hilltop Lanes Walk. Access: steep steps.
+Sunday 19:30: Pinhao Grill No. 8. Access: steep steps.
+
+=== T091
+Request: custom tour, 3 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Thursday 09:30: Ribeira Viewpoints Walk. Access: some steps.
+Thursday 11:30: Ribeira Art House. Access: step-free.
+Thursday 14:30: Ribeira Hilltop Lanes Walk. Access: steep steps.
+Thursday 16:30: Ribeira Tram Ride. Access: steep steps.
+Thursday 19:30: Ribeira Tasca No. 3. Access: some steps.
+Friday 09:30: Regua Viewpoints Walk. Access: step-free.
+Friday 11:30: Regua Art House. Access: step-free.
+Friday 14:30: Regua Cheese and Bread Tasting. Access: some steps.
+Friday 16:30: Regua Olive Oil Tasting. Access: step-free.
+Friday 19:30: Regua Kitchen No. 4. Access: some steps.
+Saturday 09:30: Ribeira Riverside Stroll. Access: step-free.
+Saturday 11:30: Ribeira Sea Stories Museum. Access: step-free.
+Saturday 19:30: Ribeira Tasca No. 2. Access: steep steps.
+
+=== T270
+Request: custom tour, 4 nights, porto. Mobility: wheelchair.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Sunday 09:30: Ribeira Beach Afternoon. Access: step-free.
+Sunday 11:30: Ribeira Riverside Stroll. Access: step-free.
+Sunday 14:30: Ribeira Art House. Access: step-free.
+Sunday 16:30: Ribeira Sea Stories Museum. Access: step-free.
+Sunday 19:30: Ribeira Green Table. Access: step-free.
+Monday 09:30: Foz Hilltop Lanes Walk. Access: steep steps.
+Monday 11:30: Foz Old Quarter Walk. Access: step-free.
+Monday 14:30: Foz Riverside Stroll. Access: step-free.
+Monday 16:30: Foz Art House. Access: step-free.
+Monday 19:30: Foz Green Table. Access: step-free.
+Tuesday 09:30: Pinhao Pastry Class. Access: step-free.
+Tuesday 11:30: Pinhao Cheese and Bread Tasting. Access: step-free.
+Tuesday 14:30: Pinhao Cork Workshop Museum. Access: step-free.
+Tuesday 16:30: Pinhao Art House. Access: step-free.
+Tuesday 19:30: Pinhao Green Table. Access: step-free.
+Wednesday 09:30: Regua Art House. Access: step-free.
+Wednesday 11:30: Regua Old Trams Museum. Access: step-free.
+Wednesday 14:30: Regua Tile Painting Class. Access: step-free.
+Wednesday 16:30: Regua Riverside Stroll. Access: step-free.
+Wednesday 19:30: Regua Grill No. 2. Access: step-free.
+
+=== T174
+Request: custom tour, 3 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Sunday 09:30: Ribeira Hilltop Lanes Walk. Access: steep steps.
+Sunday 11:30: Ribeira Sea Stories Museum. Access: step-free.
+Sunday 14:30: Ribeira Viewpoints Walk. Access: some steps.
+Sunday 16:30: Ribeira Art House. Access: step-free.
+Sunday 19:30: Ribeira Tasca No. 2. Access: steep steps.
+Monday 09:30: Regua Cork Workshop Museum. Access: step-free.
+Monday 11:30: Regua Art House. Access: step-free.
+Monday 14:30: Regua Viewpoints Walk. Access: step-free.
+Monday 16:30: Regua Cooking Class. Access: step-free.
+Monday 19:30: Regua Green Table. Access: step-free.
+Tuesday 09:30: Foz Art House. Access: step-free.
+Tuesday 11:30: Foz Cork Workshop Museum. Access: step-free.
+Tuesday 14:30: Foz Old Trams Museum. Access: step-free.
+Tuesday 16:30: Foz Riverside Stroll. Access: step-free.
+Tuesday 19:30: Foz Kitchen No. 8. Access: some steps.
+
+=== T007
+Request: city break, 2 nights, lisbon. Mobility: wheelchair.
+Hotel: Baixa Courtyard Hotel. Access: step-free.
+Saturday 09:30: Baixa Art House. Access: step-free.
+Saturday 11:30: Baixa Old Trams Museum. Access: step-free.
+Saturday 19:30: Baixa Green Table. Access: step-free.
+Sunday 09:30: Baixa Vineyard Visit. Access: step-free.
+Sunday 11:30: Baixa Riverside Stroll. Access: step-free.
+Sunday 19:30: Baixa Canteen No. 8. Access: step-free.
+
+=== T105
+Request: city break, 2 nights, porto. Mobility: limited walking.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Tuesday 09:30: Ribeira Sea Stories Museum. Access: step-free.
+Tuesday 11:30: Ribeira Art House. Access: step-free.
+Tuesday 14:30: Ribeira Riverside Stroll. Access: step-free.
+Tuesday 19:30: Ribeira Tasca No. 3. Access: some steps.
+Wednesday 09:30: Pinhao Sea Stories Museum. Access: some steps.
+Wednesday 11:30: Pinhao Art House. Access: step-free.
+Wednesday 14:30: Pinhao Cheese and Bread Tasting. Access: step-free.
+Wednesday 19:30: Pinhao Green Table. Access: step-free.
+
+=== T158
+Request: custom tour, 3 nights, porto. Mobility: none.
+Hotel: Ribeira Courtyard Hotel. Access: step-free.
+Monday 09:30: Ribeira Riverside Stroll. Access: step-free.
+Monday 11:30: Ribeira Tram Ride. Access: steep steps.
+Monday 14:30: Ribeira Hilltop Lanes Walk. Access: steep steps.
+Monday 19:30: Ribeira Bistro No. 1. Access: some steps.
+Tuesday 09:30: Ribeira Coast Kayak Trip. Access: some steps.
+Tuesday 11:30: Ribeira Sea Stories Museum. Access: step-free.
+Tuesday 14:30: Ribeira Art House. Access: step-free.
+Tuesday 19:30: Ribeira Canteen No. 3. Access: step-free.
+Wednesday 09:30: Foz Cheese and Bread Tasting. Access: some steps.
+Wednesday 11:30: Foz Old Quarter Walk. Access: step-free.
+Wednesday 14:30: Foz Garden Walk. Access: step-free.
+Wednesday 19:30: Foz Tasca No. 8. Access: some steps.

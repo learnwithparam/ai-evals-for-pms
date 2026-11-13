@@ -1,0 +1,41 @@
+trace_id,verdict,critique
+T276,pass,"The request has no mobility need, so every stop is fine."
+T058,pass,"The request has no mobility need, so every stop is fine."
+T135,fail,"Ribeira Kitchen No. 2 has some steps, and the traveller has limited walking."
+T077,pass,"The request has no mobility need, so every stop is fine."
+T093,pass,"The request has no mobility need, so every stop is fine."
+T042,pass,Every stop suits a traveller who uses a wheelchair.
+T251,pass,"The request has no mobility need, so every stop is fine."
+T244,pass,"The request has no mobility need, so every stop is fine."
+T152,pass,"The request has no mobility need, so every stop is fine."
+T290,pass,"The request has no mobility need, so every stop is fine."
+T289,fail,"Baixa Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T049,pass,"The request has no mobility need, so every stop is fine."
+T053,pass,"The request has no mobility need, so every stop is fine."
+T239,pass,"The request has no mobility need, so every stop is fine."
+T137,pass,"The request has no mobility need, so every stop is fine."
+T154,pass,Every stop suits a traveller who uses a wheelchair.
+T082,pass,"The request has no mobility need, so every stop is fine."
+T079,pass,"The request has no mobility need, so every stop is fine."
+T223,pass,"The request has no mobility need, so every stop is fine."
+T071,fail,"Faro Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T216,fail,"Sintra Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T012,fail,"Regua Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T198,pass,"The request has no mobility need, so every stop is fine."
+T026,fail,"Belem Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
+T018,fail,"Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T143,pass,"The request has no mobility need, so every stop is fine."
+T031,pass,"The request has no mobility need, so every stop is fine."
+T215,pass,"The request has no mobility need, so every stop is fine."
+T010,pass,"The request has no mobility need, so every stop is fine."
+T253,fail,"Baixa Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T249,pass,"The request has no mobility need, so every stop is fine."
+T238,pass,Every stop suits a traveller who uses a wheelchair.
+T256,pass,Every stop suits a traveller with limited walking.
+T099,pass,"The request has no mobility need, so every stop is fine."
+T091,pass,"The request has no mobility need, so every stop is fine."
+T270,fail,"Foz Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T174,pass,"The request has no mobility need, so every stop is fine."
+T007,pass,Every stop suits a traveller who uses a wheelchair.
+T105,pass,Every stop suits a traveller with limited walking.
+T158,pass,"The request has no mobility need, so every stop is fine."

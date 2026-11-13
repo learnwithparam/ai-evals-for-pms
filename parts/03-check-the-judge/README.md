@@ -1,7 +1,5 @@
 # Check the judge
 
-Status: TODO(part session). This README is the plan. The step folders do not exist yet.
-
 ## The problem
 
 You cannot read every draft by hand forever. So teams use an AI model to grade the drafts. We call this AI grader a **judge**. A judge reads a draft and says pass or fail.
@@ -43,12 +41,12 @@ flowchart LR
 
 ## Steps
 
-| Step                              | Minutes | You make                | The check reads                                                                                                                                                                                                                                                                                        |
-| --------------------------------- | ------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| test-the-judge                    | 25      | `judge-check.md`        | TPR and TNR for the two pass or fail judges, each within 0.01 of the values from `world/data/judges/` against `world/data/expert-labels.csv`. The pick is the judge whose lower value is at least 0.80 (only the mobility judge). One line on why a 1 to 5 score cannot be checked without a pass line |
-| choose-the-judge-prompt           | 20      | `judge-prompt.md`       | The Pass and Fail text from the rubric. 2 to 4 examples, all from `world/data/splits/train.csv` (an id from dev or test is leakage and fails). Asks for a reason before the verdict. Covers one failure mode only                                                                                      |
-| correct-the-pass-rate (extension) | 15      | `corrected.md`          | The corrected pass rate with the Rogan-Gladen formula, within 0.01. One line on why the raw rate is wrong                                                                                                                                                                                              |
-| write-your-own-judge (extension)  | 20      | `my-judge-verdicts.csv` | Columns trace_id, critique, verdict. 40 rows from `world/data/splits/dev.csv`. TPR and TNR against Ines both at least 0.80. Any tool may make it; the file is the contract                                                                                                                             |
+| Step                                                                            | Minutes | You make                | The check reads                                                                                                |
+| ------------------------------------------------------------------------------- | ------- | ----------------------- | -------------------------------------------------------------------------------------------------------------- |
+| [test-the-judge](01-test-the-judge/problem/README.md)                           | 25      | `judge-check.md`        | TPR and TNR of the two pass or fail judges against Ines, your pick, and why a 1 to 5 score cannot be checked   |
+| [choose-the-judge-prompt](02-choose-the-judge-prompt/problem/README.md)         | 20      | `judge-prompt.md`       | The rubric's Pass and Fail text, 2 to 4 examples from the train split, the reason before the verdict, one mode |
+| [correct-the-pass-rate](03-correct-the-pass-rate/problem/README.md) (extension) | 15      | `corrected.md`          | The raw rate, the mobility judge's rates, and the Rogan-Gladen corrected rate                                  |
+| [write-your-own-judge](04-write-your-own-judge/problem/README.md) (extension)   | 20      | `my-judge-verdicts.csv` | 40 dev drafts with a critique and a verdict, and TPR and TNR against Ines of 0.80 or more                      |
 
 A few more words from the table:
 
@@ -60,10 +58,60 @@ The numbers are already planted in the world. The mobility judge gets TPR 84 of 
 
 ## Walkthrough
 
-TODO(part session): write the walkthrough once the steps exist. When all the steps pass, you check the whole part:
+Do the steps in order. Each step checks the files in its own `problem` folder. Each starter holds what the step needs from earlier steps, so you can start any step.
+
+```bash
+bun run verify test-the-judge
+```
+
+Expect: `Done. All 5 rules pass.` once `judge-check.md` has the rates and your pick.
+
+```bash
+bun run verify choose-the-judge-prompt
+```
+
+Expect: `Done. All 7 rules pass.` once `judge-prompt.md` holds the rubric, train examples and the output shape.
+
+The next two steps are extensions. Skip them if you are short of time.
+
+```bash
+bun run verify correct-the-pass-rate
+```
+
+Expect: `Done. All 4 rules pass.` once `corrected.md` has the corrected rate.
+
+```bash
+bun run verify write-your-own-judge
+```
+
+Expect: `Done. All 6 rules pass.` once your judge's 40 verdicts are in `my-judge-verdicts.csv`.
+
+When all four steps pass, check the whole part:
 
 ```bash
 bun run verify part check-the-judge
 ```
 
-Expect: TODO(part session). Once the steps exist: `Part check-the-judge is done: 4/4 steps pass.`
+Expect: `Part check-the-judge is done: 4/4 steps pass.`
+
+## Assignment
+
+The problem: a judge number is on a dashboard, and nobody has checked it.
+
+Hand in `judge-check.md` and `judge-prompt.md`. The steps above check them. In a cohort, a grader also asks these yes or no questions:
+
+| #   | Question                                                      | Check                     |
+| --- | ------------------------------------------------------------- | ------------------------- |
+| 1   | Are TPR and TNR within 0.01 for both pass or fail judges?     | `test-the-judge`          |
+| 2   | Is the chosen judge the one whose lower rate is 0.80 or more? | `test-the-judge`          |
+| 3   | Do all the judge prompt's examples come from the train split? | `choose-the-judge-prompt` |
+
+Three yes answers is a pass. In a cohort, question 1 is run again on 40 private labels from Ines.
+
+Extension: `correct-the-pass-rate` and `write-your-own-judge`. Your own judge must reach 0.80 on both rates.
+
+## Finished
+
+You now know which judge to trust, and you can show why with two numbers. For example, the generic judge looks great with a TPR of 0.97. But its TNR is 0.37, so it misses almost two in three real failures.
+
+In the next part, [decide and write it down](../04-decide-and-write-it-down/README.md), you use the trusted judge's kind of numbers to set launch rules. Then you decide on the cheaper model and the instant drafts.
