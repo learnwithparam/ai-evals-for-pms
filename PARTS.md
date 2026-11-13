@@ -1,14 +1,15 @@
 # Parts and steps
 
-The plan for every part. A part session starts from this file and the part's README. Minutes add up to 325.
+The plan for every part. A part session starts from this file and the part's README. Minutes add up to 345.
 
-| Part folder                         | Status   | Steps (minutes)                                                                                                                                                                        | Part minutes |
-| ----------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| `00-orientation`                    | Built    | meet-lantern-trails (15)                                                                                                                                                               | 15           |
-| `parts/01-look-before-you-measure`  | Built    | read-the-traces (25), name-the-failure-modes (20), count-the-failures (10)                                                                                                             | 55           |
-| `parts/02-define-good`              | Skeleton | write-the-rubric (20), label-the-golden-set (20), compare-with-the-expert (10)                                                                                                         | 50           |
-| `parts/03-check-the-judge`          | Skeleton | test-the-judge (25), choose-the-judge-prompt (20), correct-the-pass-rate (15, extension), write-your-own-judge (20, extension)                                                         | 80           |
-| `parts/04-decide-and-write-it-down` | Skeleton | set-launch-criteria (20), compare-the-releases (15), read-the-ab-test (25), write-the-eval-section (25), plan-the-weekly-review (20, extension), bring-your-own-traces (20, extension) | 125          |
+| Part folder                                       | Status   | Steps (minutes)                                                                                                                                                                        | Part minutes |
+| ------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| `00-orientation`                                  | Built    | meet-lantern-trails (15)                                                                                                                                                               | 15           |
+| `parts/01-look-before-you-measure`                | Built    | read-the-traces (25), name-the-failure-modes (20), count-the-failures (10)                                                                                                             | 55           |
+| `parts/02-define-good`                            | Skeleton | write-the-rubric (20), label-the-golden-set (20), compare-with-the-expert (10)                                                                                                         | 50           |
+| `parts/03-check-the-judge`                        | Skeleton | test-the-judge (25), choose-the-judge-prompt (20), correct-the-pass-rate (15, extension), write-your-own-judge (20, extension)                                                         | 80           |
+| `parts/04-decide-and-write-it-down`               | Skeleton | set-launch-criteria (20), compare-the-releases (15), read-the-ab-test (25), write-the-eval-section (25), plan-the-weekly-review (20, extension), bring-your-own-traces (20, extension) | 125          |
+| `parts/05-review-answers-with-the-langfuse-queue` | Built    | label-the-queue-rows (20)                                                                                                                                                              | 20           |
 
 ## What each check reads
 
@@ -33,6 +34,7 @@ Every check reads only the files in the step's own folder, the world data in `wo
 | write-the-eval-section  | `prd-eval-section.md`                                | Seven headings in order. Mode names and thresholds match earlier files                                                                                                                          |
 | plan-the-weekly-review  | `review-plan.md`                                     | Count read each cycle, the mix, the reader, minutes, an alert rule with a number, the action on alert                                                                                           |
 | bring-your-own-traces   | `own/notes.csv`, `own/failure-modes.md`              | The read-the-traces and name-the-failure-modes rules, on 20 of the learner's own ids                                                                                                            |
+| label-the-queue-rows    | `assignment/scores-export.csv`                       | The 40 ids of `golden-set.csv`, each once, each labelled pass or fail. The queue pass rate is reported beside the spreadsheet pass rate in `assignment/result.json`                             |
 
 ## Notes for part sessions
 

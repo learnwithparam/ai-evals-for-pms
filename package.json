@@ -14,6 +14,8 @@
     "draft": "bun world/draft-planner.ts",
     "finished": "bun world/finished.ts",
     "models": "bun config/check-models.ts",
+    "export-scores": "bun assignment/export-scores.ts",
+    "assignment": "bun assignment/check.ts",
     "shots": "bun images/shoot.ts"
   },
   "dependencies": {
