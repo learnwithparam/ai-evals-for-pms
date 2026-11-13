@@ -18,7 +18,7 @@ Open `prd-eval-section.md`. Fill in each of the seven sections:
 2. **Failure modes**: every mode from `failure-modes.md`, each with one line.
 3. **Metrics and thresholds**: one line per mode, with the same number as in `launch-criteria.md`.
 4. **Golden set**: `Size:`, `Owner:` and `Refresh when:` lines.
-5. **Judges**: the judge you trust, with its `TPR:` and `TNR:`.
+5. **Judges**: the judge you trust, with its `TPR:` and `TNR:`. Copy them from your `judge-check.md` in part 3, like `TPR: 0.93`. Both must be 0.80 or more.
 6. **Launch rule**: how a release ships or is blocked. Name every critical mode.
 7. **After launch**: what you read once it is live, and when you act.
 
@@ -42,7 +42,7 @@ flowchart LR
 - Failure modes names every mode in failure-modes.md.
 - Metrics and thresholds gives each mode the same threshold as launch-criteria.md.
 - Golden set has Size: (30 or more), Owner: and Refresh when: lines.
-- Judges states a TPR: and a TNR: for the judge you trust.
+- Judges states a TPR: and a TNR: of 0.80 or more for the judge you trust.
 - Launch rule names every critical mode.
 
 ```bash

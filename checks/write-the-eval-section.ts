@@ -56,11 +56,18 @@ function goldenSetIsDescribed(folder: string): boolean {
   return sizeIsEnough && hasOwner && hasRefresh;
 }
 
+// A rate written as 93% or 93 is the same as 0.93.
+function asShare(rate: number): number {
+  if (rate > 1) return rate / 100;
+  return rate;
+}
+
+// The judge you trust must reach 0.80 on both rates, so the generic judge's 0.37 cannot pass.
 function judgesHaveRates(folder: string): boolean {
   const body = sectionBody(folder, "judges");
-  const tpr = firstNumberIn(sameLineAfter(body, "TPR"));
-  const tnr = firstNumberIn(sameLineAfter(body, "TNR"));
-  return !Number.isNaN(tpr) && !Number.isNaN(tnr);
+  const truePositiveRate = asShare(firstNumberIn(sameLineAfter(body, "TPR")));
+  const trueNegativeRate = asShare(firstNumberIn(sameLineAfter(body, "TNR")));
+  return truePositiveRate >= 0.8 && trueNegativeRate >= 0.8;
 }
 
 function launchRuleNamesCriticalModes(folder: string): boolean {
@@ -109,9 +116,11 @@ export default [
     tryNext: "add three lines, like Size: 40, Owner: Ines Duarte, Refresh when: a new mode appears",
   },
   {
-    says: "Judges states a TPR: and a TNR: for the judge you trust",
+    says: "Judges states a TPR: and a TNR: of 0.80 or more for the judge you trust",
     test: (folder) => safely(() => judgesHaveRates(folder)),
-    tryNext: "copy TPR and TNR for the mobility judge from your judge-check.md",
+    tryNext:
+      "copy TPR and TNR for the mobility judge from your judge-check.md, " +
+      "not the generic judge",
   },
   {
     says: "Launch rule names every critical mode",

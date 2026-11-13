@@ -11,6 +11,7 @@ import criteriaRules, {
 } from "./set-launch-criteria";
 
 const VERDICTS = ["ship with conditions", "ship", "block"];
+const SMALL_COUNTS = new Set([0, 1, 2, 3]);
 
 const decisionIn = (folder: string) => textIn(folder, "release-decision.md");
 
@@ -69,7 +70,9 @@ function numbersFoundInReleases(folder: string): number {
   const withoutIds = withoutVerdict.replace(/\b[TRE]\d{3}\b/g, "");
   const cited = (withoutIds.match(/\d+(\.\d+)?/g) ?? []).map(Number);
   const known = releaseNumbers();
-  return new Set(cited.filter((number) => known.has(number))).size;
+  // 0 to 3 turn up in almost any sentence, so they do not prove you read summary.csv.
+  const telling = cited.filter((number) => known.has(number) && !SMALL_COUNTS.has(number));
+  return new Set(telling).size;
 }
 
 // A block must name the critical mode that caused it, so a reader knows what to fix.
