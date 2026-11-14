@@ -76,6 +76,12 @@ function launchRuleNamesCriticalModes(folder: string): boolean {
   return critical.length > 0 && critical.every((row) => body.includes(simplified(row.mode)));
 }
 
+// A business case ties the eval to money or people, with one real number.
+function businessCaseIsMade(folder: string): boolean {
+  const line = sameLineAfter(sectionBody(folder, "user outcome"), "Business case");
+  return wordCount(line) >= 10 && /\d/.test(line);
+}
+
 export default [
   {
     says: "launch-criteria.md and failure-modes.md are here and pass set-launch-criteria",
@@ -126,5 +132,12 @@ export default [
     says: "Launch rule names every critical mode",
     test: (folder) => safely(() => launchRuleNamesCriticalModes(folder)),
     tryNext: "say that each critical mode blocks a launch on its own, and name each one",
+  },
+  {
+    says: "User outcome has a Business case: line with a number and at least 10 words",
+    test: (folder) => safely(() => businessCaseIsMade(folder)),
+    tryNext:
+      "add one line: who pays when a draft fails, and a number, like a refund " +
+      "or the 0.042 euros a draft costs",
   },
 ] satisfies Rule[];

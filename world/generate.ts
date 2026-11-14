@@ -1440,6 +1440,25 @@ function writeReleases(): void {
     releaseSummary("cheaper-model", cheaper, 0.014),
   ];
   writeDataFile("releases/summary.csv", csv(summaries));
+  writeDataFile("releases/repeat-runs.csv", csv(repeatRuns()));
+}
+
+// Each release was run five times on the same 150 requests. Fixed numbers, so no random calls.
+// Run 1 is the run in summary.csv. A model can pass a different count each time it is run.
+const REPEAT_PASSES = {
+  live: [129, 127, 131, 128, 130],
+  "cheaper-model": [132, 126, 131, 125, 133],
+};
+
+function repeatRuns(): Row[] {
+  return Object.entries(REPEAT_PASSES).flatMap(([release, passes]) =>
+    passes.map((passed, index) => ({
+      release,
+      run: index + 1,
+      drafts: RELEASE_REQUESTS,
+      passed,
+    })),
+  );
 }
 
 // The instant drafts A/B test: 1,200 sessions an arm, 400 for each kind of trip.

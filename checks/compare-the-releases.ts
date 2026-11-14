@@ -83,6 +83,29 @@ function namesTheBlockingMode(folder: string): boolean {
   return blocking.some((criterion) => text.includes(simplified(criterion.mode)));
 }
 
+// The repeat runs: the same release run again can pass a different count of drafts.
+function spreadOf(release: string): number {
+  const passes = dataCsv("releases/repeat-runs.csv")
+    .filter((row) => row.release === release)
+    .map((row) => Number(row.passed));
+  return Math.max(...passes) - Math.min(...passes);
+}
+
+function sectionAfterRuns(folder: string): string {
+  const text = decisionIn(folder);
+  const start = text.search(/##\s*repeat runs/i);
+  return start < 0 ? "" : text.slice(start).split("\n").slice(1).join("\n").replace(/^(runs|spread):.*$/gim, "");
+}
+
+function repeatRunsAreRead(folder: string): boolean {
+  const text = decisionIn(folder);
+  const runs = firstNumberIn(sameLineAfter(text, "Runs"));
+  const spread = sameLineAfter(text, "Spread");
+  const numbers = (spread.match(/\d+/g) ?? []).map(Number);
+  const wanted = [spreadOf("live"), spreadOf("cheaper-model")];
+  return runs >= 3 && wanted.every((width) => numbers.includes(width));
+}
+
 export default [
   {
     says: "launch-criteria.md is in this folder and passes its check",
@@ -113,5 +136,18 @@ export default [
     says: "a block names the critical mode that broke its threshold",
     test: (folder) => safely(() => namesTheBlockingMode(folder)),
     tryNext: "name the critical mode in a sentence, spelled as in launch-criteria.md",
+  },
+  {
+    says: "Runs: is 3 or more and Spread: gives how far each release moved across runs",
+    test: (folder) => safely(() => repeatRunsAreRead(folder)),
+    tryNext:
+      "open world/data/releases/repeat-runs.csv; for each release, take the most passes " +
+      "minus the fewest, then write Runs: 5 and Spread: live 4, cheaper model 8",
+  },
+  {
+    says: "the Repeat runs section says if the gain is bigger than the spread",
+    test: (folder) =>
+      safely(() => /spread|luck|noise|chance/i.test(sectionAfterRuns(folder))),
+    tryNext: "add a sentence: is the cheaper model's gain bigger or smaller than its own spread?",
   },
 ] satisfies Rule[];

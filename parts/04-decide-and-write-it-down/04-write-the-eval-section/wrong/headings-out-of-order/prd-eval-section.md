@@ -4,6 +4,8 @@
 
 A designer can send a draft to the customer with light edits or none. Every stop is real, open, in season and in budget, and it suits the traveller.
 
+Business case: each blocked mobility failure saves a refund and a lost customer, so one refund costs far more than the 0.042 euros it costs to make a draft.
+
 ## Failure modes
 
 We read 30 drafts and found five failure modes:

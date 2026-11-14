@@ -69,6 +69,13 @@ function hasNoScale(folder: string): boolean {
   return SCALE_WORDS.every((pattern) => !pattern.test(text));
 }
 
+// The "Checked by:" line says if a code rule or a judge model will grade this mode, and why.
+function checkedByIsChosen(folder: string): boolean {
+  const line = field(rubricIn(folder), "Checked by");
+  const choice = simplified(line).split(/\s+/)[0]?.replace(/[^a-z]/g, "");
+  return (choice === "code" || choice === "judge") && wordCount(line) >= 10;
+}
+
 export default [
   {
     says: "rubric.md has the headings Pass, Fail, Borderline rule and Examples",
@@ -111,5 +118,12 @@ export default [
     tryNext:
       "add a line like Does not cover: budget, diet, pace or closed days; " +
       "other rubrics check those",
+  },
+  {
+    says: "a Checked by: line says code or judge, and why, in at least 10 words",
+    test: (folder) => safely(() => checkedByIsChosen(folder)),
+    tryNext:
+      "add a line like Checked by: judge. A person must read the draft to see it. " +
+      "Pick code only if a plain rule can see the failure",
   },
 ] satisfies Rule[];
