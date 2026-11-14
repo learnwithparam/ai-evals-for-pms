@@ -1,9 +1,9 @@
-// The audit needs the course app running. Set AUDIT_URL to where it listens.
-// Set AUDIT_SERVER to a command that starts it, and Playwright starts and stops it for you.
+// By default Playwright starts e2e/serve.ts, which serves the world folder.
+// Set AUDIT_URL and AUDIT_SERVER to point the audit at another app.
 import { defineConfig } from "@playwright/test";
 
-const appUrl = process.env.AUDIT_URL ?? "http://localhost:3000";
-const startCommand = process.env.AUDIT_SERVER;
+const appUrl = process.env.AUDIT_URL ?? "http://localhost:3019";
+const startCommand = process.env.AUDIT_SERVER ?? "bun serve.ts 3019";
 
 export default defineConfig({
   testDir: ".",
