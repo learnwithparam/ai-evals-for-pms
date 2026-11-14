@@ -19,10 +19,10 @@ This folder has a sample `launch-criteria.md` and `failure-modes.md`. You can co
    The columns use short names. For example, `ignores-mobility` is Ignores mobility needs, `impossible-transfer` is Impossible travel, and `diet-missed` is Wrong food for the diet.
 3. Decide, with the rule in the picture below:
    - a critical row broken: `block`;
-   - only other rows broken: `ship with conditions`;
+   - only other rows broken: "ship with conditions";
    - nothing broken: `ship`.
 4. Write it in `release-decision.md`, like `Verdict: block`.
-5. Under `## The numbers`, copy at least 3 numbers straight from `summary.csv`.
+5. Under the heading The numbers, copy at least 3 numbers straight from `summary.csv`.
 6. If you block, name the critical mode that broke its threshold.
 
 Your verdict must follow your own rules, even if you do not like the answer.

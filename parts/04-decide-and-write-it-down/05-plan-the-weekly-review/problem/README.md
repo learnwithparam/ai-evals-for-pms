@@ -19,7 +19,7 @@ Open `review-plan.md`. Fill in each line, with the value on the same line as its
    - some at random, to find problems nobody has seen yet;
    - some flagged by a refund request or a designer rewrite, to find the costly ones.
 3. **Reader**: who reads them. Name one person.
-4. **Minutes**: how long the reading takes. Allow about 1 to 2 minutes a draft.
+4. **Minutes**: how long the reading takes. Allow a short look at each draft.
 5. **Alert rule**: when to act, as a number. For example: more than 1 mobility fail in 30 drafts.
 6. **On alert**: who does what when the alert fires.
 

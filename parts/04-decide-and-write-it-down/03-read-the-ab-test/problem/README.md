@@ -21,8 +21,8 @@ Open `world/data/ab-test.csv` in a spreadsheet. Then fill in `ab-decision.md`, l
    - margin = 1.96 x square root of ( p1 x (1 - p1) / n1 + p2 x (1 - p2) / n2 )
    - p1 and p2 are the two rates, as shares like 0.18. n1 and n2 are the sessions in each arm.
 4. **Crosses zero**: `yes` if the low end is below 0 and the high end above 0.
-5. **Refund guardrail**: the rule is "closed on arrival refunds stay at or below 0.5% of sessions". Count rows with `refund_reason` = `closed on arrival` in the instant arm. Write `breached` or `held`.
-6. **Decision**: one of `ship to all`, `ship to a segment`, `keep testing`, `do not ship`.
+5. **Refund guardrail**: the rule is "closed on arrival refunds stay at or below 0.5% of sessions". Count rows where `refund_reason` says "closed on arrival" in the instant arm. Write `breached` or `held`.
+6. **Decision**: one of "ship to all", "ship to a segment", "keep testing" or "do not ship".
 7. Under `## Why`, explain your decision in two or three sentences.
 
 Never write "ship to all" while the interval crosses zero or the guardrail is breached.

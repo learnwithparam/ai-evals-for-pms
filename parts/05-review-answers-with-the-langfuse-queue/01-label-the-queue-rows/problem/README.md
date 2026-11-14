@@ -54,8 +54,8 @@ Find your `FAIL` line on the left. Do the fix on the right.
 | ------------------------------- | ------------------------------------------------------------------- |
 | `FAIL the export file`          | Run `bun run export-scores`. It writes the file into `assignment/`. |
 | `FAIL every row has one label`  | Open the queue. Label every draft once. Then export again.          |
-| `The Langfuse keys are missing` | Add both keys to your `.env` file. Then run the export again.       |
-| `Langfuse answered 401`         | The keys are wrong. Make a new key pair and copy both parts.        |
+| "The Langfuse keys are missing" | Add both keys to your `.env` file. Then run the export again.       |
+| "Langfuse answered 401"         | The keys are wrong. Make a new key pair and copy both parts.        |
 
 ## Words you will use
 

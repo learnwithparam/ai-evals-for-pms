@@ -24,7 +24,7 @@ Anthropic, a company that builds AI models, puts it this way: "The people closes
    - `Question:` the question the boss asked you. Start it with "How often".
    - `Who decides:` the person whose word sets what a good draft is.
 
-A good question asks for a number. For example, `Question: Is Draft Planner good?` is a weak question. Nobody can answer it with a number. A question that starts with "How often" gets you a number, like "4 drafts in 30".
+A good question asks for a number. For example, "Is Draft Planner good?" is a weak question. Nobody can answer it with a number. A question that starts with "How often" gets you a number, like "4 drafts in 30".
 
 ## Done when
 
@@ -49,7 +49,7 @@ Find the `FAIL` line you see in the left column. Then do the fix on the right.
 | What you see                                         | Fix                                                                                      |
 | ---------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | `FAIL the world is in place`                         | Run `bun run world reset`.                                                               |
-| `FAIL the Question: line asks how often`             | Start the line with `Question: How often` and write at least 6 words.                    |
+| `FAIL the Question: line asks how often`             | Start the line with Question: then the words How often, and write at least 6 words.      |
 | `FAIL the Who decides: line names the head designer` | The boss signs budgets, not trips. Read the tab again and find who signs off every trip. |
 
 ## Words you will use

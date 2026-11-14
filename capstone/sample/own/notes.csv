@@ -1,0 +1,21 @@
+trace_id,note
+R01,ok
+R02,Promises a refund after 60 days. The policy says 30.
+R03,ok
+R04,Says the shop pays return postage. It does not for sale items.
+R05,Promises a refund after 90 days. The policy says 30.
+R06,ok
+R07,Answers about shipping time when the customer asked about a refund.
+R08,ok
+R09,Says the shop pays return postage. It does not for sale items.
+R10,Answers about gift cards when the customer asked about a refund.
+R11,ok
+R12,Promises a refund after 45 days. The policy says 30.
+R13,ok
+R14,Says a worn shoe can be returned. The policy says unworn only.
+R15,ok
+R16,Says a worn coat can be returned. The policy says unworn only.
+R17,Answers about shipping time when the customer asked about a refund.
+R18,ok
+R19,Says a worn bag can be returned. The policy says unworn only.
+R20,ok

@@ -8,7 +8,7 @@ The mobility judge ran on all 300 drafts. It passed 250 of them, so the dashboar
 
 You can fix the number with the two rates you found in `test-the-judge`. The fix is called the **Rogan-Gladen correction**.
 
-For example, Hamel Husain and Shreya Shankar give this case in their [validate-evaluator skill](https://github.com/ai-evals-course/evals-skills/blob/main/skills/validate-evaluator/SKILL.md). A judge has TPR 0.92 and TNR 0.88. It passes 400 of 500 traces, so 0.80. The corrected rate is (0.80 + 0.88 - 1) / (0.92 + 0.88 - 1) = 0.68 / 0.80 = 0.85.
+For example, Hamel Husain and Shreya Shankar give this case in their [validate-evaluator skill](https://github.com/ai-evals-course/evals-skills/blob/main/skills/validate-evaluator/SKILL.md). A judge catches 92 in 100 true passes and 88 in 100 true fails. It passes 400 of 500 traces, so 0.80. The corrected rate is (0.80 + 0.88 - 1) / (0.92 + 0.88 - 1) = 0.68 / 0.80 = 0.85.
 
 ## Your challenge
 
@@ -17,7 +17,7 @@ For example, Hamel Husain and Shreya Shankar give this case in their [validate-e
 3. Copy the mobility judge's `TPR:` and `TNR:` from your `judge-check.md`.
 4. In a spreadsheet cell, work out the corrected rate:
    - corrected = (raw + TNR - 1) / (TPR + TNR - 1)
-5. Write it on the `Corrected pass rate:` line.
+5. Write it on the line that starts with Corrected pass rate.
 6. On the `Why:` line, say in one sentence why the raw rate is wrong.
 
 Keep three decimal places while you work. Round only at the end.

@@ -43,7 +43,7 @@ Use pass or fail only. Never a score like "4 out of 5". A 4 means something diff
 - Examples lists at least 2 pass and 2 fail drafts that Ines labelled.
 - Every pass example is a draft Ines passed, and every fail example one she failed.
 - The rubric has no scale: no 1 to 5, no score, no partly or mostly.
-- A `Does not cover:` line says what the rubric leaves out.
+- A line that starts with Does not cover says what the rubric leaves out.
 
 ```bash
 bun run verify write-the-rubric

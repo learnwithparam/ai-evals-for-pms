@@ -1,6 +1,6 @@
 # Parts mapped onto formats. Minutes are working minutes; breaks sit between sessions.
 # Part totals: orientation 15, look-before-you-measure 70, define-good 50,
-# check-the-judge 80 (45 core plus 35 extension), decide-and-write-it-down 150 (85 core plus 65 extension).
+# check-the-judge 80 (45 core plus 35 extension), decide-and-write-it-down 125 (85 core plus 40 extension).
 # review-answers-with-the-langfuse-queue 20 (optional in the live session, expected as homework).
 # All parts: 385 minutes.
 
@@ -9,7 +9,7 @@ sessions = [
   { parts = ["orientation", "look-before-you-measure"], minutes = 85 },
   { parts = ["define-good"], minutes = 50 },
   { parts = ["check-the-judge"], minutes = 80 },
-  { parts = ["decide-and-write-it-down"], minutes = 150 },
+  { parts = ["decide-and-write-it-down"], minutes = 125 },
   { parts = ["review-answers-with-the-langfuse-queue"], minutes = 20 },
 ]
 
@@ -25,7 +25,7 @@ sessions = [
   { parts = ["orientation", "look-before-you-measure"], minutes = 85 },
   { parts = ["define-good"], minutes = 50 },
   { parts = ["check-the-judge"], minutes = 80 },
-  { parts = ["decide-and-write-it-down"], minutes = 150 },
+  { parts = ["decide-and-write-it-down"], minutes = 125 },
   { parts = ["review-answers-with-the-langfuse-queue"], minutes = 20 },
 ]
 

@@ -57,12 +57,12 @@ Expect: `Done. All 6 rules pass.` and a `Progress:` line.
 
 Find your `FAIL` line on the left. Do the fix on the right.
 
-| What you see                                 | Fix                                                               |
-| -------------------------------------------- | ----------------------------------------------------------------- |
-| `FAIL compare.md states Agreement:`          | Count same labels and divide by 40. Write 0.95 or 95%.            |
-| `FAIL compare.md states Kappa:`              | Work out chance first. Kappa is lower than agreement.             |
-| `FAIL every draft where you and Ines differ` | Filter your sheet to rows where the labels differ. List them all. |
-| `FAIL each disagreement has one resolution`  | Write exactly one of the three choices on each line.              |
+| What you see                                 | Fix                                                                     |
+| -------------------------------------------- | ----------------------------------------------------------------------- |
+| `FAIL compare.md states Agreement:`          | Count same labels and divide by 40. Write it as a decimal or a percent. |
+| `FAIL compare.md states Kappa:`              | Work out chance first. Kappa is lower than agreement.                   |
+| `FAIL every draft where you and Ines differ` | Filter your sheet to rows where the labels differ. List them all.       |
+| `FAIL each disagreement has one resolution`  | Write exactly one of the three choices on each line.                    |
 
 ## Words you will use
 

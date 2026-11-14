@@ -47,7 +47,7 @@ Langfuse Cloud is the default, so you need no Docker. You can host Langfuse on y
 The other choice is Arize Phoenix, hosted on your own laptop.
 
 - **Choose when:** the data must stay on your laptop and memory is short. Phoenix is one container and needs far less memory than Langfuse.
-- **Trade-off:** Phoenix uses the Elastic License 2.0. That is free to use, but its source is open to read, not open source in the strict sense. It also needs Docker, which Langfuse Cloud does not.
+- **Trade-off:** Phoenix uses the Elastic License. That is free to use, but its source is open to read, not open source in the strict sense. It also needs Docker, which Langfuse Cloud does not.
 
 ## Walkthrough
 

@@ -15,7 +15,7 @@ This folder has a sample `failure-modes.md` from part 1. You can copy your own o
 1. Open `launch-criteria.md`. It has a table with six columns.
 2. Add one row for each `##` heading in `failure-modes.md`. Copy the name exactly.
 3. **Metric**: what you count, like "drafts that fail this mode".
-4. **Threshold**: the most fails you accept, as a number, like `at most 1`. You can also use a share, like `at most 2%`.
+4. **Threshold**: the most fails you accept, as a number, like "at most 1". You can also use a share, like "at most 2%".
 5. **Measured on**: the set and its size. The release results in `world/data/releases/` use 150 drafts. Use 30 drafts or more.
 6. **Critical**: `yes` or `no`. Ask: would this mistake hurt a traveller if no designer caught it?
 7. **Owner**: the person who acts when the row fails.

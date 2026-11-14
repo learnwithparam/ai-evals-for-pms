@@ -20,7 +20,7 @@ So the cheaper model looks better. But 26 of the 150 requests are from traveller
 
 A good launch rule has a number in it. Anthropic's docs give examples, like "99.5% non-toxic outputs" and "95% response time < 200ms". The first means at least 99.5% of replies are free of rude or harmful words. ([Anthropic docs, Define success criteria](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests))
 
-An average can hide failures. The TravelPlanner study tested AI trip planners. For example, one model (a fine-tuned Llama 3.1 8B) met 78.3% of the common-sense rules on average. But only 17.8% of its plans met every common-sense rule. Only 3.8% met every rule of any kind. ([OSU NLP Group, TravelPlanner](https://github.com/OSU-NLP-Group/TravelPlanner))
+An average can hide failures. The TravelPlanner study tested AI trip planners. For example, one model (a small fine-tuned open model) met 78.3% of the common-sense rules on average. But only 17.8% of its plans met every common-sense rule. Only 3.8% met every rule of any kind. ([OSU NLP Group, TravelPlanner](https://github.com/OSU-NLP-Group/TravelPlanner))
 
 This is the path you take in this part:
 
@@ -45,7 +45,6 @@ flowchart LR
 | [write-the-eval-section](04-write-the-eval-section/problem/README.md)             | 25      | `prd-eval-section.md`                   | Seven headings in order, mode names and thresholds that match your earlier files                     |
 | [plan-the-weekly-review](05-plan-the-weekly-review/problem/README.md) (extension) | 20      | `review-plan.md`                        | Drafts each cycle, a random and flagged mix, a reader, minutes, an alert rule with a number          |
 | [bring-your-own-traces](06-bring-your-own-traces/problem/README.md) (extension)   | 20      | `own/notes.csv`, `own/failure-modes.md` | The read-the-traces and name-the-failure-modes rules, on 20 of your own traces                       |
-| [ship-your-own-eval](07-ship-your-own-eval/problem/README.md)                     | 25      | `own/eval-plan.md` on your own feature  | Seven headings, limits, grader, repeat runs, business case and your own evidence ids                 |
 
 Some words from the table:
 
@@ -56,6 +55,7 @@ Some words from the table:
 - A **guardrail** is a number that must not get worse, like refunds, even if the main number gets better.
 - A **PRD** (product requirements document) is the spec that says what the product must do.
 - An **extension** is an extra step. You can skip it.
+- The **capstone** is the last task. Fill in `capstone/template/own/` with your own feature, then run `bun capstone/check.ts capstone/template`. A finished example sits in `capstone/sample/`.
 
 ## Walkthrough
 

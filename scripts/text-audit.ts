@@ -13,8 +13,6 @@ if (!existsSync(routesFile)) {
 }
 
 const configFile = join(ROOT, "e2e", "playwright.config.ts");
-// The check workflow does not install packages, so make sure the local copy of Playwright exists.
-Bun.spawnSync(["bun", "install", "--frozen-lockfile"], { cwd: ROOT, stdout: "ignore" });
 const install = Bun.spawnSync(["bunx", "playwright", "install", "chromium"], { cwd: ROOT });
 if (install.exitCode !== 0) {
   console.error("Could not get the browser. Try next: run bunx playwright install chromium.");
@@ -22,15 +20,6 @@ if (install.exitCode !== 0) {
 }
 const audit = Bun.spawnSync(["bunx", "playwright", "test", "-c", configFile, "--trace", "off"], {
   cwd: ROOT,
-  // The viewer is a static page, so a tiny file server is enough. Playwright stops it.
-  env: {
-    ...process.env,
-    // biome-ignore lint/style/useNamingConvention: these names are read by e2e/playwright.config.ts
-    AUDIT_URL: process.env.AUDIT_URL ?? "http://localhost:4173/viewer.html",
-    // biome-ignore lint/style/useNamingConvention: same as above
-    AUDIT_SERVER:
-      process.env.AUDIT_SERVER ?? `python3 -m http.server 4173 --directory ${join(ROOT, "world")}`,
-  },
   stdout: "inherit",
   stderr: "inherit",
 });

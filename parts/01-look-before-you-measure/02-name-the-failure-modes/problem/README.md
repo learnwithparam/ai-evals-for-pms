@@ -23,7 +23,7 @@ This folder has a filled-in `notes.csv`, so you can start now. To use your own n
 1. Read every note that is not `ok`.
 2. Put notes that describe the same problem into one group. Aim for 4 to 8 groups.
 3. Open `failure-modes.md`. For each group, write:
-   - `## ` and a short name that says what happened, like `## Closed on the day`.
+   - `## ` and a short name that says what happened, like "Closed on the day".
    - `Definition:` one sentence that helps a designer spot the problem.
    - `Traces:` the ids of the drafts in this group, like `T020, T199`.
 
