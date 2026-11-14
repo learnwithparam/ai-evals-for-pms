@@ -44,11 +44,11 @@ Expect: `Done. All 5 rules pass.` and a `Progress:` line.
 
 ## If you get stuck
 
-| What you see                           | Fix                                                                                   |
-| -------------------------------------- | ------------------------------------------------------------------------------------- |
-| `FAIL each fault is marked`            | Over budget, impossible travel and wrong pace are plan faults. The rest are lookups.  |
-| `FAIL each lookup fault names`         | Count the lookup list from 1, and use the one that returned the place in the fault.   |
-| `FAIL breakdown.md has Lookup faults`  | Count the rows of `stages.csv` for each stage.                                        |
+| What you see                          | Fix                                                                                  |
+| ------------------------------------- | ------------------------------------------------------------------------------------ |
+| `FAIL each fault is marked`           | Over budget, impossible travel and wrong pace are plan faults. The rest are lookups. |
+| `FAIL each lookup fault names`        | Count the lookup list from 1, and use the one that returned the place in the fault.  |
+| `FAIL breakdown.md has Lookup faults` | Count the rows of `stages.csv` for each stage.                                       |
 
 ## Words you will use
 

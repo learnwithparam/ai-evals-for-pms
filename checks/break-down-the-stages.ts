@@ -21,10 +21,11 @@ function truthKey(): Map<string, Truth> {
       key.set(row.trace_id, { stage: "plan", step: 0 });
       continue;
     }
-    const lookups = byId.get(row.trace_id)?.draft.days.flatMap((day) => day.items) ?? [];
-    const lookupsFound = (byId.get(row.trace_id) as any)?.lookups as { found: string }[];
-    const bad = lookups.findIndex((item) => row.detail.includes(item.name));
-    const step = lookupsFound.findIndex((look) => look.found === lookups[bad]?.catalogue_id);
+    const trace = byId.get(row.trace_id);
+    const placed = trace?.draft.days.flatMap((day) => day.items) ?? [];
+    const badPlace = placed.find((item) => row.detail.includes(item.name));
+    const lookupIds = (trace?.lookups ?? []).map((look) => look.found);
+    const step = lookupIds.indexOf(badPlace?.catalogue_id ?? "");
     key.set(row.trace_id, { stage: "lookup", step: step + 1 });
   }
   return key;
@@ -33,9 +34,12 @@ function truthKey(): Map<string, Truth> {
 const rowsIn = (folder: string) => csvIn(folder, "stages.csv");
 const stageOf = (row: Record<string, string>) => simplified(row.stage ?? "");
 
-function everyFaultHasARow(folder: string): boolean {
-  const ids = new Set(rowsIn(folder).map((row) => (row.trace_id ?? "").trim()));
-  return [...truthKey().keys()].every((id) => ids.has(id));
+function everyFaultHasRow(folder: string): boolean {
+  const rows = rowsIn(folder);
+  const written = rows.map((row) => (row.trace_id ?? "").trim());
+  const ids = new Set(written);
+  const faultIds = [...truthKey().keys()];
+  return faultIds.every((id) => ids.has(id));
 }
 
 function stagesAreRight(folder: string): boolean {
@@ -74,7 +78,7 @@ function nextFixIsNamed(folder: string): boolean {
 export default [
   {
     says: "stages.csv has a row for every real fault in your sample of 30",
-    test: (folder) => safely(() => hasFile(folder, "stages.csv") && everyFaultHasARow(folder)),
+    test: (folder) => safely(() => hasFile(folder, "stages.csv") && everyFaultHasRow(folder)),
     tryNext: "the starter lists the 13 draft ids that have a real fault; keep every row",
   },
   {

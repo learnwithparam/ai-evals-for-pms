@@ -94,7 +94,14 @@ function spreadOf(release: string): number {
 function sectionAfterRuns(folder: string): string {
   const text = decisionIn(folder);
   const start = text.search(/##\s*repeat runs/i);
-  return start < 0 ? "" : text.slice(start).split("\n").slice(1).join("\n").replace(/^(runs|spread):.*$/gim, "");
+  return start < 0
+    ? ""
+    : text
+        .slice(start)
+        .split("\n")
+        .slice(1)
+        .join("\n")
+        .replace(/^(runs|spread):.*$/gim, "");
 }
 
 function repeatRunsAreRead(folder: string): boolean {
@@ -146,8 +153,7 @@ export default [
   },
   {
     says: "the Repeat runs section says if the gain is bigger than the spread",
-    test: (folder) =>
-      safely(() => /spread|luck|noise|chance/i.test(sectionAfterRuns(folder))),
+    test: (folder) => safely(() => /spread|luck|noise|chance/i.test(sectionAfterRuns(folder))),
     tryNext: "add a sentence: is the cheaper model's gain bigger or smaller than its own spread?",
   },
 ] satisfies Rule[];

@@ -72,7 +72,9 @@ function hasNoScale(folder: string): boolean {
 // The "Checked by:" line says if a code rule or a judge model will grade this mode, and why.
 function checkedByIsChosen(folder: string): boolean {
   const line = field(rubricIn(folder), "Checked by");
-  const choice = simplified(line).split(/\s+/)[0]?.replace(/[^a-z]/g, "");
+  const choice = simplified(line)
+    .split(/\s+/)[0]
+    ?.replace(/[^a-z]/g, "");
   return (choice === "code" || choice === "judge") && wordCount(line) >= 10;
 }
 
