@@ -24,6 +24,7 @@ This folder has a sample `launch-criteria.md` and `failure-modes.md`. You can co
 4. Write it in `release-decision.md`, like `Verdict: block`.
 5. Under the heading The numbers, copy at least 3 numbers straight from `summary.csv`.
 6. If you block, name the critical mode that broke its threshold.
+7. Open `world/data/releases/repeat-runs.csv`. It holds five runs of each release. Under the heading Repeat runs, write `Runs:` and a `Spread:` line. The spread is the most passes minus the fewest, for each release. Then add one sentence: is the gain of the cheaper model smaller or bigger than its own spread? A gain smaller than the spread may be luck.
 
 Your verdict must follow your own rules, even if you do not like the answer.
 
@@ -50,7 +51,7 @@ flowchart LR
 bun run verify compare-the-releases
 ```
 
-Expect: `Done. All 5 rules pass.` and a `Progress:` line.
+Expect: `Done. All 7 rules pass.` and a `Progress:` line.
 
 ## If you get stuck
 

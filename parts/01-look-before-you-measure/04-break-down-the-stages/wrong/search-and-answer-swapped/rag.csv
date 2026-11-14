@@ -1,0 +1,7 @@
+question,page_found,page_needed,answer_matches_page,stage
+Can I move my trip to another date?,refund-policy,change-dates,yes,answer
+How do I get my money back?,refund-policy,refund-policy,no,search
+Is breakfast included?,hotel-meals,hotel-meals,yes,none
+Can I bring my dog?,luggage-rules,pet-rules,yes,answer
+What time does check-in open?,check-in,check-in,no,search
+Do you cover lost bags?,luggage-rules,luggage-rules,yes,none

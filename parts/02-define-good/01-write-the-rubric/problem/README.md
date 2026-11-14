@@ -4,14 +4,14 @@
 
 Your counts showed the top failure: the draft ignores mobility needs. But one designer fails a draft that another designer passes. Every review turns into an argument.
 
-The rule lives in Ines Duarte's head. You need it on paper, so anyone can apply it and get her answer.
+Ines Duarte holds the rule in her head. Put it on paper.
 
 For example, Ines labels these two drafts in `world/data/expert-labels.csv`:
 
 - T149 fails: "Ribeira Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
 - T068 passes: "Ribeira Kitchen No. 2 has a few steps, which is fine for limited walking."
 
-Both travellers have limited walking. Both places have steps. Your rubric must say why one passes and one fails.
+Both travellers have limited walking and both places have steps. Say why one passes.
 
 ```mermaid
 flowchart TD
@@ -32,8 +32,9 @@ Open `rubric.md` in this folder. Fill in each part.
 3. **Borderline rule**: how to decide the close case. Open T068 in the viewer to see it: `world/viewer.html#read/T068`. Look at the `Access:` line of each stop.
 4. **Examples**: two drafts that pass and two that fail. Take the ids from `world/data/expert-labels.csv`. Write them like `Pass: T088, T068`.
 5. **Does not cover**: one line on what this rubric leaves out, like budget or diet.
+6. **Checked by**: one line that starts with Checked by:, then code or judge, then why. Pick code only when a plain rule can see the failure. Write at least 10 words.
 
-Use pass or fail only. Never a score like "4 out of 5". A 4 means something different to each reader, and nobody can build a check from it.
+Use pass or fail only. Never a score like "4 out of 5". A 4 means something different to each reader.
 
 ## Done when
 
@@ -42,18 +43,17 @@ Use pass or fail only. Never a score like "4 out of 5". A 4 means something diff
 - The Borderline rule decides the close case in at least 8 words.
 - Examples lists at least 2 pass and 2 fail drafts that Ines labelled.
 - Every pass example is a draft Ines passed, and every fail example one she failed.
-- The rubric has no scale: no 1 to 5, no score, no partly or mostly.
+- The rubric has no scale, like 1 to 5, partly or mostly.
 - A line that starts with Does not cover says what the rubric leaves out.
+- A line that starts with Checked by says code or judge, and why, in at least 10 words.
 
 ```bash
 bun run verify write-the-rubric
 ```
 
-Expect: `Done. All 7 rules pass.` and a `Progress:` line.
+Expect: `Done. All 8 rules pass.` and a `Progress:` line.
 
 ## If you get stuck
-
-Find your `FAIL` line on the left. Do the fix on the right.
 
 | What you see                                     | Fix                                                                    |
 | ------------------------------------------------ | ---------------------------------------------------------------------- |
@@ -66,5 +66,4 @@ Find your `FAIL` line on the left. Do the fix on the right.
 
 - **Rubric**: a short written rule that says when a draft passes and when it fails.
 - **Borderline case**: a draft close to the line, where two careful people could disagree.
-- **Step-free**: a place you can reach with no steps, so a wheelchair can get in.
 - **Scale**: a score from low to high, like 1 to 5.

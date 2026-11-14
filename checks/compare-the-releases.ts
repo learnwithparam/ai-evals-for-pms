@@ -113,6 +113,16 @@ function repeatRunsAreRead(folder: string): boolean {
   return runs >= 3 && wanted.every((width) => numbers.includes(width));
 }
 
+// The gain must be called smaller than the spread, so it may be luck. Calling it real is wrong.
+function gainIsCalledNoise(folder: string): boolean {
+  const text = sectionAfterRuns(folder);
+  const saysReal =
+    /\b(is|a|the)\s+real\b|\breal gain\b|\bbigger than (its|the|their)? ?(own )?spread\b/i;
+  const saysNoise =
+    /\b(smaller|less|under|inside|within)\b[^.]*\bspread\b|\b(luck|noise|chance)\b/i;
+  return saysNoise.test(text) && !saysReal.test(text);
+}
+
 export default [
   {
     says: "launch-criteria.md is in this folder and passes its check",
@@ -153,7 +163,8 @@ export default [
   },
   {
     says: "the Repeat runs section says if the gain is bigger than the spread",
-    test: (folder) => safely(() => /spread|luck|noise|chance/i.test(sectionAfterRuns(folder))),
-    tryNext: "add a sentence: is the cheaper model's gain bigger or smaller than its own spread?",
+    test: (folder) => safely(() => gainIsCalledNoise(folder)),
+    tryNext:
+      "add a sentence: the cheaper model's gain is smaller than its own spread, so it may be luck",
   },
 ] satisfies Rule[];

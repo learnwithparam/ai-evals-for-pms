@@ -14,7 +14,7 @@ This folder has a sample `launch-criteria.md` and `failure-modes.md`. You can co
 
 Open `prd-eval-section.md`. Fill in each of the seven sections:
 
-1. **User outcome**: what a good draft does for the customer and the designer.
+1. **User outcome**: what a good draft does for the customer and the designer. Add one line that starts with Business case:. Say who pays when a draft fails, give one number, and say how it compares, like a refund against the cost of a draft.
 2. **Failure modes**: every mode from `failure-modes.md`, each with one line.
 3. **Metrics and thresholds**: one line per mode, with the same number as in `launch-criteria.md`.
 4. **Golden set**: `Size:`, `Owner:` and `Refresh when:` lines.
@@ -49,7 +49,7 @@ flowchart LR
 bun run verify write-the-eval-section
 ```
 
-Expect: `Done. All 8 rules pass.` and a `Progress:` line.
+Expect: `Done. All 9 rules pass.` and a `Progress:` line.
 
 ## If you get stuck
 

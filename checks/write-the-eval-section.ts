@@ -79,7 +79,9 @@ function launchRuleNamesCriticalModes(folder: string): boolean {
 // A business case ties the eval to money or people, with one real number.
 function businessCaseIsMade(folder: string): boolean {
   const line = sameLineAfter(sectionBody(folder, "user outcome"), "Business case");
-  return wordCount(line) >= 10 && /\d/.test(line);
+  const namesCost = /\b(refunds?|euros?|costs?|pays?|paid|lost|hours?|fees?)\b/i.test(line);
+  const weighsIt = /\b(more than|less than|far more|against|worth|instead of|beats?)\b/i.test(line);
+  return wordCount(line) >= 10 && /\d/.test(line) && namesCost && weighsIt;
 }
 
 export default [
@@ -137,7 +139,7 @@ export default [
     says: "User outcome has a Business case: line with a number and at least 10 words",
     test: (folder) => safely(() => businessCaseIsMade(folder)),
     tryNext:
-      "add one line: who pays when a draft fails, and a number, like a refund " +
+      "add one line: who pays when a draft fails, a number, and how it compares, like a refund " +
       "or the 0.042 euros a draft costs",
   },
 ] satisfies Rule[];
