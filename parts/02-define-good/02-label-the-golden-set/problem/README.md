@@ -2,15 +2,16 @@
 
 ## The problem
 
-A rubric on paper is a guess until you use it. You find the gaps only when you apply it to real drafts, one by one.
+A rubric on paper is only a guess until you test it. So you label a fixed set of 40 drafts with your rubric. For example, take draft T135. It is for a traveller with limited walking. One stop says "some steps". Does it pass?
 
-So you label a fixed set of 40 drafts with your rubric. We call this set the **golden set**. The team tests against the same 40 drafts again and again, so every result can be compared.
+## Watch it done
 
-For example, draft T135 is for a traveller with limited walking. One stop is "Ribeira Kitchen No. 2". Its `Access:` line says "some steps". Does it pass? Your borderline rule decides.
+Before: `labels.csv` has only ids and empty cells, and the check fails.
+After: every row has a label, and each fail has a reason. The check says Done. All 5 rules pass.
 
 ![Draft T135 open in the viewer, with the Access line of each stop](../images/expected.png)
 
-## Your challenge
+## Your turn
 
 1. Open `labels.csv` in this folder in a spreadsheet. It lists the 40 ids from `world/data/golden-set.csv`.
 2. Keep your rubric open beside it. This folder has a sample `rubric.md`. You can copy your own over it.
@@ -24,6 +25,18 @@ Most travellers have no mobility need, so most drafts pass. Expect about 1 in 5 
 
 Do not look up these 40 ids in `world/data/expert-labels.csv` yet. Label first, then compare in the next step. If you look first, you copy Ines and learn nothing about your rubric.
 
+8. Run the check.
+
+```bash
+bun run verify label-the-golden-set
+```
+
+Expect: `Done. All 5 rules pass.` and a `Progress:` line.
+
+## Do it on your work
+
+Take a few real drafts from your own product. Label them with the rubric you wrote in the last step. Good looks like: each fail names one stop or step and says what is wrong, and a colleague reaches the same label.
+
 ## Done when
 
 - `labels.csv` has the columns `trace_id`, `label` and `reason`.
@@ -32,11 +45,9 @@ Do not look up these 40 ids in `world/data/expert-labels.csv` yet. Label first, 
 - Both pass and fail appear.
 - Every fail has a reason of at least 6 words.
 
-```bash
-bun run verify label-the-golden-set
-```
+## Solution
 
-Expect: `Done. All 5 rules pass.` and a `Progress:` line.
+After state: `labels.csv` has all 40 ids, each labelled pass or fail, and a reason on every fail. The finished file is in `solution/labels.csv`.
 
 ## If you get stuck
 
@@ -48,9 +59,3 @@ Find your `FAIL` line on the left. Do the fix on the right.
 | `FAIL every label is pass or fail` | Fill every empty cell. Change any number or "maybe" to pass or fail.      |
 | `FAIL both pass and fail appear`   | Read the drafts with a wheelchair or limited walking again.               |
 | `FAIL every fail has a reason`     | Name the stop and say what is wrong, like "steep steps for a wheelchair". |
-
-## Words you will use
-
-- **Golden set**: a fixed set of drafts with trusted answers. You test against it again and again.
-- **Label**: your pass or fail for one draft.
-- **Reason**: a short note on why a draft fails. It helps when you compare with Ines.

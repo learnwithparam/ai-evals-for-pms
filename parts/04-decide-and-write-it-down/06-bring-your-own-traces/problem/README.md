@@ -1,16 +1,19 @@
 # Bring your own traces
 
-This is an extension step. You can skip it.
-
 ## The problem
 
-Lantern Trails is practice. Your own AI feature is the real thing. The same method works on it: read, write notes, then group the notes into failure modes.
+Lantern Trails is practice. Your own AI feature is the real thing. Read the traces, write notes, then group them into failure modes. Nothing leaves your computer.
 
-You do it here on 20 of your own traces. Nothing leaves your computer. The check reads only your two files.
+For example, a farm advice assistant answers farmers from an expert fact sheet. One note reads: "Says to spray the maize twice the dose on the fact sheet."
 
-For example, a farm advice assistant answers farmers from an expert fact sheet. One of its notes might say: "Says to spray the maize twice the dose on the fact sheet." The sample answer in `solution/own/` shows 20 such notes and four modes.
+## Watch it done
 
-## Your challenge
+Before: `verify` prints `FAIL at least 2 notes are ok` when notes.csv has fewer than 2 ok rows.
+After: `Done. All 13 rules pass.` and a `Progress:` line.
+
+## Your turn
+
+This is an extension step. You can skip it.
 
 1. Pick 20 traces from your own AI feature. A mix of random ones and ones users complained about works best.
 2. Remove names, emails and other personal data first.
@@ -19,10 +22,14 @@ For example, a farm advice assistant answers farmers from an expert fact sheet. 
 5. In `own/failure-modes.md`, group the notes that are not `ok`. For each group, write a `##` name, a `Definition:` line and a `Traces:` line.
 6. In `own/rubric.md`, write the rule for the mode with the most traces: Pass, Fail, a Borderline rule, and examples from your own ids. Add a `Checked by:` line. Say code if a plain rule can see the failure. Say judge if a person has to read it. Give the reason.
 7. In `own/judge.md`, turn that rubric into a judge prompt. Copy the Pass and Fail text. List 2 to 4 of your ids as examples. Ask for a critique first, then the verdict.
+8. No AI feature of your own yet? Pick one you use at work or at home, and write down 20 of its answers.
+9. Run the check.
 
-No AI feature of your own yet? Pick one you use at work or at home, and write down 20 of its answers.
+```bash
+bun run verify bring-your-own-traces
+```
 
-This is the same path as part 1, then on to a rubric and a judge:
+Expect: `Done. All 13 rules pass.` and a `Progress:` line.
 
 ```mermaid
 flowchart LR
@@ -32,6 +39,10 @@ flowchart LR
   R --> J[judge.md]
 ```
 
+## Do it on your work
+
+Your own feature is the work. Good looks like: the 20 notes are real, personal data is removed, and each mode lists 2 or more traces.
+
 ## Done when
 
 - Your 20 notes are in `own/notes.csv`, with at least 2 ok and at least 8 that are not.
@@ -40,22 +51,11 @@ flowchart LR
 - `own/rubric.md` has its four headings, your own ids as examples, and a `Checked by:` line.
 - `own/judge.md` holds the rubric text, asks for a critique first, and shows 2 to 4 of your ids.
 
-```bash
-bun run verify bring-your-own-traces
-```
-
-Expect: `Done. All 13 rules pass.` and a `Progress:` line.
-
-## If you get stuck
-
-Find your `FAIL` line on the left. Do the fix on the right.
-
 | What you see                             | Fix                                |
 | ---------------------------------------- | ---------------------------------- |
 | `FAIL at least 2 notes are ok`           | Add traces users complained about. |
 | `FAIL every mode lists 2 or more traces` | Use ids from `own/notes.csv`.      |
 
-## Words you will use
+## Solution
 
-- **Trace**: the full record of one run of your AI feature: what went in and what came out.
-- **Personal data**: anything that points to a real person, like a name or an email.
+`solution/own/` shows a finished set of notes, modes, a rubric and a judge prompt.

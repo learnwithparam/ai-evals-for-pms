@@ -10,6 +10,7 @@ const page = (folder: string) => readFileSync(join(fixtures, folder, "README.md"
 const exampleFiles = (folder: string) =>
   (
     Bun.TOML.parse(readFileSync(join(fixtures, folder, "step.toml"), "utf8")) as {
+      // biome-ignore lint/style/useNamingConvention: this is the field name written in step.toml
       example_files: string[];
     }
   ).example_files;

@@ -16,6 +16,7 @@ type StepSettings = {
   minutes?: number;
   screen?: boolean;
   solution?: boolean;
+  // biome-ignore lint/style/useNamingConvention: this is the field name written in step.toml
   example_files?: string[];
 };
 

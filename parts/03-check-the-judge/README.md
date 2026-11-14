@@ -1,5 +1,13 @@
 # Check the judge
 
+## After this part you can
+
+Check an AI judge against a human expert, using two rates, and say whether to trust it.
+
+## You leave with
+
+A judge check, a judge prompt, a corrected pass rate, and a note on which judge you trust.
+
 ## The problem
 
 You cannot read every draft by hand forever. So teams use an AI model to grade the drafts. We call this AI grader a **judge**. A judge reads a draft and says pass or fail.
@@ -41,12 +49,12 @@ flowchart LR
 
 ## Steps
 
-| Step                                                                            | Minutes | You make                | The check reads                                                                                                |
-| ------------------------------------------------------------------------------- | ------- | ----------------------- | -------------------------------------------------------------------------------------------------------------- |
-| [test-the-judge](01-test-the-judge/problem/README.md)                           | 25      | `judge-check.md`        | TPR and TNR of the two pass or fail judges against Ines, your pick, and why a 1 to 5 score cannot be checked   |
-| [choose-the-judge-prompt](02-choose-the-judge-prompt/problem/README.md)         | 20      | `judge-prompt.md`       | The rubric's Pass and Fail text, 2 to 4 examples from the train split, the reason before the verdict, one mode |
-| [correct-the-pass-rate](03-correct-the-pass-rate/problem/README.md) (extension) | 15      | `corrected.md`          | The raw rate, the mobility judge's rates, and the Rogan-Gladen corrected rate                                  |
-| [write-your-own-judge](04-write-your-own-judge/problem/README.md) (extension)   | 20      | `my-judge-verdicts.csv` | 40 dev drafts with a critique and a verdict, and TPR and TNR against Ines of 0.80 or more                      |
+| Step                                                                            | You make                | The check reads                                                                                                |
+| ------------------------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------- |
+| [test-the-judge](01-test-the-judge/problem/README.md)                           | `judge-check.md`        | TPR and TNR of the two pass or fail judges against Ines, your pick, and why a 1 to 5 score cannot be checked   |
+| [choose-the-judge-prompt](02-choose-the-judge-prompt/problem/README.md)         | `judge-prompt.md`       | The rubric's Pass and Fail text, 2 to 4 examples from the train split, the reason before the verdict, one mode |
+| [correct-the-pass-rate](03-correct-the-pass-rate/problem/README.md) (extension) | `corrected.md`          | The raw rate, the mobility judge's rates, and the Rogan-Gladen corrected rate                                  |
+| [write-your-own-judge](04-write-your-own-judge/problem/README.md) (extension)   | `my-judge-verdicts.csv` | 40 dev drafts with a critique and a verdict, and TPR and TNR against Ines of 0.80 or more                      |
 
 A few more words from the table:
 
@@ -113,3 +121,18 @@ Extension: `correct-the-pass-rate` and `write-your-own-judge`. Your own judge mu
 You now know which judge to trust, and you can show why with two numbers. For example, the generic judge looks great with a TPR of 0.97. But its TNR is 0.37, so it misses almost two in three real failures.
 
 In the next part, [decide and write it down](../04-decide-and-write-it-down/README.md), you use the trusted judge's kind of numbers to set launch rules. Then you decide on the cheaper model and the instant drafts.
+
+## Watch and read
+
+| Kind  | Title                                                                                                | Author                                       | Why it is here                                                                               | Link                                          |
+| ----- | ---------------------------------------------------------------------------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| read  | Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena                                               | Lianmin Zheng et al. (LMSYS and UC Berkeley) | This is the original paper that tested an AI judge against human votes and named its biases. | https://arxiv.org/abs/2306.05685              |
+| read  | Who Validates the Validators? Aligning LLM-Assisted Evaluation of LLM Outputs with Human Preferences | Shreya Shankar et al.                        | It shows why you must check a judge against your own human labels.                           | https://arxiv.org/abs/2404.12272              |
+| read  | Using LLM-as-a-Judge For Evaluation: A Complete Guide                                                | Hamel Husain                                 | It gives a plain recipe for building a judge and matching it to an expert.                   | https://hamel.dev/blog/posts/llm-judge/       |
+| read  | Evaluating the Effectiveness of LLM-Evaluators (aka LLM-as-Judge)                                    | Eugene Yan                                   | It sums up how well AI judges agree with people and where they fail.                         | https://eugeneyan.com/writing/llm-evaluators/ |
+| video | Paper Club: Who Validates the Validators? Aligning LLM-Judges with Humans                            | Eugene Yan (Latent Space)                    | It walks through the paper and shows how to test a judge with human labels.                  | https://www.youtube.com/watch?v=4o_ic83U1Kw   |
+| video | Judge the Judge: Building LLM Evaluators That Actually Work                                          | Mahmoud Mabrouk, Agenta (AI Engineer)        | It shows how to improve a judge until it matches human labels.                               | https://www.youtube.com/watch?v=X4dEHRzBLmc   |
+
+## Project
+
+Pick one yes or no check you already rely on, such as a spam filter or a grader for your own work. Label a small set of cases yourself. Work out its TPR and TNR, and write one sentence on whether you would trust it.
