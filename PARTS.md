@@ -1,15 +1,15 @@
 # Parts and steps
 
-The plan for every part. A part session starts from this file and the part's README. Minutes add up to 345.
+The plan for every part. A part session starts from this file and the part's README. Minutes add up to 385.
 
-| Part folder                                       | Status | Steps (minutes)                                                                                                                                                                        | Part minutes |
-| ------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| `00-orientation`                                  | Built  | meet-lantern-trails (15)                                                                                                                                                               | 15           |
-| `parts/01-look-before-you-measure`                | Built  | read-the-traces (25), name-the-failure-modes (20), count-the-failures (10)                                                                                                             | 55           |
-| `parts/02-define-good`                            | Built  | write-the-rubric (20), label-the-golden-set (20), compare-with-the-expert (10)                                                                                                         | 50           |
-| `parts/03-check-the-judge`                        | Built  | test-the-judge (25), choose-the-judge-prompt (20), correct-the-pass-rate (15, extension), write-your-own-judge (20, extension)                                                         | 80           |
-| `parts/04-decide-and-write-it-down`               | Built  | set-launch-criteria (20), compare-the-releases (15), read-the-ab-test (25), write-the-eval-section (25), plan-the-weekly-review (20, extension), bring-your-own-traces (20, extension) | 125          |
-| `parts/05-review-answers-with-the-langfuse-queue` | Built  | label-the-queue-rows (20)                                                                                                                                                              | 20           |
+| Part folder                                       | Status | Steps (minutes)                                                                                                                                                                                                            | Part minutes |
+| ------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| `00-orientation`                                  | Built  | meet-lantern-trails (15)                                                                                                                                                                                                   | 15           |
+| `parts/01-look-before-you-measure`                | Built  | read-the-traces (25), name-the-failure-modes (20), count-the-failures (10), break-down-the-stages (15)                                                                                                                     | 70           |
+| `parts/02-define-good`                            | Built  | write-the-rubric (20), label-the-golden-set (20), compare-with-the-expert (10)                                                                                                                                             | 50           |
+| `parts/03-check-the-judge`                        | Built  | test-the-judge (25), choose-the-judge-prompt (20), correct-the-pass-rate (15, extension), write-your-own-judge (20, extension)                                                                                             | 80           |
+| `parts/04-decide-and-write-it-down`               | Built  | set-launch-criteria (20), compare-the-releases (15), read-the-ab-test (25), write-the-eval-section (25), plan-the-weekly-review (20, extension), bring-your-own-traces (20, extension), ship-your-own-eval (25, extension) | 150          |
+| `parts/05-review-answers-with-the-langfuse-queue` | Built  | label-the-queue-rows (20)                                                                                                                                                                                                  | 20           |
 
 ## What each check reads
 

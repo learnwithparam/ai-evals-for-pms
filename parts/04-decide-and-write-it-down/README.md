@@ -45,6 +45,7 @@ flowchart LR
 | [write-the-eval-section](04-write-the-eval-section/problem/README.md)             | 25      | `prd-eval-section.md`                   | Seven headings in order, mode names and thresholds that match your earlier files                     |
 | [plan-the-weekly-review](05-plan-the-weekly-review/problem/README.md) (extension) | 20      | `review-plan.md`                        | Drafts each cycle, a random and flagged mix, a reader, minutes, an alert rule with a number          |
 | [bring-your-own-traces](06-bring-your-own-traces/problem/README.md) (extension)   | 20      | `own/notes.csv`, `own/failure-modes.md` | The read-the-traces and name-the-failure-modes rules, on 20 of your own traces                       |
+| [ship-your-own-eval](07-ship-your-own-eval/problem/README.md)                     | 25      | `own/eval-plan.md` on your own feature  | Seven headings, limits, grader, repeat runs, business case and your own evidence ids                 |
 
 Some words from the table:
 
