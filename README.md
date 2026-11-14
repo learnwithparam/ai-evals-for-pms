@@ -97,7 +97,7 @@ The course has an orientation and four parts. Each part has short steps.
 | Part                                                                                                | What you make                                                                           | Steps                                                                                                                              | Part minutes |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------ |
 | [Orientation](00-orientation/README.md)                                                             | Set up, meet the world, write the question you must answer                              | meet-lantern-trails                                                                                                                | 15           |
-| [Look before you measure](parts/01-look-before-you-measure/README.md)                               | Notes on 30 drafts, named failure modes, counts and a chart                             | read-the-traces, name-the-failure-modes, count-the-failures                                                                        | 55           |
+| [Look before you measure](parts/01-look-before-you-measure/README.md)                               | Notes on 30 drafts, named failure modes, counts and a chart                             | read-the-traces, name-the-failure-modes, count-the-failures, break-down-the-stages                                                 | 70           |
 | [Define good](parts/02-define-good/README.md)                                                       | A pass and fail rule, 40 labels, and a match with the expert                            | write-the-rubric, label-the-golden-set, compare-with-the-expert                                                                    | 50           |
 | [Check the judge](parts/03-check-the-judge/README.md)                                               | A report card for three AI graders, and a judge prompt                                  | test-the-judge, choose-the-judge-prompt, correct-the-pass-rate, write-your-own-judge                                               | 80           |
 | [Decide and write it down](parts/04-decide-and-write-it-down/README.md)                             | Launch rules, two ship calls, the eval section of a PRD                                 | set-launch-criteria, compare-the-releases, read-the-ab-test, write-the-eval-section, plan-the-weekly-review, bring-your-own-traces | 125          |
@@ -115,7 +115,7 @@ Each `FAIL` line comes with a `Try next:` line. It tells you what to do.
 
 No terminal at work? Give your files to your teacher. They run the same command for you.
 
-[PARTS.md](PARTS.md) lists every step, how many minutes it takes, and what its check reads. [schedules.toml](schedules.toml) shows how to fit the parts into one day or into several shorter sessions.
+[schedules.toml](schedules.toml) shows how to fit the parts into one day or into several shorter sessions.
 
 ## The project
 

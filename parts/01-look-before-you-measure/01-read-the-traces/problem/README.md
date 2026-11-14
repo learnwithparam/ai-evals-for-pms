@@ -2,26 +2,48 @@
 
 ## The problem
 
-You have 30 drafts to read. Some are fine. Some have a problem that a designer had to fix. You do not know yet what kinds of problems there are.
+Lantern Trails has 300 drafts. Designers rewrote or edited 143 of them, but nobody knows which were bad, or why. For example, draft T020 books a steep walk for a traveller who uses a wheelchair. Read the drafts first. Do not start with a list of problems.
 
-If you start with a list of problems, you only find the ones on your list. So you read first, and write what you see.
+## Watch it done
+
+Before: the check prints `FAIL notes.csv is in this folder`.
+After: the check prints `Done. All 6 rules pass.`
 
 ![The viewer with a draft open and the note box below it](../images/expected.png)
 
-## Your challenge
+## Your turn
+
+A trace is the record of one Draft Planner run. An open note is a few words, in your own words, about what went wrong.
 
 1. Open `world/viewer.html` and click **Read the drafts**. The list on the left shows your 30 drafts.
-2. For each draft, compare the draft with the request at the top. Check the budget, closed days, walking, food, and travel time between stops.
+2. For each draft, compare it with the request at the top. Check the budget, closed days, walking, food, and travel time between stops.
 3. Write one note in the box:
    - If something is wrong, say what you see in 6 words or more. Do not guess why it happened.
    - If the draft is fine, write `ok`.
 4. Click **Download notes.csv**. Move the file into this `problem` folder. It takes the place of the starter file.
+5. Run the check:
 
-For example, open draft T020. The request says the traveller uses a wheelchair. On Friday, the draft books the "Lagos Hilltop Lanes Walk". The list of places says this walk has steep steps.
+```bash
+bun run verify read-the-traces
+```
 
-- A good note: "Books a steep walk for a traveller in a wheelchair." It says what you see.
-- A weak note: "bad". It does not say what is wrong.
-- Another weak note: "the model was confused". It is a guess about why. Write what you see, not why you think it happened.
+Expect: `Done. All 6 rules pass.` and a `Progress:` line.
+
+For draft T020, the request says the traveller uses a wheelchair. The draft books the "Lagos Hilltop Lanes Walk", and the list of places says it has steep steps. A good note: "Books a steep walk for a traveller in a wheelchair." A weak note: "bad" does not say what is wrong. "The model was confused" is a guess about why.
+
+If the check fails:
+
+- FAIL notes.csv is in this folder: your browser saved the file in Downloads. Move it here.
+- FAIL it has the 30 drafts from your sample: do not add or remove rows.
+- FAIL every note is filled in: write what you saw, or `ok`, for each short note.
+- FAIL you spotted most of the drafts with a real problem: check the drafts you marked `ok` against the request.
+- FAIL you did not flag every draft: if a draft is fine, write `ok`.
+
+You can also fill in `notes.csv` in a spreadsheet. Save it as CSV.
+
+## Do it on your work
+
+Pick a few past runs, such as chat logs. Write one note for each: a few words on what you saw, or `ok`. Good looks like: each note says what you saw, not why it happened, and not every run is marked as a problem.
 
 ## Done when
 
@@ -32,30 +54,6 @@ For example, open draft T020. The request says the traveller uses a wheelchair. 
 - You spotted (found) most of the drafts with a real problem.
 - You did not flag (mark as a problem) every draft: at least 5 notes say `ok`.
 
-Run the check:
+## Solution
 
-```bash
-bun run verify read-the-traces
-```
-
-Expect: `Done. All 6 rules pass.` and a `Progress:` line.
-
-## If you get stuck
-
-Find your `FAIL` line on the left. Do the fix on the right.
-
-| What you see                                              | Fix                                                                            |
-| --------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| `FAIL notes.csv is in this folder`                        | Your browser saved the file in your Downloads folder. Move it here.            |
-| `FAIL it has the 30 drafts from your sample`              | Do not add or remove rows. Start again from the starter `notes.csv` if needed. |
-| `FAIL every note is filled in`                            | Find the empty or short notes. Write what you saw, or `ok`.                    |
-| `FAIL you spotted most of the drafts with a real problem` | Open the drafts you marked `ok`. Check each fact against the request.          |
-| `FAIL you did not flag every draft`                       | A note is for something a designer would fix. If a draft is fine, write `ok`.  |
-
-You can also fill in `notes.csv` in a spreadsheet. Save it as CSV.
-
-## Words you will use
-
-- **Trace**: the record of one Draft Planner run. It holds the request, what the tool looked up, and the draft.
-- **Sample**: a small part of a big pile that you read in full. Here, you read 30 of the 300 drafts.
-- **Open note**: a few words, in your own words, about what went wrong. You do not pick from a fixed list.
+`solution/notes.csv` holds a finished file for the 30 drafts. Each row has either `ok` or a note that says what was seen.

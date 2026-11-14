@@ -18,3 +18,5 @@ Pass: T088, T068
 Fail: T056, T149
 
 Does not cover: budget, diet, pace, closed days or travel times. Other rubrics check those.
+
+Checked by: judge. A person can see steep steps in a draft, but no simple code rule can read what they mean for this traveller.

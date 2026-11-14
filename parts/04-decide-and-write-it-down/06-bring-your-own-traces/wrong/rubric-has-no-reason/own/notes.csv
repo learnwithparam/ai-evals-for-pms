@@ -1,0 +1,21 @@
+trace_id,note
+F01,ok
+F02,Says to spray the maize twice the dose on the fact sheet.
+F03,ok
+F04,Tells the farmer to plant beans in the dry season.
+F05,Gives a spray dose for tomatoes that is three times too high.
+F06,ok
+F07,Names a fertiliser brand that the fact sheet never mentions.
+F08,Answers about cassava when the farmer asked about sorghum.
+F09,ok
+F10,Says to plant groundnuts after the rains have ended.
+F11,Answers about goats when the question was about chickens.
+F12,Recommends a seed shop that is not on the approved list.
+F13,ok
+F14,Doubles the dose of the copper spray for coffee.
+F15,Says to sow wheat in the hot months for this region.
+F16,ok
+F17,Mentions a pest control product that the fact sheet does not list.
+F18,Answers a question about the soil test with advice on irrigation.
+F19,ok
+F20,ok

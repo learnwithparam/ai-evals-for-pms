@@ -2,6 +2,8 @@
 
 ## User outcome
 
+Business case:
+
 ## Failure modes
 
 ## Metrics and thresholds

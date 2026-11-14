@@ -1,5 +1,17 @@
 # Define good
 
+**After this part you can:** write a rule that says pass or fail. Test it on 40 drafts. Measure how close it comes to an expert.
+
+**You leave with:** three files: `rubric.md`, `labels.csv` and `compare.md`. Each one passes its own check.
+
+## After this part you can
+
+Write a rule that says pass or fail, test it on 40 drafts, and measure how close it comes to an expert.
+
+## You leave with
+
+Three files: `rubric.md`, `labels.csv` and `compare.md`. Each one passes its own check.
+
 ## The problem
 
 Right now, "good" lives only in Ines Duarte's head. When the team looks at drafts together, people argue. Nobody wrote the rule down.
@@ -39,11 +51,11 @@ You label 40 drafts with your rubric. Then you compare your labels with Ines's l
 
 ## Steps
 
-| Step                                                                    | Minutes | You make                                | The check reads                                                                                    |
-| ----------------------------------------------------------------------- | ------- | --------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [write-the-rubric](01-write-the-rubric/problem/README.md)               | 20      | `rubric.md` for the mobility mode       | The four headings, the borderline rule, 2 pass and 2 fail examples that match Ines, no scale words |
-| [label-the-golden-set](02-label-the-golden-set/problem/README.md)       | 20      | `labels.csv`: pass or fail on 40 drafts | The 40 ids of `world/data/golden-set.csv`, pass or fail on each, a reason on each fail             |
-| [compare-with-the-expert](03-compare-with-the-expert/problem/README.md) | 10      | `compare.md`                            | Agreement and kappa against `world/data/expert-labels.csv`, and a resolution on every disagreement |
+| Step                                                                    | You make                                | The check reads                                                                                    |
+| ----------------------------------------------------------------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [write-the-rubric](01-write-the-rubric/problem/README.md)               | `rubric.md` for the mobility mode       | The four headings, the borderline rule, 2 pass and 2 fail examples that match Ines, no scale words |
+| [label-the-golden-set](02-label-the-golden-set/problem/README.md)       | `labels.csv`: pass or fail on 40 drafts | The 40 ids of `world/data/golden-set.csv`, pass or fail on each, a reason on each fail             |
+| [compare-with-the-expert](03-compare-with-the-expert/problem/README.md) | `compare.md`                            | Agreement and kappa against `world/data/expert-labels.csv`, and a resolution on every disagreement |
 
 The data for this part is already in the world:
 
@@ -105,3 +117,17 @@ Extension: write a second rubric for "wrong pace". Add one line on why pace is h
 You now have a written rule for the top failure mode. You tested it on 40 drafts and know how close it comes to Ines. For example, the sample answer agrees with her on 38 of 40 drafts, with a kappa of 0.86.
 
 Your labels cannot scale. Nobody reads every draft by hand forever. In the next part, [check the judge](../03-check-the-judge/README.md), an AI model grades the drafts. You use Ines's labels to test whether that grader can be trusted.
+
+## Watch and read
+
+| Kind  | Title                                                 | Author                                                            | Why it is here                                                                               | Link                                                                |
+| ----- | ----------------------------------------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| read  | Define success criteria and build evaluations         | Anthropic                                                         | It shows how to turn a vague idea of good into goals you can measure.                        | https://platform.claude.com/docs/en/test-and-evaluate/develop-tests |
+| read  | How to improve your golden datasets with human review | Ornella Altunyan (Braintrust)                                     | It shows how experts label real outputs to build a golden set you can trust.                 | https://www.braintrust.dev/blog/human-review-golden-datasets        |
+| read  | Product Evals in Three Simple Steps                   | Eugene Yan                                                        | It tells you to label a balanced set of pass and fail examples by hand before anything else. | https://eugeneyan.com/writing/product-evals/                        |
+| video | How Evals and Prompts Shape Agent Behavior            | Preetika Bhateja and Daniel Bump, YouTube Ads (AI Engineer)       | It shows how a real team writes clear rating rules so many reviewers agree.                  | https://www.youtube.com/watch?v=xyL2Ltkh-SA                         |
+| video | Lessons From A Year Building With LLMs                | Eugene Yan, Hamel Husain, Shreya Shankar and others (AI Engineer) | Builders explain how they decide what good looks like and check it against expert views.     | https://www.youtube.com/watch?v=qBHfQT3YtyY                         |
+
+## Project
+
+Write a short rubric for one pass or fail rule you apply at your work. Label a small set of real cases with it. Show a colleague the two cases where you and they disagree, and say which way the rule should change.

@@ -1,5 +1,21 @@
 # Review answers with the Langfuse queue
 
+## After this part you can
+
+label the same drafts in a team tool, export the scores, and compare the pass rate with your spreadsheet.
+
+## You leave with
+
+a scores export that a script checked, and one pass rate you can compare with your own labels.
+
+## After this part you can
+
+label the same drafts in a team tool, export the scores, and compare the pass rate with your spreadsheet.
+
+## You leave with
+
+a scores export that a script checked, and one pass rate you can compare with your own labels.
+
 ## The problem
 
 In part 2 you labelled 40 drafts in a spreadsheet. It worked. But a spreadsheet does not scale. Two reviewers overwrite each other. Nobody can see which drafts are still waiting. The label sits far from the draft it describes.
@@ -36,9 +52,9 @@ flowchart LR
 
 ## Steps
 
-| Step                                                              | Minutes | You make                       | The check reads                                                   |
-| ----------------------------------------------------------------- | ------- | ------------------------------ | ----------------------------------------------------------------- |
-| [label-the-queue-rows](01-label-the-queue-rows/problem/README.md) | 20      | `assignment/scores-export.csv` | 40 ids of `golden-set.csv`, each once, each labelled pass or fail |
+| Step                                                              | You make                       | The check reads                                                   |
+| ----------------------------------------------------------------- | ------------------------------ | ----------------------------------------------------------------- |
+| [label-the-queue-rows](01-label-the-queue-rows/problem/README.md) | `assignment/scores-export.csv` | 40 ids of `golden-set.csv`, each once, each labelled pass or fail |
 
 ## Options
 
@@ -47,7 +63,7 @@ Langfuse Cloud is the default, so you need no Docker. You can host Langfuse on y
 The other choice is Arize Phoenix, hosted on your own laptop.
 
 - **Choose when:** the data must stay on your laptop and memory is short. Phoenix is one container and needs far less memory than Langfuse.
-- **Trade-off:** Phoenix uses the Elastic License 2.0. That is free to use, but its source is open to read, not open source in the strict sense. It also needs Docker, which Langfuse Cloud does not.
+- **Trade-off:** Phoenix uses the Elastic License. That is free to use, but its source is open to read, not open source in the strict sense. It also needs Docker, which Langfuse Cloud does not.
 
 ## Walkthrough
 
@@ -80,3 +96,17 @@ This part is optional in the live session. It is expected as homework. The full 
 ## Finished
 
 You made the same labels in a tool that teams use at work. For example, the sample answer has 40 labels, and its pass rate matches the spreadsheet from part 2.
+
+## Watch and read
+
+| Kind  | Title                                                                                       | Author   | Why it is here                                                           | Link                                                                      |
+| ----- | ------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| read  | Annotation Queues                                                                           | Langfuse | These are the official steps to make a queue and score items in it.      | https://langfuse.com/docs/evaluation/evaluation-methods/annotation-queues |
+| read  | Build a human-in-the-loop scoring workflow                                                  | Langfuse | It shows how reviewer labels are saved as scores with a set shape.       | https://langfuse.com/guides/human-in-the-loop-scoring                     |
+| read  | Langfuse for product teams: review conversations without code                               | Langfuse | It shows how a whole team can read and score chats without writing code. | https://langfuse.com/resources/engineering/langfuse-for-product-teams     |
+| video | Replace Vibes with Evals: Testing AI Features the Right Way                                 | Langfuse | The Langfuse team shows human and judge scores landing in one place.     | https://www.youtube.com/watch?v=4ZT7GWEjFVk                               |
+| video | Langfuse Walkthrough - Full Demo of Agent Tracing, Evals, Experiments and Prompt Management | Langfuse | It is a full tour of the tool you will use for team labelling.           | https://www.youtube.com/watch?v=THfB4p2xCFY                               |
+
+## Project
+
+Pick one set of drafts you labelled before, from work or school. Label them in a queue, export the scores, and compare the pass rate with your own spreadsheet. Show one classmate the export file and the two pass rates.

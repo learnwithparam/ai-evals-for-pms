@@ -1,5 +1,13 @@
 # Decide and write it down
 
+## After this part you can
+
+Write launch rules before you see results, and let those rules decide a release.
+
+## You leave with
+
+Your launch rules, two decisions with their numbers, and a PRD eval section.
+
 ## The problem
 
 Two choices are due, and the boss wants your answer on both.
@@ -20,7 +28,7 @@ So the cheaper model looks better. But 26 of the 150 requests are from traveller
 
 A good launch rule has a number in it. Anthropic's docs give examples, like "99.5% non-toxic outputs" and "95% response time < 200ms". The first means at least 99.5% of replies are free of rude or harmful words. ([Anthropic docs, Define success criteria](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests))
 
-An average can hide failures. The TravelPlanner study tested AI trip planners. For example, one model (a fine-tuned Llama 3.1 8B) met 78.3% of the common-sense rules on average. But only 17.8% of its plans met every common-sense rule. Only 3.8% met every rule of any kind. ([OSU NLP Group, TravelPlanner](https://github.com/OSU-NLP-Group/TravelPlanner))
+An average can hide failures. The TravelPlanner study tested AI trip planners. For example, one model (a small fine-tuned open model) met 78.3% of the common-sense rules on average. But only 17.8% of its plans met every common-sense rule. Only 3.8% met every rule of any kind. ([OSU NLP Group, TravelPlanner](https://github.com/OSU-NLP-Group/TravelPlanner))
 
 This is the path you take in this part:
 
@@ -37,14 +45,14 @@ flowchart LR
 
 ## Steps
 
-| Step                                                                              | Minutes | You make                                | The check reads                                                                                      |
-| --------------------------------------------------------------------------------- | ------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [set-launch-criteria](01-set-launch-criteria/problem/README.md)                   | 20      | `launch-criteria.md`                    | A row per mode with a number threshold, a set of 30 or more, a critical flag and an owner            |
-| [compare-the-releases](02-compare-the-releases/problem/README.md)                 | 15      | `release-decision.md`                   | A verdict that equals your own criteria applied to `world/data/releases/summary.csv`, with 3 numbers |
-| [read-the-ab-test](03-read-the-ab-test/problem/README.md)                         | 25      | `ab-decision.md`                        | Rates, difference and 95% interval within 0.5 points, the guardrail, and a decision that follows     |
-| [write-the-eval-section](04-write-the-eval-section/problem/README.md)             | 25      | `prd-eval-section.md`                   | Seven headings in order, mode names and thresholds that match your earlier files                     |
-| [plan-the-weekly-review](05-plan-the-weekly-review/problem/README.md) (extension) | 20      | `review-plan.md`                        | Drafts each cycle, a random and flagged mix, a reader, minutes, an alert rule with a number          |
-| [bring-your-own-traces](06-bring-your-own-traces/problem/README.md) (extension)   | 20      | `own/notes.csv`, `own/failure-modes.md` | The read-the-traces and name-the-failure-modes rules, on 20 of your own traces                       |
+| Step                                                                              | You make                                | The check reads                                                                                      |
+| --------------------------------------------------------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [set-launch-criteria](01-set-launch-criteria/problem/README.md)                   | `launch-criteria.md`                    | A row per mode with a number threshold, a set of 30 or more, a critical flag and an owner            |
+| [compare-the-releases](02-compare-the-releases/problem/README.md)                 | `release-decision.md`                   | A verdict that equals your own criteria applied to `world/data/releases/summary.csv`, with 3 numbers |
+| [read-the-ab-test](03-read-the-ab-test/problem/README.md)                         | `ab-decision.md`                        | Rates, difference and 95% interval within 0.5 points, the guardrail, and a decision that follows     |
+| [write-the-eval-section](04-write-the-eval-section/problem/README.md)             | `prd-eval-section.md`                   | Seven headings in order, mode names and thresholds that match your earlier files                     |
+| [plan-the-weekly-review](05-plan-the-weekly-review/problem/README.md) (extension) | `review-plan.md`                        | Drafts each cycle, a random and flagged mix, a reader, minutes, an alert rule with a number          |
+| [bring-your-own-traces](06-bring-your-own-traces/problem/README.md) (extension)   | `own/notes.csv`, `own/failure-modes.md` | The read-the-traces and name-the-failure-modes rules, on 20 of your own traces                       |
 
 Some words from the table:
 
@@ -55,6 +63,7 @@ Some words from the table:
 - A **guardrail** is a number that must not get worse, like refunds, even if the main number gets better.
 - A **PRD** (product requirements document) is the spec that says what the product must do.
 - An **extension** is an extra step. You can skip it.
+- The **capstone** is the last task. Fill in `capstone/template/own/` with your own feature, then run `bun capstone/check.ts capstone/template`. A finished example sits in `capstone/sample/`.
 
 ## Walkthrough
 
@@ -128,3 +137,21 @@ Extension: `plan-the-weekly-review`, and the trip-type split that shows where th
 You now have the full launch pack. It holds counts of what goes wrong, a rubric, a check on the judge, launch rules, two decisions with their numbers, and a PRD section. For example, the sample answer blocks the cheaper model. It passes 88% of drafts against 86%, but it fails wheelchair users on 7 drafts against 1.
 
 This is the last part. Put your files together with `bun run verify --report`, which writes `verify-report.json`. Then use the same method on your own AI feature, starting with `bring-your-own-traces`.
+
+## Watch and read
+
+| Kind  | Title                                                           | Author                             | Why it is here                                                                        | Link                                                                   |
+| ----- | --------------------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| read  | A statistical approach to model evaluations                     | Anthropic                          | It shows how to tell a real gain between two releases from plain luck.                | https://www.anthropic.com/research/statistical-approach-to-model-evals |
+| read  | How Not To Run an A/B Test                                      | Evan Miller                        | It warns that peeking at results too early can fool you when you read a test.         | https://www.evanmiller.org/how-not-to-run-an-ab-test.html              |
+| read  | A Field Guide to Rapidly Improving AI Products                  | Hamel Husain                       | It shows how teams keep a steady review habit and plan work around what they measure. | https://hamel.dev/blog/posts/field-guide/                              |
+| video | The ultimate guide to A/B testing                               | Ronny Kohavi (Lenny's Podcast)     | The author of the A/B testing book explains how to read a test and trust the result.  | https://www.youtube.com/watch?v=hEzpiDuYFoE                            |
+| video | Why Most AI Agents Fail, and How Anthropic Builds Reliable Ones | Anthropic engineer (Arize Observe) | It shows how a team checks each new release against its old tests before it ships.    | https://www.youtube.com/watch?v=ijlrwKiYYM4                            |
+
+## Project
+
+Pick one feature you use at work. Write its launch rules, with a number for each one. Then say whether it would ship. Show one classmate your rules and the one number that decided the answer.
+
+## Project
+
+Pick one AI feature you use at work or at home. Write launch rules for it, one row for each failure mode, with a threshold on each row. Then check one real result against your rules. Show your verdict to a classmate, and say which rule decided it.

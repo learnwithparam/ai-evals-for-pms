@@ -2,32 +2,34 @@
 
 ## The problem
 
-The engineers want to switch to the cheaper model. It passes more drafts in total, and it costs a third as much. On the average, it wins.
+The engineers want the cheaper model. It passes more drafts in total, so the average says it wins. But you wrote launch rules in the last step. Now let the rules decide.
 
-But you wrote launch rules in the last step. Now you apply them, row by row, and let the rules decide.
+For example, `world/data/releases/summary.csv` says the cheaper model fails `ignores-mobility` 7 times. The live model fails it once.
 
-For example, `world/data/releases/summary.csv` says the cheaper model passes 132 of 150 drafts (88%). The live model passes 129 (86%). But look at the `ignores-mobility` column. The cheaper model fails it 7 times. The live model fails it once.
+## Watch it done
 
-This matches a public study. In TravelPlanner, one model met 78.3% of the common-sense rules on average. But only 17.8% of its plans met every common-sense rule. ([OSU NLP Group, TravelPlanner](https://github.com/OSU-NLP-Group/TravelPlanner))
+Before: `verify` prints `FAIL it cites at least 3 numbers` when the verdict has too few numbers.
+After: `Done. All 7 rules pass.` and a `Progress:` line.
 
-## Your challenge
+## Your turn
 
 This folder has a sample `launch-criteria.md` and `failure-modes.md`. You can copy your own over them.
 
 1. Open `world/data/releases/summary.csv`. Find the `cheaper-model` row.
-2. For each row of your launch criteria, find the matching column. Is the count within your threshold?
-   The columns use short names. For example, `ignores-mobility` is Ignores mobility needs, `impossible-transfer` is Impossible travel, and `diet-missed` is Wrong food for the diet.
-3. Decide, with the rule in the picture below:
-   - a critical row broken: `block`;
-   - only other rows broken: `ship with conditions`;
-   - nothing broken: `ship`.
+2. For each row of your launch criteria, find the matching column. Is the count within your threshold? Short names: `ignores-mobility` is Ignores mobility needs, `impossible-transfer` is Impossible travel, and `diet-missed` is Wrong food for the diet.
+3. Decide with the picture below. A critical row broken means `block`. Only other rows broken means "ship with conditions". Nothing broken means `ship`.
 4. Write it in `release-decision.md`, like `Verdict: block`.
-5. Under `## The numbers`, copy at least 3 numbers straight from `summary.csv`.
+5. Under the heading The numbers, copy at least 3 numbers straight from `summary.csv`.
 6. If you block, name the critical mode that broke its threshold.
+7. Open `world/data/releases/repeat-runs.csv`, which holds five runs of each release. Under the heading Repeat runs, write `Runs:` and a `Spread:` line. The spread is the most passes minus the fewest. Then say if the cheaper model's gain is bigger than its spread. A smaller gain may be luck.
+8. Your verdict must follow your own rules, even if you do not like the answer.
+9. Run the check.
 
-Your verdict must follow your own rules, even if you do not like the answer.
+```bash
+bun run verify compare-the-releases
+```
 
-This is the rule you apply:
+Expect: `Done. All 7 rules pass.` and a `Progress:` line.
 
 ```mermaid
 flowchart LR
@@ -38,6 +40,10 @@ flowchart LR
   O -->|no| S[Ship]
 ```
 
+## Do it on your work
+
+Take one release of a feature you own, with its counts. Apply your own criteria row by row and write a verdict. Good looks like: the verdict follows from your rows, and a broken critical row shows as `block` with the mode named.
+
 ## Done when
 
 - launch-criteria.md is in this folder and passes its check.
@@ -46,24 +52,12 @@ flowchart LR
 - The verdict is what your own launch criteria give for the cheaper model.
 - A block names the critical mode that broke its threshold.
 
-```bash
-bun run verify compare-the-releases
-```
-
-Expect: `Done. All 5 rules pass.` and a `Progress:` line.
-
-## If you get stuck
-
-Find your `FAIL` line on the left. Do the fix on the right.
-
 | What you see                           | Fix                                                                     |
 | -------------------------------------- | ----------------------------------------------------------------------- |
 | `FAIL it cites at least 3 numbers`     | Copy numbers from `summary.csv`, like 132, 150 or 7.                    |
 | `FAIL the verdict is what your own`    | Go row by row. A broken critical row means block, whatever the average. |
 | `FAIL a block names the critical mode` | Write the mode name as it is in `launch-criteria.md`.                   |
 
-## Words you will use
+## Solution
 
-- **Release**: one version of Draft Planner, here `live` or `cheaper-model`.
-- **Verdict**: your decision: ship, block, or ship with conditions.
-- **Average**: one number for all drafts together. It can hide a mode that got much worse.
+`solution/release-decision.md` shows a finished verdict with its numbers and the repeat-run lines.

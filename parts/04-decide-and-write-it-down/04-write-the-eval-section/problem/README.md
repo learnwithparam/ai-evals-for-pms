@@ -2,29 +2,35 @@
 
 ## The problem
 
-Your work is spread over many files. The next person on the team will not read them all. A product spec, or **PRD** (product requirements document), is where the team looks. So you write one section of it: how Draft Planner is measured.
+The next person on the team will not read all your files. They read the product spec, or **PRD** (product requirements document). So you write one section of it: how Draft Planner is measured.
 
-Descript, a video editing company, grades its AI features with "criteria defined by the product team". ([Anthropic, Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)) The PRD is where your team writes those criteria down.
+For example, the sample answer's launch rule says: "Ignores mobility needs and Wrong food for the diet are critical."
 
-For example, the Launch rule section of the sample answer says: "Ignores mobility needs and Wrong food for the diet are critical. Each one blocks a launch on its own."
+## Watch it done
 
-## Your challenge
+Before: `verify` prints `FAIL Launch rule names every critical` when a critical mode is missing from the section.
+After: `Done. All 9 rules pass.` and a `Progress:` line.
+
+## Your turn
 
 This folder has a sample `launch-criteria.md` and `failure-modes.md`. You can copy your own over them.
 
-Open `prd-eval-section.md`. Fill in each of the seven sections:
+1. Open `prd-eval-section.md`. Fill in each of the seven sections.
+2. **User outcome**: what a good draft does for the customer and the designer. Add one line that starts with Business case:. Say who pays when a draft fails, give one number, and compare it, like a refund against the cost of a draft.
+3. **Failure modes**: every mode from `failure-modes.md`, each with one line.
+4. **Metrics and thresholds**: one line per mode, with the same number as in `launch-criteria.md`.
+5. **Golden set**: `Size:`, `Owner:` and `Refresh when:` lines. Refresh means adding new drafts so the set keeps up with real use.
+6. **Judges**: the judge you trust, with its `TPR:` and `TNR:`. Copy them from your `judge-check.md` in part 3, like `TPR: 0.93`. Both must be 0.80 or more.
+7. **Launch rule**: how a release ships or is blocked. Name every critical mode.
+8. **After launch**: what you read once it is live, and when you act.
+9. Use the words from your files. If the spec and `launch-criteria.md` disagree, nobody knows which is true.
+10. Run the check.
 
-1. **User outcome**: what a good draft does for the customer and the designer.
-2. **Failure modes**: every mode from `failure-modes.md`, each with one line.
-3. **Metrics and thresholds**: one line per mode, with the same number as in `launch-criteria.md`.
-4. **Golden set**: `Size:`, `Owner:` and `Refresh when:` lines.
-5. **Judges**: the judge you trust, with its `TPR:` and `TNR:`. Copy them from your `judge-check.md` in part 3, like `TPR: 0.93`. Both must be 0.80 or more.
-6. **Launch rule**: how a release ships or is blocked. Name every critical mode.
-7. **After launch**: what you read once it is live, and when you act.
+```bash
+bun run verify write-the-eval-section
+```
 
-Use the words from your files. If the spec says one number and `launch-criteria.md` says another, nobody knows which is true.
-
-This is where each section comes from:
+Expect: `Done. All 9 rules pass.` and a `Progress:` line.
 
 ```mermaid
 flowchart LR
@@ -33,6 +39,10 @@ flowchart LR
   G[labels.csv and compare.md] --> P
   J[judge-check.md] --> P
 ```
+
+## Do it on your work
+
+Write the seven sections for a feature of your own, in the same order. Good looks like: each threshold matches your own launch rule file, and each critical mode is named in the launch rule.
 
 ## Done when
 
@@ -45,16 +55,6 @@ flowchart LR
 - Judges states a TPR: and a TNR: of 0.80 or more for the judge you trust.
 - Launch rule names every critical mode.
 
-```bash
-bun run verify write-the-eval-section
-```
-
-Expect: `Done. All 8 rules pass.` and a `Progress:` line.
-
-## If you get stuck
-
-Find your `FAIL` line on the left. Do the fix on the right.
-
 | What you see                             | Fix                                                          |
 | ---------------------------------------- | ------------------------------------------------------------ |
 | `FAIL the seven ## headings, in order`   | Keep the starter headings and their order.                   |
@@ -62,8 +62,6 @@ Find your `FAIL` line on the left. Do the fix on the right.
 | `FAIL Golden set has Size:`              | Write all three lines, each with its value on the same line. |
 | `FAIL Launch rule names every critical`  | Name each mode marked `yes` in the Critical column.          |
 
-## Words you will use
+## Solution
 
-- **PRD**: product requirements document, the spec that says what a product must do.
-- **Eval**: a test of how well an AI feature does its job.
-- **Refresh**: add new drafts to the golden set, so it keeps up with real use.
+`solution/prd-eval-section.md` holds the finished seven sections. Its thresholds match `solution/launch-criteria.md`.

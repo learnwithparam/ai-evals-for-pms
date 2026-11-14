@@ -14,7 +14,7 @@ For example, you type `bun run draft R999`. There is no request R999, so the scr
 There is no request called "R999". Try R001 to R300.
 ```
 
-Find `There is no request called` in the table. The fix says to run `bun run draft R020`, a request that exists.
+Find "There is no request called" in the table. The fix says to run `bun run draft R020`, a request that exists.
 
 In the table, `...` stands for a word that changes, like a step name. The letters `x` and `y` stand for numbers.
 
@@ -27,7 +27,7 @@ In the table, `...` stands for a word that changes, like a step name. The letter
 | `The world files are missing. Run: bun run world reset`                     | The `world/data` folder is gone or empty.                                 | Run `bun run world reset`.                                                              |
 | `The counts are wrong. Run: bun run world reset`                            | Someone changed a world file by hand.                                     | Run `bun run world reset`. It puts every file back the way it was.                      |
 | `Unknown option "...". Use: bun run world, or bun run world reset.`         | You typed an extra word after `bun run world`.                            | Use one of the two commands it names.                                                   |
-| `There is no request called "...". Try R001 to R300.`                       | `bun run draft` needs a request name, from R001 to R300.                  | Run `bun run draft R020`.                                                               |
+| "There is no request called ... Try R001 to R300."                          | `bun run draft` needs a request name, from R001 to R300.                  | Run `bun run draft R020`.                                                               |
 | `LLM_PROVIDER is "..."`                                                     | Your `.env` file names a model company the course does not know.          | Use replay, anthropic, openrouter, openai or ollama.                                    |
 | `LLM_PROVIDER is ... but ..._API_KEY is not set`                            | You picked a real model, but you did not add its key.                     | Add the key to `.env`, or set `LLM_PROVIDER=replay`.                                    |
 | `LLM_PROVIDER is ollama but OLLAMA_MODEL is not set.`                       | Ollama needs the name of a model you downloaded.                          | Set `OLLAMA_MODEL` in `.env`.                                                           |
@@ -40,5 +40,5 @@ In the table, `...` stands for a word that changes, like a step name. The letter
 | `The finished work passes: x of 17 steps.` with x below 17                  | A sample answer no longer passes its check.                               | Run `bun run world reset`. If it still fails, tell your teacher.                        |
 | A CSV opens as one long column                                              | Your spreadsheet did not split the text at each comma.                    | Use File, then Import. Pick comma as the separator.                                     |
 | The check cannot find `notes.csv`                                           | The file is still in your Downloads folder.                               | Move it into the step's `problem` folder.                                               |
-| `The Langfuse keys are missing.`                                            | The export or import script cannot find your keys.                        | Add `LANGFUSE_PUBLIC_KEY` and `LANGFUSE_SECRET_KEY` to your `.env` file.                |
+| "The Langfuse keys are missing."                                            | The export or import script cannot find your keys.                        | Add `LANGFUSE_PUBLIC_KEY` and `LANGFUSE_SECRET_KEY` to your `.env` file.                |
 | `Langfuse answered ...`                                                     | Langfuse refused the request. The keys or the host are wrong.             | Make a new key pair. For a laptop copy, set `LANGFUSE_HOST` to `http://localhost:3000`. |

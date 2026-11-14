@@ -1,10 +1,10 @@
-// bun parts/02-define-good/images/shoot.ts: captures the picture this part's pages show,
+// bun images/shoot-golden-set.ts: captures the picture this part's pages show,
 // from the real viewer. Uses Playwright's Chromium. If yours is elsewhere, set CHROME_PATH.
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { chromium } from "playwright";
 
-const ROOT = join(import.meta.dir, "..", "..", "..");
+const ROOT = join(import.meta.dir, "..");
 const VIEWER = pathToFileURL(join(ROOT, "world", "viewer.html")).href;
 const PICTURE = "parts/02-define-good/02-label-the-golden-set/images/expected.png";
 

@@ -1,0 +1,6 @@
+trace_id,stage,lookup_number,reason
+T020,lookup,99,"Lagos Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair."
+T103,lookup,99,"Foz Tasca No. 8 serves seafood only, and the party is vegan."
+T115,plan,,"Tavira Hilltop Lanes Walk is 504 minutes by car from the stop before it, with no time to get there."
+T187,plan,,"The plan costs 471 euros a person, 18% over the 399 euro budget."
+T221,lookup,99,"Regua Cork Workshop Museum is booked on a Monday, but it is closed on Mondays."
