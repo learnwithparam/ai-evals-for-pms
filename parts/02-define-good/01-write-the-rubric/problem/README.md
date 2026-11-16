@@ -15,7 +15,7 @@ After: the four parts are filled in and the check says Done. All 8 rules pass.
    - T149 fails: "Ribeira Hilltop Lanes Walk has steep steps, and the traveller has limited walking."
    - T068 passes: "Ribeira Kitchen No. 2 has a few steps, which is fine for limited walking."
 
-   Say why one passes.
+   Say why one passes and the other fails.
 
 ```mermaid
 flowchart TD

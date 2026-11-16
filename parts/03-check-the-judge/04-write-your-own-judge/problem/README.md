@@ -33,7 +33,7 @@ Expect: `Done. All 6 rules pass.` and a `Progress:` line.
 
 6. If a rate is under 0.80, change the prompt and run the batch again. Look at the drafts where the judge and Ines differ. Change one thing at a time.
 
-Other tools work too. In Google Sheets, an AI function filled down a column gives the same CSV. Langfuse and Braintrust can also run a judge and export its scores. Do not change a verdict by hand. Then you test yourself, not the judge.
+Other tools work too. In Google Sheets, an AI function filled down a column gives the same CSV. Langfuse and Braintrust can also run a judge and export its scores. Do not change a verdict by hand. If you do, you test yourself, not the judge.
 
 ## Do it on your work
 
