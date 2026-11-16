@@ -76,7 +76,7 @@ bun run verify count-the-failures
 
 Expect: `Done. All 7 rules pass.` once `counts.csv` and `top-mode.md` are written.
 
-When all three steps pass, check the whole part:
+The fourth step, break down the stages, has its own check on its page. When all four steps pass, check the whole part:
 
 ```bash
 bun run verify part look-before-you-measure

@@ -27,7 +27,7 @@ flowchart TD
   B --> F
 ```
 
-2. Open `rubric.md` and fill in each part.
+2. Open `rubric.md` and fill in each part. The first four are the headings the check reads. The last two are single lines.
    - **Pass**: what a designer can see, like "every stop is step-free".
    - **Fail**: what a draft that fails looks like.
    - **Borderline rule**: how to decide the close case. Open T068 at `world/viewer.html#read/T068`. Read each stop's `Access:` line.
