@@ -2,7 +2,9 @@
 
 ## The problem
 
-A spreadsheet does not scale. Two reviewers can overwrite each other. You labelled 40 drafts by hand, so now label the same 40 in a Langfuse queue. For example, draft T135 fails in your spreadsheet because "Ribeira Kitchen No. 2" has some steps. In the queue, give T135 fail and the same reason as a comment.
+A spreadsheet does not scale. Two reviewers can overwrite each other. You labelled 40 drafts by hand, so now label the same 40 in a Langfuse queue.
+
+For example, draft T135 fails in your spreadsheet because "Ribeira Kitchen No. 2" has some steps. In the queue, give T135 fail and the same reason as a comment.
 
 ## Watch it done
 

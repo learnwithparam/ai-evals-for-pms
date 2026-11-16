@@ -2,7 +2,9 @@
 
 ## The problem
 
-The engineers put an AI judge on a dashboard. It says most drafts pass. Before anyone quotes that number, you must check it against Ines, who labelled 120 drafts. The generic judge passes 106 of them. Ines passes only 90. So it must miss some real fails.
+The engineers put an AI judge on a dashboard. It says most drafts pass. Before anyone quotes that number, you must check it against Ines, who labelled 120 drafts.
+
+The generic judge passes 106 of them. Ines passes only 90. So it must miss some real fails.
 
 ## Watch it done
 

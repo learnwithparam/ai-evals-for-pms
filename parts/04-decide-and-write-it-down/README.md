@@ -28,7 +28,9 @@ So the cheaper model looks better. But 26 of the 150 requests are from traveller
 
 A good launch rule has a number in it. Anthropic's docs give examples, like "99.5% non-toxic outputs" and "95% response time < 200ms". The first means at least 99.5% of replies are free of rude or harmful words. ([Anthropic docs, Define success criteria](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests))
 
-An average can hide failures. The TravelPlanner study tested AI trip planners. For example, one model (a small fine-tuned open model) met 78.3% of the common-sense rules on average. But only 17.8% of its plans met every common-sense rule. Only 3.8% met every rule of any kind. ([OSU NLP Group, TravelPlanner](https://github.com/OSU-NLP-Group/TravelPlanner))
+An average can hide failures. The TravelPlanner study tested AI trip planners.
+
+For example, one model (a small fine-tuned open model) met 78.3% of the common-sense rules on average. But only 17.8% of its plans met every common-sense rule. Only 3.8% met every rule of any kind. ([OSU NLP Group, TravelPlanner](https://github.com/OSU-NLP-Group/TravelPlanner))
 
 This is the path you take in this part:
 

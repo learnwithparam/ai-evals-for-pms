@@ -2,7 +2,9 @@
 
 ## The problem
 
-A rubric on paper is only a guess until you test it. So you label a fixed set of 40 drafts with your rubric. For example, take draft T135. It is for a traveller with limited walking. One stop says "some steps". Does it pass?
+A rubric on paper is only a guess until you test it. So you label a fixed set of 40 drafts with your rubric.
+
+For example, take draft T135. It is for a traveller with limited walking. One stop says "some steps". Does it pass?
 
 ## Watch it done
 

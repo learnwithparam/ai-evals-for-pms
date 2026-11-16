@@ -18,7 +18,10 @@ This folder has `stages.csv` with 5 drafts that have a real fault, a small `rag.
 3. Fill the `stage` column with `lookup` or `plan`.
 4. For a lookup fault, write the number of the lookup that returned the bad place in `lookup_number`. Count from 1. Leave it empty for a plan fault.
 5. Add a short `reason` for each row.
-6. Open `rag.csv`. RAG is an app that searches for a page, then writes an answer from it. Fill the `stage` column. Write `search` when `page_found` is not `page_needed`. Write `answer` when the page is right but `answer_matches_page` is `no`. Write `none` for the rest.
+6. Open `rag.csv`. RAG is an app that searches for a page, then writes an answer from it. Fill the `stage` column:
+   - Write `search` when `page_found` is not `page_needed`.
+   - Write `answer` when the page is right but `answer_matches_page` is `no`.
+   - Write `none` for the rest.
 7. In `breakdown.md`, write how many faults sit in each stage, for the drafts and for the help bot. Then write one `Fix first:` line that names a stage and says why.
 
 T020 says: "Lagos Hilltop Lanes Walk has steep steps, and the traveller uses a wheelchair." That place came back on lookup 7. So the row is `T020,lookup,7`.

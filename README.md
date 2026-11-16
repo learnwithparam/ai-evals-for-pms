@@ -8,10 +8,10 @@ An **eval** (short for evaluation) is a test that tells you how well an AI featu
 
 **What you leave with.** You leave with a **launch pack** for one AI feature. A launch pack is a set of files that shows if the feature is ready to ship. It holds:
 
-- a chart of what goes wrong, and how often;
-- a rule that says when a draft passes and when it fails;
-- an AI grader that you checked against a human expert;
-- two ship decisions, with the numbers behind them;
+- a chart of what goes wrong, and how often,
+- a rule that says when a draft passes and when it fails,
+- an AI grader that you checked against a human expert,
+- two ship decisions, with the numbers behind them,
 - the eval part of a product spec (a PRD, or product requirements document).
 
 A script checks every file you make, so you always know where you stand.

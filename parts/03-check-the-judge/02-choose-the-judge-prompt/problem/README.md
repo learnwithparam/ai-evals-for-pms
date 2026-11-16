@@ -2,7 +2,9 @@
 
 ## The problem
 
-The mobility judge passed your test. Now write down its prompt. A prompt is the text you give an AI model. For example, T068 looks like a good example, but it is in `world/data/splits/test.csv`. If the judge sees it, the test score is no longer real. This is called leakage.
+The mobility judge passed your test. Now write down its prompt. A prompt is the text you give an AI model.
+
+For example, T068 looks like a good example, but it is in `world/data/splits/test.csv`. If the judge sees it, the test score is no longer real. This is called leakage.
 
 ## Watch it done
 

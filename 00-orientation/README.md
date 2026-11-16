@@ -37,9 +37,9 @@ Open `world/viewer.html` with a double-click. It opens in your web browser. The 
 
 Read the **Meet Lantern Trails** tab. It tells you four things:
 
-- who the company is;
-- what Draft Planner, the AI tool, does;
-- who Ines Duarte, the head designer, is;
+- who the company is,
+- what Draft Planner, the AI tool, does,
+- who Ines Duarte, the head designer, is,
 - what the boss asked you.
 
 ![The Meet Lantern Trails tab in the viewer](meet-lantern-trails/images/expected.png)

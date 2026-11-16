@@ -13,7 +13,7 @@ Nobody can say how often Draft Planner gets a trip wrong. So nobody can make the
 
 Before you measure anything, you need to know two things. First, what question are you answering? Second, who decides what a "good" draft is?
 
-Anthropic, a company that builds AI models, puts it this way: "The people closest to product requirements and users are best positioned to define success." ([Anthropic](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)) In plain words: the person who knows the work best should decide what good means.
+Anthropic is a company that builds AI models. It puts it this way: "The people closest to product requirements and users are best positioned to define success." ([Anthropic](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)). In plain words: the person who knows the work best should decide what good means.
 
 ![The Meet Lantern Trails tab in the viewer](../images/expected.png)
 

@@ -18,7 +18,9 @@ a scores export that a script checked, and one pass rate you can compare with yo
 
 ## The problem
 
-In part 2 you labelled 40 drafts in a spreadsheet. It worked. But a spreadsheet does not scale. Two reviewers overwrite each other. Nobody can see which drafts are still waiting. The label sits far from the draft it describes.
+In part 2 you labelled 40 drafts in a spreadsheet. It worked. But a spreadsheet does not scale.
+
+Two reviewers overwrite each other. Nobody can see which drafts are still waiting. The label sits far from the draft it describes.
 
 Teams that run AI features in production use a tool for this. In this part you do the same job in that tool. It is called **Langfuse**. It is free and open source.
 

@@ -26,14 +26,16 @@ The generic judge misses many failures like this one. It passes 106 of the 120 d
 
 ## Why it matters
 
-Anthropic writes that "LLM-as-judge graders should be closely calibrated with human experts". ([Anthropic, Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)) In plain words: an AI judge must give the same answers as a human expert, or you cannot trust it.
+Anthropic writes that "LLM-as-judge graders should be closely calibrated with human experts". ([Anthropic, Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)) In plain words: an AI judge must match a human expert, or you cannot trust it.
 
 Hamel Husain and Shreya Shankar give two numbers to check a judge:
 
 - **TPR** (true positive rate): of the drafts Ines passes, the share the judge also passes.
 - **TNR** (true negative rate): of the drafts Ines fails, the share the judge also fails.
 
-They aim for both above 90%. The lowest they accept is above 80%. A judge that is a bit off gives you the wrong pass rate. In their worked example, a judge has a TPR of 0.92 and a TNR of 0.88. It reports an 80% pass rate. The true pass rate is about 85%. ([validate-evaluator skill](https://github.com/ai-evals-course/evals-skills/blob/main/skills/validate-evaluator/SKILL.md))
+They aim for both above 90%. The lowest they accept is above 80%.
+
+A judge that is a bit off gives you the wrong pass rate. In their worked example, a judge has a TPR of 0.92 and a TNR of 0.88. It reports an 80% pass rate. The true pass rate is about 85%. ([validate-evaluator skill](https://github.com/ai-evals-course/evals-skills/blob/main/skills/validate-evaluator/SKILL.md))
 
 This is the path you take in this part:
 
