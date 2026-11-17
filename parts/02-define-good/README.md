@@ -73,7 +73,7 @@ Do the steps in order. Each step checks the files in its own `problem` folder. E
 bun run verify write-the-rubric
 ```
 
-Expect: `Done. All 7 rules pass.` once `rubric.md` has its four parts, its examples and no scale.
+Expect: `Done. All 8 rules pass.` once `rubric.md` has its four parts, its examples and no scale.
 
 ```bash
 bun run verify label-the-golden-set

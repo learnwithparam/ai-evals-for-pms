@@ -81,7 +81,7 @@ Expect: `Done. All 7 rules pass.` once `launch-criteria.md` has a row for every 
 bun run verify compare-the-releases
 ```
 
-Expect: `Done. All 5 rules pass.` once your verdict follows your criteria.
+Expect: `Done. All 7 rules pass.` once your verdict follows your criteria.
 
 ```bash
 bun run verify read-the-ab-test
@@ -93,7 +93,7 @@ Expect: `Done. All 6 rules pass.` once `ab-decision.md` has the numbers and a de
 bun run verify write-the-eval-section
 ```
 
-Expect: `Done. All 8 rules pass.` once all seven sections of `prd-eval-section.md` are filled in.
+Expect: `Done. All 9 rules pass.` once all seven sections of `prd-eval-section.md` are filled in.
 
 The last two steps are extensions. Skip them if you are short of time.
 
@@ -107,7 +107,7 @@ Expect: `Done. All 6 rules pass.` once `review-plan.md` has every line.
 bun run verify bring-your-own-traces
 ```
 
-Expect: `Done. All 8 rules pass.` once your 20 notes and your modes are in `own/`.
+Expect: `Done. All 13 rules pass.` once your 20 notes and your modes are in `own/`.
 
 When all six steps pass, check the whole part:
 

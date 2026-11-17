@@ -82,7 +82,7 @@ The fourth step, break down the stages, has its own check on its page. When all 
 bun run verify part look-before-you-measure
 ```
 
-Expect: `Part look-before-you-measure is done: 3/3 steps pass.`
+Expect: `Part look-before-you-measure is done: 4/4 steps pass.`
 
 ## Watch and read
 
